@@ -133,26 +133,35 @@
                 <!--/content-primary -->
             </form>
         </div>
+        <div data-role="footer" data-position="fixed">    
+            <div data-role="navbar">
+                <ul>
+                    <li><a onclick="salir()" data-iconpos="top" data-icon="home">Salir</a></li>
+                </ul>
+            </div><!-- /navbar -->
+        </div><!-- /footer -->
     </div>
     <!-- Página: Pedido -->
     <div data-role="page" id="pedido" data-title="Pedido">
         <div data-role="header" data-position="fixed">
             <h1>Nuevo pedido</h1>
-            <a data-role="button" data-icon="arrow-l" data-iconpos="left" data-theme="a" href="#selectorTipo" data-transition="slide">Atras</a>
+            <a data-role="button" id="pedido_btnAtras" data-icon="arrow-l" data-iconpos="left" data-theme="a" href="" data-transition="slide">Atras</a>
         </div>
         <div data-role="content">
             <form action="http://" method="POST">
                 <div data-role="fieldcontain">
-                    <label for="pedido_txtCliente"></label>
-                    <input type="text" id="pedido_txtCliente" placeholder="Seleccione un cliente" readonly="readonly">
                     <a data-role="button" href="#clienteDetalle" data-inline="false" data-theme="b" data-icon="plus" data-iconpos="left" data-mini="true">Seleccionar cliente</a>
                 </div>
                 <div data-role="fieldcontain">
                     <!--<input type="text" id="pedido_txtProducto" placeholder="Añadir producto">-->
-                    <a data-role="button" id="Pedido_btnAgregarProducto" data-inline="false" data-theme="b" data-icon="plus" data-iconpos="left" data-mini="true">Agregar producto</a>
+                    <a data-role="button" id="Pedido_btnAgregarProducto" data-inline="false" data-theme="b" data-icon="plus" data-iconpos="left" data-mini="true">Buscar producto</a>
                 </div>
-                <a href="#pedidoDetalle" data-role="button" id="pedido_btnDetalle" data-mini="true" data-corners="false" data-theme="a">Detalle</a>
+                <a href="#pedidoDetalle" data-role="button" id="pedido_btnDetalle" data-mini="false" data-corners="false" data-theme="a">Detalle</a>
                 <!--<span id="pedido_dtpFecha">Fecha</span>-->
+                <div data-role="fieldcontain">
+                    <label for="pedido_txtCliente">Cliente</label>
+                    <input type="text" id="pedido_txtCliente" placeholder="" readonly="readonly">
+                </div>
                 <div data-role="fieldcontain">
                     <label for="pedido_dtpFecha">Fecha</label>
                     <input type="date" id="pedido_dtpFecha">
@@ -225,6 +234,11 @@
                     </a>
                 </div>
                 <div data-role="fieldcontain">
+                    <label for="listaSucursales">Sucursal</label>
+                    <select id="listaSucursales" onchange="seleccionaSucursal();" onfocus="this.selectedindex=-1;" data-native-menu="true">
+                    </select>
+                </div>
+                <div data-role="fieldcontain">
                     <label for="clienteDetalle_txtLPV">LPV</label>
                     <input type="text" id="clienteDetalle_txtLPV" readonly="readonly">
                     </text>
@@ -239,13 +253,6 @@
                     <input type="text" id="clienteDetalle_txtSaldo" readonly="readonly">
                     </text>
                 </div>
-
-                <div data-role="fieldcontain">
-                    <label for="listaSucursales">Sucursal</label>
-                    <select id="listaSucursales" onchange="seleccionaSucursal();" onfocus="this.selectedindex=-1;" data-native-menu="true">
-                    </select>
-                </div>
-
                 <div>
                     <a data-role="button" href="#pedido" id="clienteDetalle_btnAceptar" data-theme="b">Aceptar</a>
                 </div>
@@ -259,13 +266,16 @@
         <div data-theme="a" data-role="header" data-position="fixed">
             <h3>Clientes</h3>
             <a data-role="button" data-icon="arrow-l" data-iconpos="left" data-theme="a" href="#pedido" data-transition="slide">Atras</a>
+
         </div>
-        <div data-role="content" style="width:20%" align="right">                       
-                <label for="buscaCliente_txtCodCte"></label>
-                <input type="text" id="buscaCliente_txtCodCte" placeholder="Buscar por código de cliente..."></text>
+        <div data-role="content" style="position:fixed;top:30px;right:5px;" align="right">                       
+                <!--<label for="buscaCliente_txtCodCte"></label>
+                <input type="text" id="buscaCliente_txtCodCte" placeholder="Buscar por código de cliente..." data-inline="true"></text>-->
+                
         </div> 
-        <div data-role="content">
-            <ul id="autocompleteCtes" data-role="listview" data-inset="true" data-filter="true" data-filter-placeholder="Buscar por nombre de cliente..." data-filter-theme="d"></ul>           
+        <div data-role="content" style="width=80%"> 
+            <ul id="autocompleteCtes" data-role="listview" data-inset="true" data-filter="true" data-filter-placeholder="Buscar por nombre de cliente..." data-filter-theme="d"></ul>
+
         </div>
     </div>
     <!-- BuscaProducto -->
