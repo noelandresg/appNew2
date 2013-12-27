@@ -20,8 +20,9 @@
     <script src="lib/funciones.js"></script>
     <script src="cordova.js"></script>
     <!-- Styles -->
+    <link rel="stylesheet" href="css/jquery.mobile-1.3.1.css" />
     <link href="css/style.css" rel="stylesheet">
-    <link href="css/jquery.mobile-1.3.2.min.css" rel="stylesheet">
+    <!--<link href="css/jquery.mobile-1.3.2.min.css" rel="stylesheet">-->
     <!-- <link rel="stylesheet" href="https://d10ajoocuyu32n.cloudfront.net/mobile/1.3.1/jquery.mobile-1.3.1.min.css"> -->
 
     <!--<link href="src/css/jquery.mobile.structure-1.1.0.css" rel="stylesheet">
@@ -59,12 +60,6 @@
                 </div>
             </form>
             <a data-role="button" type="sumbit" id="btnIniciar" target="_self" data-transition="slide">Iniciar sesion</a>
-            <!-- <div id="establecimientos" data-role="content">
-                            <em>Seleccione el establecimiento</em> <br/>
-                                <select onchange="seleccionaPedido();" onfocus="this.selectedindex=-1;" id="listaEstab" data-native-menu="false">
-
-                                </select>
-                </div> -->
         </div>
         <div data-role="footer" data-position="fixed">
             <h4>BMS Movil© 2013</h4>
@@ -156,7 +151,7 @@
                     <!--<input type="text" id="pedido_txtProducto" placeholder="Añadir producto">-->
                     <a data-role="button" id="Pedido_btnAgregarProducto" data-inline="false" data-theme="b" data-icon="plus" data-iconpos="left" data-mini="true">Buscar producto</a>
                 </div>
-                <a href="#sample-page" data-role="button" id="pedido_btnDetalle" data-mini="false" data-corners="false" data-theme="a">Detalle</a>
+                <a data-role="button" id="pedido_btnDetalle" data-mini="false" data-corners="false" data-theme="e">Detalle</a>
                 <!--<span id="pedido_dtpFecha">Fecha</span>-->
                 <div data-role="fieldcontain">
                     <label for="pedido_txtCliente">Cliente</label>
@@ -199,7 +194,7 @@
             </form>
         </div>
     </div>
-    <!-- Página: pedidoDetalle -->
+    <!-- Página: pedidoDetalle 
     <div data-role="page" id="pedidoDetalle" data-title="Pedido detalle">
         <div data-role="header" data-position="fixed">
             <h1>Detalle del pedido</h1>
@@ -217,7 +212,7 @@
                 </div>
             </form>
         </div>
-    </div>
+    </div>-->
     <!-- Pagina: clienteDetalle -->
     <div data-role="page" id="clienteDetalle" data-title="Cliente detalle">
         <div data-theme="a" data-role="header" data-position="fixed">
@@ -300,11 +295,12 @@
         </div>
         <div data-role="content">
             <form action="http://" method post>
+                    <a data-role="button" href="#buscaProducto" data-inline="false" data-theme="b" data-icon="plus" data-iconpos="left" data-mini="true">Agregar producto</a>
                 <div data-role="fieldcontain">
                     <label for="productos_txtProducto">Producto</label>
-                    <input type="text" id="productos_txtProducto" readonly="readonly">
+                    <input type="text" id="productos_txtProducto" >
                 </div>
-                <a data-role="button" href="#buscaProducto" data-inline="false" data-theme="b" data-icon="plus" data-iconpos="left" data-mini="true">Agregar producto</a>
+                
                 <div data-role="fieldcontain">
                     <label for="productos_listaUnidad">Unidad</label>
                     <select onchange="seleccionaUnidad()" onfocus="this.selectedindex=-1;" id="productos_listaUnidad" data-native-menu="true">
@@ -354,150 +350,27 @@
         </div>
     </div>
     <!-- SWIPE LIST -->
-    <div data-role="page" id="sample-page" data-title="Inbox" data-theme="d" data-url="sample-page">
+    <div data-role="page" id="pedidoDetalle" data-title="Detalle" data-theme="d" data-url="pedidoDetalle">
     <div data-role="header" data-position="fixed" data-theme="b">
-        <h1>Inbox</h1>
-        <a href="#demo-intro" data-rel="back" data-icon="arrow-l" data-iconpos="notext">Back</a>
-        <a href="#" onclick="window.location.reload()" data-icon="back" data-iconpos="notext">Refresh</a>
+        <h1>Detalle</h1>
+        <a href="#pedido" data-icon="arrow-l" data-iconpos="notext">Pedido</a>
+        <a href="#" onclick="window.location.reload()" data-icon="back" data-iconpos="notext">Refrescar</a>
     </div><!-- /header -->
     <div data-role="content">
-        <ul id="list" class="touch" data-role="listview" data-icon="false" data-split-icon="delete" data-split-theme="d">
-            <li>
-                <a href="#demo-mail">
-                    <h3>Avery Walker</h3>
-                    <p class="topic"><strong>Re: Dinner Tonight</strong></p>
-                    <p>Sure, let's plan on meeting at Highland Kitchen at 8:00 tonight. Can't wait! </p>
-                    <p class="ui-li-aside"><strong>4:48</strong>PM</p>
-                </a>
-                <a href="#" class="delete">Delete</a>
-            </li>
-            <li>
-                <a href="#demo-mail">
-                    <h3>Amazon.com</h3>
-                    <p class="topic"><strong>4-for-3 Books for Kids</strong></p>
-                    <p>As someone who has purchased children's books from our 4-for-3 Store, you may be interested in these featured books.</p>
-                    <p class="ui-li-aside"><strong>4:37</strong>PM</p>
-                </a>
-                <a href="#" class="delete">Delete</a>
-            </li>
-            <li>
-                <a href="#demo-mail">
-                    <h3>Mike Taylor</h3>
-                    <p class="topic"><strong>Re: This weekend in Maine</strong></p>
-                    <p>Hey little buddy, sorry but I can't make it up to vacationland this weekend. Maybe next weekend?</p>
-                    <p class="ui-li-aside"><strong>3:24</strong>PM</p>
-                </a>
-                <a href="#" class="delete">Delete</a>
-            </li>
-            <li>
-                <a href="#demo-mail">
-                    <h3>Redfin</h3>
-                    <p class="topic"><strong>Redfin listing updates for today</strong></p>
-                    <p>There are 3 updates for the home on your watchlist: 1 updated MLS listing and 2 homes under contract.</p>
-                    <p class="ui-li-aside"><strong>2:52</strong>PM</p>
-                </a>
-                <a href="#" class="delete">Delete</a>
-            </li>
-            <li>
-                <a href="#demo-mail">
-                    <h3>Angela Smith</h3>
-                    <p class="topic"><strong>Link Request</strong></p>
-                    <p>My name is Angela Smith, SEO Consultant. I've greatly enjoyed looking through your site and I was wondering if you'd be interested in providing a link</p>
-                    <p class="ui-li-aside"><strong>1:24</strong>PM</p>
-                </a>
-                <a href="#" class="delete">Delete</a>
-            </li>
-            <li>
-                <a href="#demo-mail">
-                    <h3>Stephen Weber</h3>
-                    <p class="topic"><strong>You've been invited to a meeting at Filament Group in Boston, MA</strong></p>
-                    <p>Hey Stephen, if you're available at 10am tomorrow, we've got a meeting with the jQuery team.</p>
-                    <p class="ui-li-aside"><strong>11:24</strong>AM</p>
-                </a>
-                <a href="#" class="delete">Delete</a>
-            </li>
-            <li>
-                <a href="#demo-mail">
-                    <h3>jQuery Team</h3>
-                    <p class="topic"><strong>Boston Conference Planning</strong></p>
-                    <p>In preparation for the upcoming conference in Boston, we need to start gathering a list of sponsors and speakers.</p>
-                    <p class="ui-li-aside"><strong>9:18</strong>AM</p>
-                </a>
-                <a href="#" class="delete">Delete</a>
-            </li>
-            <li>
-                <a href="#demo-mail">
-                    <h3>Avery Walker</h3>
-                    <p class="topic"><strong>Re: Dinner Tonight</strong></p>
-                    <p>Sure, let's plan on meeting at Highland Kitchen at 8:00 tonight. Can't wait! </p>
-                    <p class="ui-li-aside"><strong>4:48</strong>PM</p>
-                </a>
-                <a href="#" class="delete">Delete</a>
-            </li>
-            <li>
-                <a href="#demo-mail">
-                    <h3>Amazon.com</h3>
-                    <p class="topic"><strong>4-for-3 Books for Kids</strong></p>
-                    <p>As someone who has purchased children's books from our 4-for-3 Store, you may be interested in these featured books.</p>
-                    <p class="ui-li-aside"><strong>4:37</strong>PM</p>
-                </a>
-                <a href="#" class="delete">Delete</a>
-            </li>
-            <li>
-                <a href="#demo-mail">
-                    <h3>Mike Taylor</h3>
-                    <p class="topic"><strong>Re: This weekend in Maine</strong></p>
-                    <p>Hey little buddy, sorry but I can't make it up to vacationland this weekend. Maybe next weekend?</p>
-                    <p class="ui-li-aside"><strong>3:24</strong>PM</p>
-                </a>
-                <a href="#" class="delete">Delete</a>
-            </li>
-            <li>
-                <a href="#demo-mail">
-                    <h3>Redfin</h3>
-                    <p class="topic"><strong>Redfin listing updates for today</strong></p>
-                    <p>There are 3 updates for the home on your watchlist: 1 updated MLS listing and 2 homes under contract.</p>
-                    <p class="ui-li-aside"><strong>2:52</strong>PM</p>
-                </a>
-                <a href="#" class="delete">Delete</a>
-            </li>
-            <li>
-                <a href="#demo-mail">
-                    <h3>Angela Smith</h3>
-                    <p class="topic"><strong>Link Request</strong></p>
-                    <p>My name is Angela Smith, SEO Consultant. I've greatly enjoyed looking through your site and I was wondering if you'd be interested in providing a link</p>
-                    <p class="ui-li-aside"><strong>1:24</strong>PM</p>
-                </a>
-                <a href="#" class="delete">Delete</a>
-            </li>
-            <li>
-                <a href="#demo-mail">
-                    <h3>Stephen Weber</h3>
-                    <p class="topic"><strong>You've been invited to a meeting at Filament Group in Boston, MA</strong></p>
-                    <p>Hey Stephen, if you're available at 10am tomorrow, we've got a meeting with the jQuery team.</p>
-                    <p class="ui-li-aside"><strong>11:24</strong>AM</p>
-                </a>
-                <a href="#" class="delete">Delete</a>
-            </li>
-            <li>
-                <a href="#demo-mail">
-                    <h3>jQuery Team</h3>
-                    <p class="topic"><strong>Boston Conference Planning</strong></p>
-                    <p>In preparation for the upcoming conference in Boston, we need to start gathering a list of sponsors and speakers.</p>
-                    <p class="ui-li-aside"><strong>9:18</strong>AM</p>
-                </a>
-                <a href="#" class="delete">Delete</a>
-            </li>
+        <ul id="list" class="touch" data-role="listview" data-icon="false" data-split-icon="delete" data-split-theme="d">        
         </ul>
     </div><!-- /content -->
+    <div data-role="controlgroup" id="pedidoDetalle_btnGrupo" data-type="horizontal">
+                    <a data-role="button" id="pedidoDetalle_btnBorraTodos" data-theme="e">Eliminar todos</a>
+                </div>
     <div id="confirm" class="ui-content" data-role="popup" data-theme="none">
-        <p id="question">Are you sure you want to delete</p>
+        <p id="question">Está seguro de eliminar el producto?</p>
         <div class="ui-grid-a">
             <div class="ui-block-a">
-                <a id="yes" data-role="button" data-mini="true" data-shadow="false" data-theme="b" data-rel="back">Yes</a>
+                <a id="yes" data-role="button" data-mini="true" data-shadow="false" data-theme="b" data-rel="back">Si</a>
             </div>
             <div class="ui-block-b">
-                <a id="cancel" data-role="button" data-mini="true" data-shadow="false" data-theme="b" data-rel="back">Cancel</a>
+                <a id="cancel" data-role="button" data-mini="true" data-shadow="false" data-theme="b" data-rel="back">Cancelar</a>
             </div>
         </div>
     </div><!-- /popup -->
