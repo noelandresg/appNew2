@@ -320,7 +320,7 @@
                 </div>
                 <div data-role="fieldcontain">
                     <label for="productos_txtPrecioUni">Precio/u</label>
-                    <input type="text" id="productos_txtPrecioUni" readonly="readonly">
+                    <input type="text" id="productos_txtPrecioUni">
                 </div>
                 <div data-role="fieldcontain">
                     <label for="productos_txtImporte">Importe</label>
@@ -341,6 +341,66 @@
                     <div class="ui-block-b">
 
                         <a class="ui-btn-text" data-role="button" id="productos_btnCancelaProducto" data-inline="true" data-icon="delete">Limpiar</a>
+
+                    </div>
+                </div>
+
+            </form>
+
+        </div>
+    </div>
+
+    <!-- Pagina: productosEditar -->
+    <div data-role="page" id="productosEditar" data-title="Modificar Producto">
+        <div data-theme="a" data-role="header" data-position="fixed">
+            <h3>Modificar Producto</h3>
+            <a data-role="button" data-icon="arrow-l" data-iconpos="left" data-theme="a" href="#pedidoDetalle" data-transition="slide">Atras</a>
+        </div>
+        <div data-role="content">
+            <form action="http://" method post>
+                <div data-role="fieldcontain">
+                    <label for="productosEditar_txtProducto">Producto</label>
+                    <input type="text" id="productosEditar_txtProducto" readonly="readonly">
+                </div>
+                
+                <div data-role="fieldcontain">
+                    <label for="productosEditar_listaUnidad">Unidad</label>
+                    <select onchange="seleccionaUnidad(true);" onfocus="this.selectedindex=-1;" id="productosEditar_listaUnidad" data-native-menu="true">
+                    </select>
+                </div>
+                <div data-role="fieldcontain">
+                    <label for="productosEditar_txtCantidad">Cantidad</label>
+                    <input type="text" id="productosEditar_txtCantidad">
+
+                    <label for="productosEditar_txtPeso">Peso</label>
+                    <input type="text" id="productosEditar_txtPeso" readonly="readonly">
+
+                    <label for="productosEditar_txtVolumen">Volumen</label>
+                    <input type="text" id="productosEditar_txtVolumen" readonly="readonly">
+                </div>
+                <div data-role="fieldcontain">
+                    <label for="productosEditar_txtPrecioUni">Precio/u</label>
+                    <input type="text" id="productosEditar_txtPrecioUni">
+                </div>
+                <div data-role="fieldcontain">
+                    <label for="productosEditar_txtImporte">Importe</label>
+                    <input type="text" id="productosEditar_txtImporte" readonly="readonly">
+
+                    <label for="productosEditar_txtIva">IVA</label>
+                    <input type="text" id="productosEditar_txtIva" readonly="readonly">
+
+                    <label for="productosEditar_txtTotal">Total</label>
+                    <input type="text" id="productosEditar_txtTotal" readonly="readonly">
+                </div>
+                <div class="ui-grid-a">
+                    <div class="ui-block-a">
+
+                        <a class="ui-btn-text" data-role="button" id="productosEditar_btnAgregaProducto" data-inline="true" data-icon="plus" data-theme="b">Aceptar</a>
+
+                    </div>
+                    <div class="ui-block-b">
+
+                        <a class="ui-btn-text" data-role="button" id="productosEditar_btnCancelaProducto" data-inline="true" data-icon="delete">Cancelar</a>
 
                     </div>
                 </div>
@@ -374,7 +434,17 @@
             </div>
         </div>
     </div><!-- /popup -->
-</div>
+    <div data-role="footer" data-position="fixed">
+            <div id="detalle_tablaTotales" class="ui-grid-a">
+                <div class="ui-block-a">Total importe:</div>
+                <div id="pedidoDetalle_totalImporte" class="ui-block-b"></div>
+                <div class="ui-block-a">Total IVA:</div>
+                <div id="pedidoDetalle_totalIva"class="ui-block-b"></div>
+                <div class="ui-block-a">Total:</div>
+                <div id="pedidoDetalle_Total"class="ui-block-b"></div>
+            </div>
+        </div>
+</div> 
 
     <!-- Segunda pagina con la sesion ya iniciada -->
     <div data-role="page" id="detalle" data-title="Bienvenido">

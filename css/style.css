@@ -6,6 +6,7 @@
     text-align: center;
     margin: 0 auto;
 }
+.ui-li-aside { float: right; width: 10%; text-align: right; margin: .3em 0; }
 /* Left transition */
 li.ui-li.left {
     -webkit-transition: -webkit-transform 250ms ease;
@@ -72,3 +73,4 @@ li.ui-li.border {
     font-size: inherit; /* The cloned topic will have class ui-li-desc so we negate the font-size settings of this class */
     text-align: center;
 }
+
