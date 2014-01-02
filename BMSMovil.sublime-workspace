@@ -4,6 +4,66 @@
 		"selected_items":
 		[
 			[
+				"bmsProdto",
+				"bmsProdTotal"
+			],
+			[
+				"prodobj",
+				"prodObjModif"
+			],
+			[
+				"bmsprod",
+				"bmsProdIva"
+			],
+			[
+				"bmspro",
+				"bmsProdImporte"
+			],
+			[
+				"t",
+				"true"
+			],
+			[
+				"modi",
+				"modificaDetalle"
+			],
+			[
+				"pedido",
+				"pedidoDetalle"
+			],
+			[
+				"objmod",
+				"prodObjModif"
+			],
+			[
+				"prodi",
+				"prodObjModif	{}"
+			],
+			[
+				"prod",
+				"prodObj	{}"
+			],
+			[
+				"prodObjm",
+				"prodObjModif"
+			],
+			[
+				"cant",
+				"cantidad	(num)"
+			],
+			[
+				"actualizaTotalesProductosEdita",
+				"actualizaTotalesProductosEditar(cant, precio)"
+			],
+			[
+				"ip",
+				"iProdObjModif"
+			],
+			[
+				"actual",
+				"actualizaTotalesProductosEditar(cant, precio)"
+			],
+			[
 				"codig",
 				"codigo"
 			],
@@ -52,10 +112,6 @@
 				"bmsPedImporte"
 			],
 			[
-				"actual",
-				"actualizaTotalesPedido"
-			],
-			[
 				"cliente",
 				"clienteDetalle"
 			],
@@ -66,14 +122,6 @@
 			[
 				"prodOb",
 				"prodObj"
-			],
-			[
-				"bmsprod",
-				"bmsProdTotal"
-			],
-			[
-				"bmspro",
-				"bmsProdIva"
 			],
 			[
 				"bmsPro",
@@ -110,10 +158,6 @@
 			[
 				"bmsuni",
 				"bmsUnidad"
-			],
-			[
-				"prod",
-				"Productos"
 			],
 			[
 				"imp",
@@ -274,58 +318,26 @@
 				"buffer_size": 627,
 				"line_ending": "Windows"
 			}
-		},
-		{
-			"file": "index.html",
-			"settings":
-			{
-				"buffer_size": 23327,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"contents": "/*global numeral,FastClick*/\n    /*++++++++++++++++++++ Variables BMS  ++++++++++++++++++++++++++ */\nvar bmsUser;\nvar bmsEstab = \"\";\nvar bmsTipo; //Pedido o Cobranza\nvar bmsServer;\n     /*+++++++++++++++++++++ Pedido    +++++++++++++++++++++++++++++++ */\nvar bmsCliente = \"\";\nvar bmsLineaDetalle = [];\nvar bmsFecha = new Date();\nvar bmsNotas = \"\";\nvar bmsPedImporte = 0.00;\nvar bmsPedIva = 0.00;\nvar bmsPedTotal = 0.00;\n     /*+++++++++++++++++++++ Cliente   +++++++++++++++++++++++++++++++ */\nvar bmsLPV;\nvar bmsCondPago;\nvar bmsSaldo = 0;\nvar bmsSucursal;\n     /*+++++++++++++++++++++ Productos +++++++++++++++++++++++++++++++ */\nvar bmsProducto;\nvar bmsUnidad;\nvar bmsCantidad = 0;\nvar bmsPeso;\nvar bmsVolumen;\nvar bmsPrecio;\nvar bmsProdImporte;\nvar bmsProdIva;\nvar bmsProdTotal;\n    /*+++++++++++++++++++++ Unidades +++++++++++++++++++++++++++++++ */\nvar bmsUnidadAbrev;\nvar bmsUnidadNombre;\n\nvar prodObj = {};\nvar prodObjModif = {};\n     /*+++++++++++++++++++++ --------- +++++++++++++++++++++++++++++++ */\n     //var currentTime = new Date();\n\nfunction producto(codigo, descripcion, unidad, unidadAbrev, cantidad,  peso, volumen, precio, importe, iva, total) {\n    this.codigo = codigo;\n    this.descripcion = descripcion;\n    this.unidad = unidad;\n    this.unidadAbrev = unidadAbrev;\n    this.cantidad = cantidad;\n    this.peso = peso;\n    this.volumen = volumen;\n    this.precio = precio;\n    this.importe = importe;\n    this.iva = iva;\n    this.total = total;\n}\nfunction logGlobal(){\n    console.log('***DEBUGGING LOG - [Page: logGlobal()] [\\n'+         '******* PEDIDO *******' +'\\n' +\n                                                                      'Data: bmsCliente = ' + bmsCliente + '\\n' +\n                                                                      'Data: bmsFecha = ' + bmsFecha + '\\n' +\n                                                                      'Data: bmsNotas = ' + bmsNotas + '\\n' +\n                                                                      'Data: bmsPedImporte = ' + bmsPedImporte + '\\n' +\n                                                                      'Data: bmsPedIva = ' + bmsPedIva + '\\n' +\n                                                                      'Data: bmsPedTotal = ' + bmsPedTotal + '\\n' +\n                                                                      '******* CLIENTE *******' +'\\n' + \n                                                                      'Data: bmsLPV = ' + bmsLPV + '\\n' +\n                                                                      'Data: bmsCondPago = ' + bmsCondPago + '\\n' + \n                                                                      'Data: bmsSaldo = ' + bmsSaldo + '\\n' + \n                                                                      'Data: bmsSucursal = ' + bmsSucursal + '\\n' + \n                                                                      '******* PRODUCTO *******' +'\\n' +\n                                                                      'Data: bmsProducto = ' + bmsProducto + '\\n' +\n                                                                      'Data: bmsUnidad = ' + bmsUnidad + '\\n' +\n                                                                      'Data: bmsUnidadAbrev = ' + bmsUnidadAbrev + '\\n' + \n                                                                      'Data: bmsUnidadNombre = ' + bmsUnidadNombre + '\\n' +  \n                                                                      'Data: bmsCantidad = ' + bmsCantidad + '\\n' + \n                                                                      'Data: bmsPeso = ' + bmsPeso + '\\n' +\n                                                                      'Data: bmsVolumen = ' + bmsVolumen + '\\n' +\n                                                                      'Data: bmsPrecio = ' + bmsPrecio + '\\n' + \n                                                                      'Data: bmsProdImporte = ' + bmsProdImporte + '\\n' + \n                                                                      'Data: bmsProdIva = ' + bmsProdIva+ '\\n' +\n                                                                      'Data: bmsProdTotal = ' + bmsProdTotal + '\\n' +                                                                      \n                                                                      'Data: prodObj = ' + JSON.stringify(prodObj) + '\\n' +\n\n         ']');\n}\n\n      // Manejo de base de datos \n\n      // global variables DB\nvar db;\nvar shortName = 'WebSqlDB';\nvar version = '1.0';\nvar displayName = 'WebSqlDB';\nvar maxSize = 65535;\n\n//SWIPE LIST\n    $(document).on( \"pageshow\", \"#pedidoDetalle\", function() {\n        //alert(\"Estamos en pageshow #pedidoDetalle\");\n        $('#list').empty();\n        var length = bmsLineaDetalle.length,\n            obj    = null,\n            html   = \"\",\n            i; \n        \n            for (i = 0; i < length; i++) {\n                obj = bmsLineaDetalle[i];\n                html +=  \"<li class='\"+\"item\"+\"'data-value='\"+obj.codigo+\"'><a href=\"+\"'#'\"+\"><p class=\"+\"topic\"+\">\"+ obj.descripcion +\"</p><p class=\"+\"topic\"+\"><strong>Cant: </strong>\"+ obj.cantidad+\"</p><p class=\"+\"topic\"+\"><strong>Unidad: </strong>\"+obj.unidadAbrev+\"</p><p><strong>Importe: </strong>\"+numeral(obj.importe).format('$0,0.00')+\"</p><p><strong>IVA: </strong>\"+numeral(obj.iva).format('$0,0.00')+\"</p><p><strong>TOTAL: </strong>\"+numeral(obj.total).format('$0,0.00')+\"</p></a><a href=\"+\"#\"+\" class=\"+\"delete\"+\">Delete</a></li>\";\n            }\n            $('#list').append(html);\n            $( \"#list\" ).listview( \"refresh\" );\n       \n    //$(document).on('pagehide', function () { $(this).off('swipeleft swiperight'); });    \n    // Swipe to remove list item\n    $(document).on( \"swipeleft\", \"#list li.ui-li\", function( event ) {\n        //alert(\"Estamos en event #pedidoDetalle\");\n\n        var i = $(this).index();\n        event.stopPropagation();\n        var listitem = $( this ),\n            // These are the classnames used for the CSS transition\n            dir = \"left\" //event.type === \"swipeleft\" ? \"left\" : \"right\",\n            // Check if the browser supports the transform (3D) CSS transition\n            transition = $.support.cssTransform3d ? dir : false;\n            confirmAndDelete( listitem, transition, i );\n    });\n    // If it's not a touch device...\n    if ( ! $.mobile.support.touch ) {\n        // Remove the class that is used to hide the delete button on touch devices\n        $( \"#list\" ).removeClass( \"touch\" );\n        // Click delete split-button to remove list item\n        $( \".delete\" ).on( \"click\", function() {\n            var i = $(this).parent(\"li.ui-li\").index();\n            var listitem = $( this ).parent( \"li.ui-li\" );\n            confirmAndDelete( listitem, false, i );\n        });\n    }\n\n    function confirmAndDelete( listitem, transition, i ) {\n        // Highlight the list item that will be removed\n        listitem.addClass( \"ui-btn-down-d\" );\n        // Inject topic in confirmation popup after removing any previous injected topics\n        $( \"#confirm .topic\" ).remove();\n        listitem.find( \".topic\" ).clone().insertAfter( \"#question\" );\n        // Show the confirmation popup\n        $( \"#confirm\" ).popup( \"open\" );\n        // Proceed when the user confirms\n        $( \"#confirm #yes\" ).on( \"click\", function() {\n            // Remove with a transition\n            if ( transition ) {\n                listitem\n                    // Remove the highlight\n                    .removeClass( \"ui-btn-down-d\" )\n                    // Add the class for the transition direction\n                    .addClass( transition )\n                    // When the transition is done...\n                    .on( \"webkitTransitionEnd transitionend otransitionend\", function() {\n                        // ...the list item will be removed\n                        \n                        var eliminado = bmsLineaDetalle.splice(i,1);\n                        alert(\"Producto eliminado: \" + eliminado[0].descripcion + \" Cant. \"+eliminado[0].cantidad + \" Importe. \" + numeral(eliminado[0].importe).format('$0,0.00'))\n                        //alert(\"Item eliminado index :\" + JSON.stringify(eliminado));\n                        listitem.remove();\n                        actualizaTotalesPedido();\n                        // ...the list will be refreshed and the temporary class for border styling removed\n                        $( \"#list\" ).listview( \"refresh\" ).find( \".ui-li.border\" ).removeClass( \"border\" );\n                    })\n                    // During the transition the previous list item should get bottom border\n                    .prev( \"li.ui-li\" ).addClass( \"border\" );\n            }\n            // If it's not a touch device or the CSS transition isn't supported just remove the list item and refresh the list\n            else {\n                var eliminado = bmsLineaDetalle.splice(i,1);\n                        alert(\"Producto eliminado: \" + eliminado[0].descripcion + \" Cant. \"+eliminado[0].cantidad + \" Importe. \" + numeral(eliminado[0].importe).format('$0,0.00'))\n                listitem.remove();\n                actualizaTotalesPedido();\n                $( \"#list\" ).listview( \"refresh\" );\n            }\n        });\n        // Remove active state and unbind when the cancel button is clicked\n        $( \"#confirm #cancel\" ).on( \"click\", function() {\n            listitem.removeClass( \"ui-btn-down-d\" );\n            $( \"#confirm #yes\" ).off();\n        });\n    }\n});\n\nfunction errorHandler(transaction, error) {\n    alert('Error: ' + error.message + ' code: ' + error.code);\n}\n\nfunction successCallBack() {\n //alert(\"DEBUGGING: success\");\n}\n\nfunction nullHandler() {}\n\nfunction renderEntries(tx, result) {\n         //alert(\"DEBUGGING: We are on renderEntries()\");\n    if (result.rows.length == 0) {\n        console.log(\"No se trajo registros con el SELECT\");\n    } else {\n        var row = result.rows.item(0);\n        console.log('***DEBUGGING LOG - [Page: Config - SQL SELECT] [Data: row.serverText  ' + row.serverText);\n        document.getElementById(\"config_servidor\").value = row.serverText;\n        console.log('***DEBUGGING LOG - [Page: Config] [Data: bmsServer =  ' + row.serverText);\n        bmsServer = row.serverText;\n    }\n}\n\nfunction queryDB() {\n\n    if (!window.openDatabase) {\n        alert('Databases are not supported in this browser.');\n        return;\n    }\n    db.transaction(function(transaction) {\n        transaction.executeSql('SELECT serverText FROM Config ORDER BY serverId DESC LIMIT 1;', [], renderEntries, errorHandler);\n    }, errorHandler, nullHandler);\n    return;\n}\n\n      // called when the application loads \nfunction onBodyLoad() {\n\n //alert(\"DEBUGGING: we are in the onBodyLoad() function\"); \n\n    if (!window.openDatabase) {\n        alert('Databases are not supported in this browser.');\n        return;\n    }\n\n    db = window.openDatabase(shortName, version, displayName, maxSize);\n    queryDB();\n\n // this line will try to create the table User in the database just created/openned \n    db.transaction(function(tx) {\n     //tx.executeSql( 'CREATE TABLE IF NOT EXISTS Config(serverId INTEGER NOT NULL PRIMARY KEY, serverText TEXT NOT NULL)',[],nullHandler,errorHandler);\n        tx.executeSql('CREATE TABLE IF NOT EXISTS Config(serverId INTEGER NOT NULL PRIMARY KEY, serverText TEXT NOT NULL)', [], nullHandler, errorHandler);\n    }, errorHandler, successCallBack);\n //alert('DB Created!');\n}\n\n      // list the values in the database to the screen using jquery to update the ##config_servidor element \n\nfunction AddValueToDB() {\n\n    if (!window.openDatabase) {\n        alert('Databases are not supported in this browser.');\n        return;\n    }\n\n    bmsServer = $('#config_servidor').val();\n    db.transaction(function(transaction) {\n        transaction.executeSql('INSERT INTO Config(serverText) VALUES (?)', [bmsServer],\n            nullHandler, errorHandler);\n        console.log('***DEBUGGING LOG - [Page: config] [Data: bmsServer = ' + bmsServer + ']');\n        alert('Información guardada: ' + bmsServer);\n    });\n\n    return false;\n}\nfunction validateForm() {\n    var x = document.forms[\"Login\"][\"text1\"].value,\n    y = document.forms[\"Login\"][\"text2\"].value,\n    band = true;\n    bmsServer = document.getElementById(\"config_servidor\").value;\n    \n    if (x == null || x == \"\") {\n        alert(\"Por favor indique su nombre de usuario.\");\n        band = false;\n        return band;\n    }  \n    if (y == null || y == \"\") {\n        alert(\"Por favor indique su contraseña.\");\n        band = false;\n        return band;\n    }  \n    if (bmsServer == null || bmsServer == \"\") {\n     alert(\"Por favor indique un servidor en el panel de configuración.\");\n        band = false;\n        return band;\n    }\n    return true;\n}\nfunction salir(){\n    var answer = confirm(\"Está a punto de terminar su sesión, desea continuar?\");\n     if (answer) {\n         inicio();\n         $.mobile.changePage($('#Login'), {\n             transition: \"slide\",\n             changeHash: false\n         });\n         return true;\n     } \n     return false;\n}\n\nfunction limpiaProducto(){\n    //Limpia el formulario de producto y se resetean las variables globales de los valores de pedido\n    $('#productos_txtProducto').val('');\n    $('#productos_listaUnidad').empty();\n    $('#productos_txtCantidad').val('');\n    $('#productos_txtPeso').val('');\n    $('#productos_txtVolumen').val('');\n    $('#productos_txtPrecioUni').val('');\n    $('#productos_txtImporte').val('');\n    $('#productos_txtIva').val('');\n    $('#productos_txtTotal').val('');\n\n    //Limpiar variables\n    bmsProdImporte = 0;\n    bmsProdIva = 0;\n    bmsProdTotal = 0;\n    prodObj.length = 0;\n\n    bmsProducto = \"\";\n    bmsUnidad = \"\";\n    bmsCantidad = 0;\n    bmsPeso = 0;\n    bmsVolumen = 0;\n    bmsPrecio = 0.0;\n\n    bmsUnidadAbrev = \"\";\n    bmsUnidadNombre = \"\";\n}\n\nfunction nuevoPedido(){\n        limpiaProducto();\n        $('form').clearForm();\n        bmsCliente = \"\";\n        \n        bmsLineaDetalle = [];\n        bmsFecha = new Date();\n        bmsNotas = \"\";\n        bmsPedImporte = 0.00;\n        bmsPedIva = 0.00;\n        bmsPedTotal = 0.00;\n        document.getElementById(\"pedido_txtImporte\").value = numeral(bmsPedImporte).format('$0,0.00');\n        document.getElementById(\"pedido_txtIva\").value = numeral(bmsPedIva).format('$0,0.00');\n        document.getElementById(\"pedido_txtTotal\").value = numeral(bmsPedTotal).format('$0,0.00');\n        document.getElementById(\"pedido_dtpFecha\").valueAsDate = bmsFecha;\n        document.getElementById(\"config_servidor\").value = bmsServer;\n     }\n\n\nfunction inicio() {        \n         nuevoPedido();\n         $('#listaEstab').empty();\n         bmsEstab = \"\";\n         bmsTipo = \"\";\n         document.getElementById(\"text1\").value = '';\n         document.getElementById(\"text2\").value = '';\n         $('#text1').focus();\n     }\n\nfunction iniciaPedido(){\n        document.getElementById(\"pedido_dtpFecha\").valueAsDate = bmsFecha;\n        document.getElementById(\"pedido_txtImporte\").value = numeral(bmsPedImporte).format('$0,0.00');\n        document.getElementById(\"pedido_txtIva\").value = numeral(bmsPedIva).format('$0,0.00');\n        document.getElementById(\"pedido_txtTotal\").value = numeral(bmsPedTotal).format('$0,0.00');\n      }\n    \n\nfunction llenaSelect(codigoUsuario){ //Recibe un codigo de usuario, consume el ws GetEstabs y llena un Select \n      \n         var url = bmsServer + \"/api/sesion/GetEstabs\",\n         \n         html = '<option value=\"' + '-1' + '\">' + \"Seleccione...\" + '</option>',\n         success = function(data) {\n             if (data.codigo !== \"\") {\n                 $('#listaEstab').empty();\n                 //alert(\"Llenar combo.\");\n                 //console.log(data);\n                 $.each(data, function(i, val) {\n                     html += '<option value=\"' + val.codigo + '\">' + val.nombre + '</option>';\n                 });\n                 $('#listaEstab').append(html);\n                 $(\"#listaEstab\").selectmenu('refresh', true);\n             }\n\n         };\n         //Llamada al web service GetEstabs \n         $.ajax({\n             type: 'get',\n             url: url,\n             data: {\n                 \"usuario\": codigoUsuario\n             },\n             dataType: \"jsonp\",\n             crossDomain: true,\n             cache: false,\n             success: success,\n             error: function(jqXHR, textStatus, errorThrown) {\n                 alert(errorThrown);\n             }\n         });\n     }\n\n function guardaPedido() {\n         return true;\n     }\n\n     \n\n     function actualizaTotalesPedido() {\n        var length = bmsLineaDetalle.length,\n            obj    = null,\n            i;\n            bmsPedImporte = 0;\n            bmsPedIva = 0;\n            bmsPedTotal = 0; \n        if (length !== 0) {\n            for (i = 0; i < length; i++) {\n                obj = bmsLineaDetalle[i];\n                bmsPedImporte += obj.importe;\n                bmsPedIva += obj.iva;\n                bmsPedTotal += obj.total;\n            };    \n        };\n        if (length == 0) {\n            bmsPedImporte = 0;\n            bmsPedIva = 0;\n            bmsPedTotal = 0;                        \n        };\n        document.getElementById(\"pedido_txtImporte\").value = numeral(bmsPedImporte).format('$0,0.00');\n        document.getElementById(\"pedido_txtIva\").value = numeral(bmsPedIva).format('$0,0.00');\n        document.getElementById(\"pedido_txtTotal\").value = numeral(bmsPedTotal).format('$0,0.00');\n\n        $('#pedidoDetalle_totalImporte').text(numeral(bmsPedImporte).format('$0,0.00'));\n        $('#pedidoDetalle_totalIva').text(numeral(bmsPedIva).format('$0,0.00'));\n        $('#pedidoDetalle_Total').text(numeral(bmsPedTotal).format('$0,0.00'));\n        logGlobal();              \n     }\n\n     function actualizaTotalesProducto( cant, precio ){\n        var b;\n        if (precio === 0) {\n            b = true;\n        } else {\n            b = false;\n        }\n        bmsProdImporte = 0;\n        bmsProdIva = 0;\n        bmsProdTotal = 0;\n        if (bmsUnidad === 'U') {\n            bmsPeso = cant * prodObj.peso;\n            if (precio === 0) {\n                bmsPrecio = prodObj.precioUC;\n            } else {\n              bmsPrecio = precio;  \n            }\n            \n            bmsProdImporte = bmsPrecio * cant;\n            bmsVolumen = cant * prodObj.volumen;\n        };\n        if (bmsUnidad === 'P') {\n            bmsPeso = (cant * prodObj.volumen)/prodObj.contenido;\n            if (precio === 0) {\n                bmsPrecio = prodObj.precioUA;\n            } else {\n              bmsPrecio = precio;  \n            }\n            \n            bmsProdImporte = bmsPrecio * cant;\n            bmsVolumen = cant * prodObj.volumen;\n        };\n        \n        \n        bmsProdIva = (prodObj.porcentajeIVA * bmsProdImporte) / 100;\n        bmsProdTotal = bmsProdImporte + bmsProdIva;\n        if (b) {document.getElementById(\"productos_txtPrecioUni\").value = numeral(bmsPrecio).format('$0,0.00');};\n        document.getElementById(\"productos_txtImporte\").value = numeral(bmsProdImporte).format('$0,0.00');\n        document.getElementById(\"productos_txtIva\").value = numeral(bmsProdIva).format('$0,0.00');\n        document.getElementById(\"productos_txtTotal\").value = numeral(bmsProdTotal).format('$0,0.00');\n\n        //if (confirm(\"Imprimir Log General?\")){\n        //    logGlobal();\n        //}\n        logGlobal();\n     }\n\n     function actualizaTotalesProductosEditar( cant, precio ){\n        var b;\n        if (precio === 0) {\n            b = true;\n        } else {\n            b = false;\n        }\n        bmsProdImporte = 0;\n        bmsProdIva = 0;\n        bmsProdTotal = 0;\n        if (bmsUnidad === 'U') {\n            bmsPeso = cant * prodObj.peso;\n            if (precio === 0) {\n                bmsPrecio = prodObj.precioUC;\n            } else {\n              bmsPrecio = precio;  \n            }\n            \n            bmsProdImporte = bmsPrecio * cant;\n            bmsVolumen = cant * prodObj.volumen;\n        };\n        if (bmsUnidad === 'P') {\n            bmsPeso = (cant * prodObj.volumen)/prodObj.contenido;\n            if (precio === 0) {\n                bmsPrecio = prodObj.precioUA;\n            } else {\n              bmsPrecio = precio;  \n            }\n            \n            bmsProdImporte = bmsPrecio * cant;\n            bmsVolumen = cant * prodObj.volumen;\n        };\n        \n        \n        bmsProdIva = (prodObj.porcentajeIVA * bmsProdImporte) / 100;\n        bmsProdTotal = bmsProdImporte + bmsProdIva;\n        if (b) {document.getElementById(\"productos_txtPrecioUni\").value = numeral(bmsPrecio).format('$0,0.00');};\n        document.getElementById(\"productos_txtImporte\").value = numeral(bmsProdImporte).format('$0,0.00');\n        document.getElementById(\"productos_txtIva\").value = numeral(bmsProdIva).format('$0,0.00');\n        document.getElementById(\"productos_txtTotal\").value = numeral(bmsProdTotal).format('$0,0.00');\n\n        //if (confirm(\"Imprimir Log General?\")){\n        //    logGlobal();\n        //}\n        logGlobal();\n     }                         \n\n      //Funciones Básicas\n    window.addEventListener('load', function() {\n    new FastClick(document.body);\n    }, false);\n$(document).ready(function() {\n\n    document.getElementById(\"text1\").value = '1';\n    document.getElementById(\"text2\").value = 'coloma';\n    //nuevoPedido();\n\n\n    $(\"#btnIniciar\").click(function() {\n        if (!validateForm()) {\n            return;\n        }\n     var username = $(\"#text1\").val(),\n     password = $(\"#text2\").val(),\n     estab = \"1\",\n     url = bmsServer+\"/api/sesion/GetUsuario\",\n     data = {},\n     success = function(data) {\n         if (data.codigo == \"\") {\n             alert(\"No se pudo iniciar sesion, por favor verifique sus datos.\");\n             inicio();\n             return;\n         }  \n         if (data.codigo != \"\") {\n             alert(\"Bienvenido \" + data.nombre);\n             bmsUser = data.codigo; //Variable Global BMS\n             console.log('***DEBUGGING LOG - [Page: Login] Codigo usuario guardado: ' + data.codigo);\n             $.mobile.changePage($('#selector_estab'), {\n                 transition: \"slide\",\n                 changeHash: false\n             });\n             llenaSelect(data.codigo);\n             //$('#establecimientos').css('visibility','visible');\n         }\n\n     };\n     console.log('***DEBUGGING LOG - [Page: Login] [Data: username = ' + username +\n         '] [Data: password = ' + password +   '\\n' +\n         '] [Data: estab = ' + estab +         '\\n' +\n         '] [Data: url = ' + url);             \n     \n     //Llamada al web service GetUsuario \n     $.ajax({\n         type: 'get',\n         url: url,\n         data: {\n             \"usuario\": username,\n             \"clave\": password\n         },\n         dataType: \"jsonp\",\n         crossDomain: true,\n         cache: false,\n         success: success,\n         error: function(jqXHR, textStatus, errorThrown) {\n             alert(errorThrown);\n         }\n     });\n });\n $('#config_btnProbar').click(function(){\n    bmsServer = $('#config_servidor').val();\n    if (bmsServer == \"\"){\n        alert(\"Para probar la conexión ingrese un servidor válido.\");\n        return;\n    }\n     var url = bmsServer+\"/api/General/GetProbarConexion\",\n     \n     success = function(data) {\n         if (data == true) {\n             alert(\"La conexión se estableció correctamente.\");\n         }\n     };\n\n     //Llamada al web service \n     $.ajax({\n         type: 'get',\n         url: url,\n         data: {},\n         dataType: \"jsonp\",\n         crossDomain: true,\n         cache: false,\n         success: success,\n         error: function(jqXHR, textStatus, errorThrown) {\n             alert(errorThrown);\n         }\n     });\n\n });\n    //Continuar después de seleccionar un establecimiento\n $('#BtnContinuar').click(function() {\n     if (bmsEstab == -1 || bmsEstab == 'null' || bmsEstab == \"\") {\n         alert(\"Seleccione un establecimiento para continuar\");\n         return;\n     }\n     $.mobile.changePage($('#selectorTipo'), {\n         transition: \"slide\",\n         changeHash: false\n     });\n });\n    //Tipo de documento: Pedido o Crobranza\n $('#listaTipo').children('li').click(function() {\n     bmsTipo = $(this).attr('data-name');\n     event.stopPropagation();\n     iniciaPedido();             \n     console.log('***DEBUGGING LOG - [Page: selectorTipo] [Data: bmsTipo = ' + bmsTipo +\n         ']');\n });\n\n $('#selector_estabBtnSalir').click(function() {\n     salir();     \n });\n\n $(\"#pedido_btnDetalle\").click(function() {\n        if (bmsLineaDetalle.length === 0) {\n            alert(\"No se han agregado productos\"); \n            return;\n        }\n        $.mobile.changePage($('#pedidoDetalle'), {\n        transition: \"slide\",\n        changeHash: false\n        });\n });\n $('#Pedido_btnAgregarProducto').click(function() {\n    var selectCte;\n    if (bmsCliente !== \"\") {\n        $.mobile.changePage($('#productos'), {\n        transition: \"slide\",\n        changeHash: false\n        });\n    }\n    if (bmsCliente == \"\"){\n        selectCte = confirm(\"Primero debe seleccionar un cliente. Desea hacerlo ahora?\");\n        if(selectCte){\n            $.mobile.changePage($('#clienteDetalle'), {\n             transition: \"slide\",\n             changeHash: false\n         });\n        }\n        if (selectCte == false) {return;}\n    }\n });\n\n $('#Pedido_btnGuardaPedido').click(function() {\n     var guardar = confirm(\"Está a punto de guardar el pedido, desea continuar?\"),\n     valida = true,\n     bmsNotas = document.getElementById(\"pedido_txtImporte\").value;\n     if (guardar) {\n\n         //valida cliente\n         //valida productos[]\n         //valida fecha\n         if (!valida) {\n             alert(\"ERROR: Verifique el pedido.\");\n             return;\n         }\n         if (guardar) {\n             alert(\"El pedido se ha guardado con éxito.\");\n             nuevoPedido();\n             $.mobile.changePage($('#selectorTipo'), {\n                 transition: \"slide\",\n                 changeHash: false\n             });\n         }\n     }\n });\n $('#pedido_btnAtras').click(function() {\n     var guardar = confirm(\"Está a punto de salir, desea continuar? Se perderán los datos no guardados.\");\n     if (guardar) {\n         nuevoPedido();         \n         logGlobal();\n         $.mobile.changePage($('#selectorTipo'), {\n             transition: \"slide\",\n             changeHash: false\n         });\n     }\n });\n\n $('#Pedido_btnCancelaPedido').click(function() {\n     var guardar = confirm(\"Está a punto de cancelar el pedido, desea continuar?\");\n     //valida = true;\n     if (guardar) {\n         nuevoPedido();         \n         logGlobal();\n         $.mobile.changePage($('#selectorTipo'), {\n             transition: \"slide\",\n             changeHash: false\n         });\n     }\n });\n//TAPHOLD List detalle producto\n $(document).on( 'taphold', 'li.item', tapholdHandler );\n    \n            function tapholdHandler( event ){\n            var i = $(this).index();\n              $.mobile.changePage($('#productosEditar'), {\n                transition: \"slide\",\n                changeHash: false});\n                \n                modificaProducto(i);\n            }\n \n //Agregar producto al detalle: Se crea el Objeto producto, se añade al arreglo de objectos y se limpia la pagina de producto. \n $('#productos_btnAgregaProducto').click(function() {\n    if ($('#productos_txtProducto').val() == \"\") {\n        alert(\"No ha seleccionador un producto.\");\n        $('#productos_btnAgregaProducto').focus();\n        return;}\n    if (document.getElementById(\"productos_txtCantidad\").value == \"\") {\n        alert(\"Especifique una cantidad válida.\");\n        $('#productos_txtCantidad').focus();\n        return;\n    }\n                          //producto(codigo        ,         descripcion,    unidad, unidadAbrev,       cantidad,    peso,    volumen,    precio,        importe,        iva, total)\n    var productoNuevo = new producto(prodObj.codigo, prodObj.descripcion, bmsUnidad, bmsUnidadAbrev, bmsCantidad, bmsPeso, bmsVolumen, bmsPrecio, bmsProdImporte, bmsProdIva, bmsProdTotal);\n    bmsLineaDetalle.push(productoNuevo);\n    \n    logGlobal();\n\n    actualizaTotalesPedido();\n    limpiaProducto();\n    alert(\"Producto agregado correctamente.\");\n\n    /*$.mobile.changePage($('#productos'), {\n    transition: \"slide\",\n    changeHash: false});*/\n    \n });\n/*\n $('#productos_txtCantidad').on('input propertychange', function(){ \n    bmsCantidad = $(this).val();\n    if (bmsCantidad == \"\") {return;}\n\n    if ($.isNumeric($('#productos_txtCantidad').val())){\n        actualizaTotalesProducto(bmsCantidad);\n    }else{\n        document.getElementById(\"productos_txtCantidad\").value = \"\";\n        alert(\"Teclee la cantidad en numeros.\");       \n        $('#productos_txtCantidad').focus();\n    }               \n });\n*/\n $('#productos_btnCancelaProducto').click(function() {\n    var limpiar = confirm(\"Desea limpiar el formulario? Se limpiaran todos los campos.\");\n    if (limpiar) { limpiaProducto(); }    \n });\n //Al cambiar el valor de la cantidad actualizar importe, iva y total del producto\n $('#productos_txtCantidad').on('input propertychange', function(){ \n    bmsCantidad = $(this).val();\n    if (bmsCantidad == \"\") {return;}\n\n    if ($.isNumeric($('#productos_txtCantidad').val())){\n        actualizaTotalesProducto(bmsCantidad, bmsPrecio);\n    }else{\n        document.getElementById(\"productos_txtCantidad\").value = \"\";\n        alert(\"Teclee la cantidad en numeros.\");       \n        $('#productos_txtCantidad').focus();\n    }                \n });\n  //Al cambiar el valor del precio/u actualizar importe, iva y total del producto\n $('#productos_txtPrecioUni').on('focus', function(){\n    this.select();\n })\n $('#productos_txtPrecioUni').on('input propertychange', function(){\n    bmsPrecio = numeral().unformat($(this).val());\n    actualizaTotalesProducto(bmsCantidad, bmsPrecio);                \n });\n //Buscar producto por código\n $('#productos_txtProducto').on('keypress', function(e){ \n    var prodInput = $(this).val();\n    if (e.keyCode === 13) {\n        if (prodInput !== \"\") {\n            addProducto(prodInput);\n        };\n    };\n                \n });\n\n $('#clienteDetalle_btnAceptar').click(function() {\n                \n });\n \n\n $('#pedidoDetalle_btnBorraTodos').click(function() {\n    var length = bmsLineaDetalle.length,\n    eliminado,\n    i;\n\n    if (length !== 0) {\n        //for (i = 0; i < length; i++) {\n        //  eliminado = bmsLineaDetalle.splice(i,1);\n        var confirma = confirm(\"Está seguro de borrar todos los productos del pedido?.\");\n        if (confirma) {\n            bmsLineaDetalle = [];\n        } \n        \n    }\n\n    $('#list').empty();\n    $( \"#list\" ).listview( \"refresh\" );\n    actualizaTotalesPedido();\n                   \n });\n\n});\n\n     \n\n    \n\n     $.fn.clearForm = function() { \n         return this.each(function() {  \n             var type = this.type,\n                 tag = this.tagName.toLowerCase();  \n             if (tag == 'form')    return $(':input', this).clearForm();  \n             if (type == 'text' || type == 'password' || tag == 'textarea')    this.value = '';  \n             else if (type == 'checkbox' || type == 'radio')    this.checked = false;  \n             else if (tag == 'select')    this.selectedIndex = -1; \n         });\n     };\n\n\n     $(document).ready(\"pageinit\", \"#config\", function() {\n         queryDB();\n     });\n\n    \n     //Busca Producto\n     $(document).on(\"pageinit\", \"#buscaProducto\", function() {\n         $(\"#autocompleteProds\").on(\"listviewbeforefilter\", function(e, data) {\n             var $ul = $(this),\n                 $input = $(data.input),\n                 value = $input.val(),\n                 html = \"\";\n             $ul.html(\"\");\n             if (value && value.length > 2) {\n                 $ul.html(\"<li><div class='ui-loader'><span class='ui-icon ui-icon-loading'></span></div></li>\");\n                 $ul.listview(\"refresh\");\n                 $.ajax({\n                     url: bmsServer+\"/api/Productos/GetBuscarProductos\",\n                     type: \"GET\",\n                     dataType: \"jsonp\",\n                     crossDomain: true,\n                     data: {\n                         estab: \"1\",\n                         filtro: $input.val()\n                     }\n                 })\n                     .then(function(response) {\n                         $.each(response, function(i, val) {\n                             html += \"<li data-icon=\" + \"plus\" + \" onclick=\" + \"'addProducto(\" + val.codigo + \")'>\" + \"<a href=\" + \"#productos\" + \"><h2 class='ui-li-heading'>\" + val.descripcion + \"</h2><p class=\" + \"ui-li-desc\" + \"> Exist: \" + val.existenciaEstablecimiento + \"</p> <p class=\" + \"ui-li-desc\" + \"> Exist Global: \" + val.existenciaGlobal + \"</p></a></li>\";\n                         });\n                         $ul.html(html);\n                         $ul.listview(\"refresh\");\n                         $ul.trigger(\"updatelayout\");\n                     });\n             }\n         });\n     });\n\n      function addProducto(val) {\n         bmsProducto = val;\n         console.log('***DEBUGGING LOG - [Page: buscaProducto function addProducto()] [Data: codProducto = ' + val +\n             ']');\n         document.getElementById(\"productos_txtProducto\").value = val;\n         $('input[data-type=\"search\"]').val(\"\");\n         $('#autocompleteProds').empty();\n\n         var url = bmsServer+\"/api/Productos/GetProducto\";\n         var data = {};\n         var html; //= '<option value=\"' + '' + '\">' + \"Seleccione...\" + '</option>';\n         \n         var success = function(data) {\n             if (data.codigo !== \"\") {\n\n                 $('#productos_listaUnidad').empty();\n                  \n                 bmsUnidad = \"U\";\n                 bmsUnidadAbrev = data.unidades[0].abreviatura;\n                 bmsUnidadNombre = data.unidades[0].nombre;\n                 bmsCantidad = 1;\n                 bmsPeso = data.peso;\n                 bmsVolumen = data.volumen;\n                 bmsPrecio = data.precioUC;\n                 document.getElementById(\"productos_txtProducto\").value = data.descripcion;\n                 \n                 document.getElementById(\"productos_txtPeso\").value = numeral(data.peso).format('0.000');\n                 document.getElementById(\"productos_txtVolumen\").value = numeral(data.volumen).format('0.000');\n                 document.getElementById(\"productos_txtPrecioUni\").value = numeral(data.precioUC).format('$0,0.00');\n                 \n                 document.getElementById(\"productos_txtCantidad\").value = bmsCantidad;\n                 prodObj = data;\n                 actualizaTotalesProducto(1, 0);                 \n                 \n                 $.each(data.unidades, function(i, val) {\n                    html += '<option value=\"' + val.tipo + '\">' + val.nombre + '</option>';                    \n                 });\n                                            \n                \n                 $('#productos_listaUnidad').append(html);\n                 $(\"#productos_listaUnidad\").val(bmsUnidad);\n                 $(\"#productos_listaUnidad\").selectmenu('refresh', true);\n\n             }\n\n         };\n \n         $.ajax({\n             type: 'get',\n             url: url,\n             data: {\n                 \"cliente\": bmsCliente,\n                 \"estab\"  : bmsEstab,\n                 \"producto\": bmsProducto\n             },\n             dataType: \"jsonp\",\n             crossDomain: true,\n             cache: false,\n             success: success,\n             error: function(jqXHR, textStatus, errorThrown) {\n                 alert(errorThrown);\n             }\n         });\n\n     }\n\n     function modificaProducto(val) {\n         var codProd = bmsLineaDetalle[val].codigo;\n         prodObjModif = bmsLineaDetalle[val];\n         console.log('***DEBUGGING LOG - [Page: modificaProducto function modificaProducto()] [Data: codProducto = ' + codProd +']');\n         document.getElementById(\"productosEditar_txtProducto\").value = codProd;\n         var url = bmsServer+\"/api/Productos/GetProducto\";\n         var data = {};\n         var html; //= '<option value=\"' + '' + '\">' + \"Seleccione...\" + '</option>';\n         \n         var success = function(data) {\n             if (data.codigo !== \"\") {\n\n                 $('#productosEditar_listaUnidad').empty();\n                  \n                 bmsUnidad = \"U\";\n                 //bmsUnidadAbrev = data.unidades[0].abreviatura;\n                 //bmsUnidadNombre = data.unidades[0].nombre;\n                 //bmsCantidad = prodObjModif.cantidad;\n                 //bmsPeso = data.peso;\n                 //bmsVolumen = data.volumen;\n                 //bmsPrecio = data.precioUC;\n                 document.getElementById(\"productosEditar_txtProducto\").value = data.descripcion;\n                 \n                 document.getElementById(\"productosEditar_txtPeso\").value = numeral(data.peso).format('0.000');\n                 document.getElementById(\"productosEditar_txtVolumen\").value = numeral(data.volumen).format('0.000');\n                 document.getElementById(\"productosEditar_txtPrecioUni\").value = numeral(data.precioUC).format('$0,0.00');\n                 \n                 document.getElementById(\"productosEditar_txtCantidad\").value = prodObjModif.cantidad;               \n                 \n                 $.each(data.unidades, function(i, val) {\n                    html += '<option value=\"' + val.tipo + '\">' + val.nombre + '</option>';                    \n                 });\n                                            \n                \n                 $('#productosEditar_listaUnidad').append(html);\n                 $(\"#productosEditar_listaUnidad\").val(bmsUnidad);\n                 $(\"#productosEditar_listaUnidad\").selectmenu('refresh', true);\n\n             }\n\n         };\n \n         $.ajax({\n             type: 'get',\n             url: url,\n             data: {\n                 \"cliente\": bmsCliente,\n                 \"estab\"  : bmsEstab,\n                 \"producto\": codProd\n             },\n             dataType: \"jsonp\",\n             crossDomain: true,\n             cache: false,\n             success: success,\n             error: function(jqXHR, textStatus, errorThrown) {\n                 alert(errorThrown);\n             }\n         });\n\n     }\n\n      //Busca Cliente\n     $(document).on(\"pageinit\", \"#buscaCliente\", function() {\n         $(\"#autocompleteCtes\").on(\"listviewbeforefilter\", function(e, data) {\n             var $ul = $(this),\n                 $input = $(data.input),\n                 value = $input.val(),\n                 html = \"\";\n             $ul.html(\"\");\n             if (value && value.length > 2) {\n                 $ul.html(\"<li ><div class='ui-loader'><span class='ui-icon ui-icon-loading'></span></div></li>\");\n                 $ul.listview(\"refresh\");\n                 $.ajax({\n                     url: bmsServer+\"/api/Clientes/GetBuscarClientes\",\n                     type: \"GET\",\n                     dataType: \"jsonp\",\n                     crossDomain: true,\n                     data: {\n                         estab: \"1\",\n                         filtro: $input.val()\n                     }\n                 })\n                     .then(function(response) {\n                         $.each(response, function(i, val) {\n                             html += \"<li \" + \"data-icon=\" + \"plus\" + \" data-liCtesCod= '\" + val.codigo + \"' data-liCtesNom='\" + val.nombre + \"' onclick=\" + \"'addCliente(\" + val.codigo + \")'\" + \"><a href=\" + \"#clienteDetalle\" + \"><h2 class='ui-li-heading'>\" + val.nombre + \"</h2><p class=\" + \"ui-li-desc\" + \"> Código: \" + val.codigo + \"</p> </a></li>\";\n                         });\n                         $ul.html(html);\n                         $ul.listview(\"refresh\");\n                         $ul.trigger(\"updatelayout\");\n                     });\n             }\n         });\n     });\n\n     \n      //Llama al webservice que se trae el detalle del cliente mandandole el codigoCte \n     function addCliente(val) {\n         bmsCliente = val;\n         console.log('***DEBUGGING LOG - [Page: buscaCliente function addCliente()] [Data: codCte = ' + val +\n             ']');\n         document.getElementById(\"clienteDetalle_txtCliente\").value = val;\n         $('input[data-type=\"search\"]').val(\"\");\n         $('#autocompleteCtes').empty();\n         //$('input[data-type=\"search\"]').trigger(\"change\");\n\n         var url = bmsServer+\"/api/Clientes/GetCliente\";\n         var data = {};\n         var html = '<option value=\"' + '' + '\">' + \"Seleccione...\" + '</option>';\n         var success = function(data) {\n             if (data.codigo !== \"\") {\n                 $('#listaSucursales').empty();\n                 //alert(\"Llenar combo.\");\n                 //console.log(data);\n                 bmsSucursal = \"\";\n                 document.getElementById(\"pedido_txtCliente\").value = data.razonSocial;\n                 document.getElementById(\"clienteDetalle_txtCliente\").value = data.razonSocial;\n                 bmsCliente = data.codigo;\n                 document.getElementById(\"clienteDetalle_txtLPV\").value = data.listaPrecios;\n                 bmsLPV = data.idListaPrecios;\n                 document.getElementById(\"clienteDetalle_txtCondPago\").value = data.condicionPago;\n                 bmsCondPago = data.idCondicionPago;\n                 document.getElementById(\"clienteDetalle_txtSaldo\").value = numeral(data.saldo).format('$0,0.00');\n                 bmsSaldo = data.saldo;\n                 \n                 $.each(data.sucursales, function(i, val) {\n                    html += '<option value=\"' + val.codigo + '\">' + val.nombre + '</option>';\n                 });\n                 $('#listaSucursales').append(html);\n                 $(\"#listaSucursales\").selectmenu('refresh', true);\n             }\n\n         };\n\n         //Llamada al web service GetEstabs \n         $.ajax({\n             type: 'get',\n             url: url,\n             data: {\n                 \"cliente\": val\n             },\n             dataType: \"jsonp\",\n             crossDomain: true,\n             cache: false,\n             success: success,\n             error: function(jqXHR, textStatus, errorThrown) {\n                 alert(errorThrown);\n             }\n         });\n     }\n\n     \n\n     function seleccionaEstab() {\n         bmsEstab = document.getElementById(\"listaEstab\").value\n         console.log('***DEBUGGING LOG - [Page: selector_estab] [Data: bmsEstab = ' + bmsEstab +\n             ']');\n         //showNotificationBar(\"Acciones al seleccionar un elemento\");\n     }\n     function seleccionaSucursal() {\n         bmsSucursal = document.getElementById(\"listaSucursales\").value\n         console.log('***DEBUGGING LOG - [Page: selector_sucursales] [Data: bmsSucursal = ' + bmsSucursal +\n             ']');\n         //showNotificationBar(\"Acciones al seleccionar un elemento\");\n     }\n\n     function seleccionaPedido() {\n         bmsTipo = $(this).attr('data-name');\n         bmsTipo = document.getElementById(\"listaTipo\").index;\n         console.log('***DEBUGGING LOG - [Page: selectorTipo] [Data: bmsTipo = ' + bmsTipo +\n             ']');\n     }\n     function seleccionaUnidad() {\n         bmsUnidad = document.getElementById(\"productos_listaUnidad\").value;\n         actualizaTotalesProducto(bmsCantidad, 0);\n         console.log('***DEBUGGING LOG - [Page: Productos_selectorUnidad] [Data: bmsUnidad = ' + bmsUnidad +\n             ']');\n     }\n\n     function showNotificationBar(message, duration, bgColor, txtColor, height) {\n\n         /*set default values*/\n         duration = typeof duration !== 'undefined' ? duration : 2500;\n         bgColor = typeof bgColor !== 'undefined' ? bgColor : \"#5CFF7C\";\n         txtColor = typeof txtColor !== 'undefined' ? txtColor : \"#262425\";\n         height = typeof height !== 'undefined' ? height : 100;\n         /*create the notification bar div if it doesn't exist*/\n         if ($('#notification-bar').size() == 0) {\n             var HTMLmessage = \"<div class='notification-message' style='text-align:center; line-height: \" + height + \"px;'> \" + message + \" </div>\";\n             $('body').prepend(\"<div id='notification-bar' style='display:none; width:100%; height:\" + height + \"px; background-color: \" + bgColor + \"; position: fixed; z-index: 100; color: \" + txtColor + \";border-bottom: 1px solid \" + txtColor + \";'>\" + HTMLmessage + \"</div>\");\n         }\n         /*animate the bar*/\n         $('#notification-bar').slideDown(function() {\n             setTimeout(function() {\n                 $('#notification-bar').slideUp(function() {});\n             }, duration);\n         });\n     }\n\n\n\n\n\n\n\n\n     /*     function submit_form()\n            {\n                if (!validateForm()){return}\n                var username=$(\"#text1\").val();\n                var password=$(\"#text2\").val(); \n                var estab=\"1\";\n                var data = { user: username, cve:password, estab:estab };\n                $.ajax( {\n                    type: \"POST\",\n                    url:\"http://bmsystems.myvnc.com:8888/WSAndroid/bms/BMS/Sesion/\",\n                    data: JSON.stringify(data),\n                    contentType: \"application/json; charset=utf-8\",\n                    dataType: \"json\",\n                    async: false,\n                    success: function(data){\n                        var value = data.d; \n                        if(value.usuario !== 0){ \n                            alert('Success ' + data);\n                        }\n                    },\n                    error: function (e) {\n                        alert('Failed ' + data);\n                    }\n                });  \n            }\n        */",
-			"file": "lib/funciones.js",
-			"file_size": 45272,
-			"file_write_time": 130329246185255180,
-			"settings":
-			{
-				"buffer_size": 45743,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"contents": "html +=  \"<li data-value='\"+obj.codigo+\"'><a href'\"+\"=#\"+\"'><div class='\"+\"ui-li-aside' data-role='\"+\"controlgroup\"+\"' data-type='\"+\"horizontal\"+\"'><a data-role=\"+\"'button'\"+\">Modificar</a><a data-role=\"+\"'button'\"+\">Eliminar</a></div><p class=\"+\"topic\"+\">\"+ obj.descripcion +\"</p><p class=\"+\"topic\"+\"><strong>Cant: </strong>\"+ obj.cantidad+\"</p><p class=\"+\"topic\"+\"><strong>Unidad: </strong>\"+obj.unidadAbrev+\"</p><p><strong>Importe: </strong>\"+numeral(obj.importe).format('$0,0.00')+\"</p><p><strong>IVA: </strong>\"+numeral(obj.iva).format('$0,0.00')+\"</p><p><strong>TOTAL: </strong>\"+numeral(obj.total).format('$0,0.00')+\"</p></a><a href=\"+\"#\"+\" class=\"+\"delete\"+\">Delete</a></li>\";\n\n<div class='ui-li-aside' data-role=\"controlgroup\" data-type=\"horizontal\"><a data-role=\"button\">Modificar</a><a data-role=\"button\">Eliminar</a></div>\n\n<div class='\"+\"ui-li-aside' data-role='\"+\"controlgroup\"+\"' data-type='\"+\"horizontal\"+\"'><a data-role=\"+\"'button'\"+\">Modificar</a><a data-role=\"+\"'button'\"+\">Eliminar</a></div>",
-			"settings":
-			{
-				"buffer_size": 1011,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"contents": "<!-- Pagina: Productos -->\n    <div data-role=\"page\" id=\"productosEditar\" data-title=\"Modificar Producto\">\n        <div data-theme=\"a\" data-role=\"header\" data-position=\"fixed\">\n            <h3>Modificar Producto</h3>\n            <a data-role=\"button\" data-icon=\"arrow-l\" data-iconpos=\"left\" data-theme=\"a\" href=\"#pedidoDetalle\" data-transition=\"slide\">Atras</a>\n        </div>\n        <div data-role=\"content\">\n            <form action=\"http://\" method post>\n                <div data-role=\"fieldcontain\">\n                    <label for=\"productosEditar_txtProducto\">Producto</label>\n                    <input type=\"text\" id=\"productosEditar_txtProducto\" readonly=\"readonly\">\n                </div>\n                \n                <div data-role=\"fieldcontain\">\n                    <label for=\"productosEditar_listaUnidad\">Unidad</label>\n                    <select onchange=\"seleccionaUnidad()\" onfocus=\"this.selectedindex=-1;\" id=\"productosEditar_listaUnidad\" data-native-menu=\"true\">\n                    </select>\n                </div>\n                <div data-role=\"fieldcontain\">\n                    <label for=\"productosEditar_txtCantidad\">Cantidad</label>\n                    <input type=\"text\" id=\"productosEditar_txtCantidad\">\n\n                    <label for=\"productosEditar_txtPeso\">Peso</label>\n                    <input type=\"text\" id=\"productosEditar_txtPeso\" readonly=\"readonly\">\n\n                    <label for=\"productosEditar_txtVolumen\">Volumen</label>\n                    <input type=\"text\" id=\"productosEditar_txtVolumen\" readonly=\"readonly\">\n                </div>\n                <div data-role=\"fieldcontain\">\n                    <label for=\"productosEditar_txtPrecioUni\">Precio/u</label>\n                    <input type=\"text\" id=\"productosEditar_txtPrecioUni\">\n                </div>\n                <div data-role=\"fieldcontain\">\n                    <label for=\"productosEditar_txtImporte\">Importe</label>\n                    <input type=\"text\" id=\"productosEditar_txtImporte\" readonly=\"readonly\">\n\n                    <label for=\"productosEditar_txtIva\">IVA</label>\n                    <input type=\"text\" id=\"productosEditar_txtIva\" readonly=\"readonly\">\n\n                    <label for=\"productosEditar_txtTotal\">Total</label>\n                    <input type=\"text\" id=\"productosEditar_txtTotal\" readonly=\"readonly\">\n                </div>\n                <div class=\"ui-grid-a\">\n                    <div class=\"ui-block-a\">\n\n                        <a class=\"ui-btn-text\" data-role=\"button\" id=\"productosEditar_btnAgregaProducto\" data-inline=\"true\" data-icon=\"plus\" data-theme=\"b\">Aceptar</a>\n\n                    </div>\n                    <div class=\"ui-block-b\">\n\n                        <a class=\"ui-btn-text\" data-role=\"button\" id=\"productosEditar_btnCancelaProducto\" data-inline=\"true\" data-icon=\"delete\">Cancelar</a>\n\n                    </div>\n                </div>\n\n            </form>\n\n        </div>\n    </div>",
-			"settings":
-			{
-				"buffer_size": 2956,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "project sample file",
-			"settings":
-			{
-				"buffer_size": 20,
-				"line_ending": "Windows",
-				"name": "project sample file"
-			}
 		}
 	],
 	"build_system": "Packages/JSLint/JSLint.sublime-build",
 	"command_palette":
 	{
-		"height": 81.0,
+		"height": 392.0,
 		"selected_items":
 		[
+			[
+				"pack",
+				"Package Control: Remove Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"tern",
+				"TernJS: Jump to definition"
+			],
 			[
 				"instal",
 				"Package Control: Install Package"
@@ -333,10 +345,6 @@
 			[
 				"sche",
 				"Schemr: List all schemes"
-			],
-			[
-				"insta",
-				"Package Control: Install Package"
 			],
 			[
 				"htm",
@@ -383,7 +391,7 @@
 	},
 	"console":
 	{
-		"height": 135.0
+		"height": 58.0
 	},
 	"distraction_free":
 	{
@@ -396,12 +404,14 @@
 	},
 	"file_history":
 	[
+		"/C/Users/Programacion3/Dropbox/Public/appNew/index.html",
+		"/C/Users/Programacion3/Dropbox/Public/appNew/lib/funciones.js",
 		"/C/Users/Programacion3/Dropbox/Public/appNew/css/style.css",
+		"/C/Users/Programacion3/Dropbox/Public/appNew/project sample file",
+		"/C/Users/Programacion3/Dropbox/Public/appNew/BMSMovil.sublime-project",
 		"/C/Users/Programacion3/Dropbox/Public/appNew/swipeIndex.html",
 		"/C/Users/Programacion3/Dropbox/Public/appNew/lib/testSwipe.js",
 		"/C/Users/Programacion3/Dropbox/Public/appNew/indexSwipe.html",
-		"/C/Users/Programacion3/Dropbox/Public/appNew/lib/funciones.js",
-		"/C/Users/Programacion3/Dropbox/Public/appNew/index.html",
 		"/C/Users/Programacion3/Desktop/swipe.js",
 		"/C/Users/Programacion3/Desktop/swipe1.js",
 		"/C/Users/Programacion3/Dropbox/Public/index.html",
@@ -459,7 +469,7 @@
 	],
 	"find":
 	{
-		"height": 35.0
+		"height": 378.0
 	},
 	"find_in_files":
 	{
@@ -473,6 +483,80 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"modificaProducto",
+			"modificaDetalle",
+			"bmsprodimporte = 0",
+			"bmsprodimp",
+			"bmsimporte",
+			"modificaProducto",
+			"modifica",
+			"bmsProdImporte = 0",
+			"modificaDetalle",
+			"modificaProducto",
+			"actualizaTotalesPedido",
+			"bmsLineaDetalle",
+			"modificaDetalle",
+			"limpiaProducto",
+			"nuevoPedido",
+			"limpiaProducto",
+			"actualizaTotalesPedido",
+			"modificaDetalle",
+			"modificade",
+			"!",
+			"modificaDetalle",
+			"número",
+			"numero",
+			"numer",
+			"numero",
+			"producto modificado co",
+			"limpiaProducto",
+			"actualizaTotalesProductosEditar",
+			"prec",
+			"prodObj",
+			"prodObjModif",
+			"actualizaTotalesProductosEditar",
+			"addprod",
+			"bmsprecio",
+			"actualizaTotalesProductos",
+			"addprod",
+			"teclee",
+			"actualizaTotalesProductos",
+			"actualizaTotalesProducto",
+			"actualizaTotalesProductos",
+			"modif",
+			"actualizaTotalesProductosEditar",
+			"actualiza",
+			"modifica",
+			"actualizaTotalesProducto",
+			"productos_txtCantidad",
+			"actualizaTotalesProductosEditar",
+			"prodObj",
+			"modificaProducto",
+			"prodObjModif",
+			"actualizaTotalesProductosEditar",
+			"seleccionaun",
+			"actualizaTotalesProductosEditar",
+			"prodObjModif.cantidad",
+			"actualizaTotalesProductosEditar",
+			"modificaProducto",
+			"actualizaTotalesProductosEditar",
+			"modificaProducto",
+			"modifi",
+			"actualizaTotalesProductosEditar",
+			"actualizaTotales",
+			"seleccionauni",
+			"actualizaTotalesProductosEditar",
+			"actualizaTotalesProducto",
+			"seleccionaUnidad",
+			"onchan",
+			"modif",
+			"splice",
+			"modificaProducto",
+			"editar",
+			"prodObjModif",
+			"actualizaTotalesProductosEditar",
+			"actualiz",
+			"edit",
 			"editar",
 			"actualizaTotalesProducto",
 			"modificaProducto",
@@ -526,81 +610,7 @@
 			"input",
 			"addprod",
 			"actualizaTotalesProducto",
-			"input",
-			"actualizaTotalesPedido",
-			"mandrake",
-			"andr",
-			"addPr",
-			"addProducto",
-			"buscaProducto_txtCodProd",
-			"buscaProducto",
-			"teclee",
-			"txtProd",
-			"pageinit",
-			"detalle",
-			"logGlo",
-			"limpiaProducto",
-			"bmsLineaDetalle = ",
-			"bmsLineaDetalle",
-			"pageinit",
-			"pedido_btnDetalle",
-			"btnSalir",
-			"sample-page",
-			"for",
-			"selector",
-			"eliminaProd",
-			"//Tipo de documento:",
-			"seleccionaPedido()",
-			"seleccionaPedid",
-			"document.getElementById(\"li",
-			"document.getElementById(\"list\").index;",
-			"index",
-			"listaTipo",
-			"index",
-			"data-",
-			"data-value",
-			"value",
-			"$('#li",
-			"'#list'",
-			"$('#list')",
-			"remove",
-			"+=",
-			"+\"",
-			"++",
-			"demo-mail",
-			"id=\"list",
-			"html",
-			"bmsLineaDetalle",
-			"bmsUnidad",
-			"prodObj",
-			"producto",
-			"obj",
-			"bmsLineaDetalle",
-			"-page",
-			".on",
-			"$(document)",
-			"li",
-			"confirmAndDelete",
-			"confirm",
-			"detalle",
-			"documen",
-			"salir",
-			"salie",
-			".nav-glyphish-example .ui-btn .ui-btn-inner { padding-top: 40px !important; }\n    .nav-glyphish-example .ui-btn .ui-icon { width: 30px!important; height: 30px!important; margin-left: -15px !important; box-shadow: none!important; -moz-box-shadow: none!important; -webkit-box-shadow: none!important; -webkit-border-radius: none !important; border-radius: none !important; }\n    #chat .ui-icon { background:  url(glyphish-icons/09-chat2.png) 50% 50% no-repeat; background-size: 24px 22px; }\n    #email .ui-icon { background:  url(glyphish-icons/18-envelope.png) 50% 50% no-repeat; background-size: 24px 16px;  }\n    #login .ui-icon { background:  url(glyphish-icons/30-key.png) 50% 50% no-repeat;  background-size: 12px 26px; }\n    #beer .ui-icon { background:  url(glyphish-icons/88-beermug.png) 50% 50% no-repeat;  background-size: 22px 27px; }\n    #coffee .ui-icon { background:  url(glyphish-icons/100-coffee.png) 50% 50% no-repeat;  background-size: 20px 24px; }\n    #skull .ui-icon { background:  url(glyphish-icons/21-skull.png) 50% 50% no-repeat;  background-size: 22px 24px; }\n",
-			"buscaCliente_txtC",
-			"inicio",
-			"nuevoPedido",
-			"limpiaProducto",
-			"nuevoPedido",
-			"bmsEstab",
-			"bmsEstab =",
-			"bmsEstab = \"",
-			"bmsEstab = \"\"",
-			"nuevoPedido",
-			"está a punto",
-			"inicio()",
-			"salir()",
-			"salir"
+			"input"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -621,7 +631,7 @@
 	"groups":
 	[
 		{
-			"selected": 6,
+			"selected": 1,
 			"sheets":
 			[
 				{
@@ -763,361 +773,6 @@
 						"zoom_level": 1.0
 					},
 					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "index.html",
-					"settings":
-					{
-						"buffer_size": 23327,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								18771,
-								18787
-							]
-						],
-						"settings":
-						{
-							"BracketHighlighterBusy": false,
-							"bh_regions":
-							[
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close"
-							],
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 262.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "lib/funciones.js",
-					"settings":
-					{
-						"buffer_size": 45743,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								35732,
-								35732
-							]
-						],
-						"settings":
-						{
-							"BracketHighlighterBusy": false,
-							"bh_regions":
-							[
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close"
-							],
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 17890.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"settings":
-					{
-						"buffer_size": 1011,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1011,
-								1011
-							]
-						],
-						"settings":
-						{
-							"BracketHighlighterBusy": false,
-							"bh_regions":
-							[
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close"
-							],
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
-						},
-						"translation.x": 421.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"settings":
-					{
-						"buffer_size": 2956,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								2956
-							]
-						],
-						"settings":
-						{
-							"BracketHighlighterBusy": false,
-							"bh_regions":
-							[
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close"
-							],
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 57.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 6,
-					"file": "project sample file",
-					"settings":
-					{
-						"buffer_size": 20,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								20,
-								20
-							]
-						],
-						"settings":
-						{
-							"BracketHighlighterBusy": false,
-							"auto_name": "project sample file",
-							"bh_regions":
-							[
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close"
-							],
-							"syntax": "Packages/Text/Plain text.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
 				}
 			]
 		}
@@ -1159,7 +814,7 @@
 	},
 	"output.jslint_result_view":
 	{
-		"height": 341.0
+		"height": 81.0
 	},
 	"replace":
 	{
@@ -1190,6 +845,6 @@
 	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 210.0,
+	"side_bar_width": 175.0,
 	"status_bar_visible": true
 }

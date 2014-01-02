@@ -39,7 +39,7 @@ li.ui-li.border {
 }
 /* Hide the delete button on touch devices */
 .touch .delete {
-   /* display: none; */
+   display: none;
 }
 .touch .ui-link-inherit {
     padding-right: 15px !important;
