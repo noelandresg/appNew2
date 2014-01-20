@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="descripcion" content="BMS app login">
     <meta name="keywords" content="BMS login">
-    <meta name="author" content="Noel">
+    <meta name="author" content="Noel García">
     <meta charset="UTF-8">
     <!-- LIBs -->
     <!--<script src="https://d10ajoocuyu32n.cloudfront.net/jquery-1.9.1.min.js"></script>-->
@@ -16,6 +16,7 @@
     <script src="lib/jquery.mobile-1.3.2.min.js"></script>
     <script src="lib/numeral.min.js"></script>
     <script src="lib/fastclick.js"></script>
+    <script src="lib/barcodescanner.js"></script>
 
     <script src="lib/funciones.js"></script>
     <script src="cordova.js"></script>
@@ -66,7 +67,7 @@
         </div>
     </div>
     <!--  Pagina: Configuración   -->
-    <div data-role="dialog" data-rel="back" id="config" data-title="Configuración">
+    <div data-role="dialog"  id="config" data-title="Configuración" data-close-btn="none">
         <div data-role="header" data-position="fixed">
             <h1>Configuración</h1>
         </div>
@@ -79,6 +80,7 @@
             </form>
             <a data-role="button" id="config_btnProbar">Probar conexión</a>
             <a data-role="button" id="config_btnGuardar" href="#Login" data-transition="slideup" onclick="AddValueToDB()">Guardar</a>
+            <a href='#Login' onclick='$(#config).dialog("close");'data-role='button' data-theme='b'>Cerrar</a>
         </div>
     </div>
     <!-- Página: Selector de establecimiento -->
@@ -110,13 +112,13 @@
                 <div class="content-primary">
                     <ul data-role="listview" id="listaTipo">
                         <li data-name="pedido">
-                            <a href="#pedido">
+                            <a href="#pedido" data-transition="slide">
                                 <img src="img/document_128x128.png" />
                                 <h3>Iniciar Pedido</h3>
                                 <p></p>
                             </a>
                         </li>
-                        <li data-name="cobranza">
+                        <li data-name="cobranza" data-transition="slide">
                             <a href="#cobranza">
                                 <img src="img/money_128x128.png" />
                                 <h3>Iniciar Cobranza</h3>
@@ -145,11 +147,11 @@
         <div data-role="content">
             <form action="http://" method="POST">
                 <div data-role="fieldcontain">
-                    <a data-role="button" href="#clienteDetalle" data-inline="false" data-theme="b" data-icon="plus" data-iconpos="left" data-mini="true">Seleccionar cliente</a>
+                    <a data-role="button" href="#clienteDetalle" data-inline="false" data-theme="b" data-icon="plus" data-iconpos="left" data-mini="true" data-transition="slide">Seleccionar cliente</a>
                 </div>
                 <div data-role="fieldcontain">
                     <!--<input type="text" id="pedido_txtProducto" placeholder="Añadir producto">-->
-                    <a data-role="button" id="Pedido_btnAgregarProducto" data-inline="false" data-theme="b" data-icon="plus" data-iconpos="left" data-mini="true">Buscar producto</a>
+                    <a data-role="button" id="Pedido_btnAgregarProducto" data-inline="false" data-theme="b" data-icon="plus" data-iconpos="left" data-mini="true">Agregar productos</a>
                 </div>
                 <a data-role="button" id="pedido_btnDetalle" data-mini="false" data-corners="false" data-theme="e">Detalle</a>
                 <!--<span id="pedido_dtpFecha">Fecha</span>-->
@@ -221,8 +223,9 @@
         </div>
         <div data-role="content">
             <form action="http://" method="POST">
-                <div data-role="fieldcontain" align="right">                    
-                    <a href="#buscaCliente">
+                <div data-role="fieldcontain" align="right"> 
+                    <a data-role="button" id="clienteDetalle_btnScan"href="#" data-inline="false" data-theme="d" data-icon="search" data-iconpos="left" data-mini="false">Scanear</a>                 
+                    <a href="#buscaCliente" data-transition="slide">
                         <label for="clienteDetalle_txtCliente"></label>
                         <input type="text" id="clienteDetalle_txtCliente" placeholder="Buscar cliente..">
                         </text>
@@ -249,7 +252,7 @@
                     </text>
                 </div>
                 <div>
-                    <a data-role="button" href="#pedido" id="clienteDetalle_btnAceptar" data-theme="b">Aceptar</a>
+                    <a data-role="button" href="#pedido" id="clienteDetalle_btnAceptar" data-theme="b" data-transition="slide">Aceptar</a>
                 </div>
 
             </form>
@@ -284,7 +287,7 @@
                 <input type="text" id="buscaProducto_txtCodProd" placeholder="Buscar por código de producto..."></text>
         </div> BUSCA PRODCUTO POR CODIGO -->
         <div data-role="content">
-            <ul id="autocompleteProds" data-role="listview" data-inset="true" data-filter="true" data-filter-placeholder="Buscar por nombre de producto..." data-filter-theme="d"></ul>
+            <ul id="autocompleteProds" data-role="listview" data-inset="true" data-filter="true" data-filter-placeholder="Buscar por nombre de producto..." data-filter-theme="d" data-transition="slide"></ul>
         </div>
     </div>
     <!-- Pagina: Productos -->
@@ -292,13 +295,16 @@
         <div data-theme="a" data-role="header" data-position="fixed">
             <h3>Productos</h3>
             <a data-role="button" data-icon="arrow-l" data-iconpos="left" data-theme="a" href="#pedido" data-transition="slide">Atras</a>
+            <a id="productos_btnInventario" data-role="button" href="#" data-theme="b" data-transition="slide">Inventario</a>
         </div>
         <div data-role="content">
             <form action="http://" method post>
-                    <a data-role="button" href="#buscaProducto" data-inline="false" data-theme="b" data-icon="plus" data-iconpos="left" data-mini="true">Agregar producto</a>
+                    <a data-role="button" id="productos_btnScan"href="#" data-inline="false" data-theme="d" data-icon="search" data-iconpos="left" data-mini="false">Scanear</a>
+                    <a data-role="button" href="#buscaProducto" data-inline="false" data-theme="b" data-icon="search" data-iconpos="left" data-mini="true" data-transition="slide">Buscar producto</a>
                 <div data-role="fieldcontain">
                     <label for="productos_txtProducto">Producto</label>
                     <input type="text" id="productos_txtProducto" >
+                    <!--<a id="productos_btnInventario" data-role="button" href="#" data-inline="false" data-theme="b" data-icon="search" data-iconpos="left" data-mini="false" data-transition="slide">Inventario</a>-->
                 </div>
                 
                 <div data-role="fieldcontain">
@@ -323,25 +329,23 @@
                     <input type="text" id="productos_txtPrecioUni">
                 </div>
                 <div data-role="fieldcontain">
-                    <label for="productos_txtImporte">Importe</label>
-                    <input type="text" id="productos_txtImporte" readonly="readonly">
+                    
+                    <label for="productos_txtTotal">Total</label>
+                    <input type="text" id="productos_txtTotal" readonly="readonly">
 
                     <label for="productos_txtIva">IVA</label>
                     <input type="text" id="productos_txtIva" readonly="readonly">
 
-                    <label for="productos_txtTotal">Total</label>
-                    <input type="text" id="productos_txtTotal" readonly="readonly">
+                    <label for="productos_txtImporte">Importe</label>
+                    <input type="text" id="productos_txtImporte" readonly="readonly">
+                    
                 </div>
                 <div class="ui-grid-a">
                     <div class="ui-block-a">
-
                         <a class="ui-btn-text" data-role="button" id="productos_btnAgregaProducto" data-inline="true" data-icon="plus" data-theme="b">Agregar</a>
-
                     </div>
                     <div class="ui-block-b">
-
                         <a class="ui-btn-text" data-role="button" id="productos_btnCancelaProducto" data-inline="true" data-icon="delete">Limpiar</a>
-
                     </div>
                 </div>
 
@@ -423,14 +427,14 @@
     <div data-role="controlgroup" id="pedidoDetalle_btnGrupo" data-type="horizontal">
                     <a data-role="button" id="pedidoDetalle_btnBorraTodos" data-theme="e">Eliminar todos</a>
                 </div>
-    <div id="confirm" class="ui-content" data-role="popup" data-theme="none">
+    <div id="confirm" class="ui-content" data-role="popup" data-theme="none" data-history="false">
         <p id="question">Está seguro de eliminar el producto?</p>
         <div class="ui-grid-a">
             <div class="ui-block-a">
-                <a id="yes" data-role="button" data-mini="true" data-shadow="false" data-theme="b" data-rel="back">Si</a>
+                <a id="yes" data-role="button" data-mini="true" data-shadow="false" data-theme="b">Si</a>
             </div>
             <div class="ui-block-b">
-                <a id="cancel" data-role="button" data-mini="true" data-shadow="false" data-theme="b" data-rel="back">Cancelar</a>
+                <a id="cancel" data-role="button" data-mini="true" data-shadow="false" data-theme="b">Cancelar</a>
             </div>
         </div>
     </div><!-- /popup -->
@@ -444,7 +448,19 @@
                 <div id="pedidoDetalle_Total"class="ui-block-b"></div>
             </div>
         </div>
-</div> 
+</div>
+
+    <!-- Pagina: inventario -->
+    <div data-role="page" id="inventario" data-title="Inventario" data-content-theme="c">
+        <div data-theme="a" data-role="header" data-position="fixed">
+            <h3>Inventario</h3>
+            <a data-role="button" data-icon="arrow-l" data-iconpos="left" data-theme="a" href="#productos" data-transition="slide">Atras</a>
+        </div>
+        <div data-role="content">
+            <ul id="inventario_list" data-role="listview" data-icon="false" >        
+            </ul>     
+        </div> 
+    </div> 
 
     <!-- Segunda pagina con la sesion ya iniciada -->
     <div data-role="page" id="detalle" data-title="Bienvenido">
