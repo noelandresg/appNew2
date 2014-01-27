@@ -41,7 +41,26 @@
     .ui-listview-filter-inset {
         margin-top: 0;
     }
+    /* Start by setting display:none to make this hidden.
+   Then we position it in relation to the viewport window
+   with position:fixed. Width, height, top and left speak
+   speak for themselves. Background we set to 80% white with
+   our animation centered, and no-repeating */
+    #modal {
+        display:    none;
+        position:   fixed;
+        z-index:    1000;
+        top:        0;
+        left:       0;
+        height:     100%;
+        width:      100%;
+        background: rgba( 255, 255, 255, .8 ) 
+                    url('loader.gif') 
+                    50% 50% 
+                    no-repeat;
+    }
     </style>
+    <div id="modal"><!-- Place at bottom of page --></div>
     <div data-role="page" id="Login" data-title="Login">
         <div data-role="header" data-position="fixed">
             <h1>BMS Movil</h1>
@@ -50,7 +69,7 @@
 
         <div data-role="content">
             <form name="Login" action="http://" method="POST" accept-charset="utf-8">
-                <img id="BMSlogo" src="ic_launcher-web.png" style="display: block; margin: 0 auto">
+                <img id="BMSlogo" src="img/ic_launcher-web.png" style="display: block; margin: 0 auto">
                 <div data-role="fieldcontain">
                     <label for="text1">Usuario</label>
                     <input type="text" id="text1" placeholder="Usuario">
@@ -63,7 +82,7 @@
             <a data-role="button" type="sumbit" id="btnIniciar" target="_self" data-transition="slide">Iniciar sesion</a>
         </div>
         <div data-role="footer" data-position="fixed">
-            <h4>BMS Movil© 2013</h4>
+            <h4>BMS Móvil© 2014</h4>
         </div>
     </div>
     <!--  Pagina: Configuración   -->
@@ -159,8 +178,11 @@
                     <label for="pedido_txtCliente">Cliente</label>
                     <input type="text" id="pedido_txtCliente" placeholder="" readonly="readonly">
                 </div>
+                <label for="pedido_CondDistrib">Cond. Distribución</label>
+                    <select id="pedido_CondDistrib" onchange="seleccionaCondDistrib();" onfocus="this.selectedindex=-1;" data-native-menu="true">
+                    </select>
                 <div data-role="fieldcontain">
-                    <label for="pedido_dtpFecha">Fecha</label>
+                    <label for="pedido_dtpFecha">Fecha de entrega</label>
                     <input type="date" id="pedido_dtpFecha">
                 </div>
                 <div data-role="fieldcontain">
@@ -316,7 +338,7 @@
                 </div>
                 <div data-role="fieldcontain">
                     <label for="productos_txtCantidad">Cantidad</label>
-                    <input type="text" id="productos_txtCantidad">
+                    <input type="tel" id="productos_txtCantidad">
 
                     <label for="productos_txtPeso">Peso</label>
                     <input type="text" id="productos_txtPeso" readonly="readonly">
@@ -472,7 +494,6 @@
             <form action="http://" method="POST"></form>
         </div>
     </div>
-
 </body>
 
 </html>

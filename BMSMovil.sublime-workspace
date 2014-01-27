@@ -4,6 +4,146 @@
 		"selected_items":
 		[
 			[
+				"te",
+				"text2"
+			],
+			[
+				"onf",
+				"onConfirmGuardaPedido(button)"
+			],
+			[
+				"text",
+				"text2"
+			],
+			[
+				"sub",
+				"submit_login()"
+			],
+			[
+				"oncon",
+				"onConfirmGuardaPedido(button)"
+			],
+			[
+				"pedid",
+				"pedidoGuardado	(bool)"
+			],
+			[
+				"bmsprod",
+				"bmsProdTotal	(num)"
+			],
+			[
+				"preci",
+				"precioUnidad	(num)"
+			],
+			[
+				"prec",
+				"precioUnidad	(num)"
+			],
+			[
+				"cant",
+				"cant	(num)"
+			],
+			[
+				"bmspro",
+				"bmsProducto	(str)"
+			],
+			[
+				"bmspr",
+				"bmsProdIva	(num)"
+			],
+			[
+				"Tot",
+				"bmsTotalConIva"
+			],
+			[
+				"bmsProd",
+				"bmsProdImporte	(num)"
+			],
+			[
+				"precio",
+				"precioOriginal	(?)"
+			],
+			[
+				"bmsProdI",
+				"bmsProdIva	(num)"
+			],
+			[
+				"pedido",
+				"pedido(cliente, establecimiento, fecha, notas, sucursal, usuario, productos)"
+			],
+			[
+				"produc",
+				"productos"
+			],
+			[
+				"guarda",
+				"guardado"
+			],
+			[
+				"ped",
+				"pedCab	{}"
+			],
+			[
+				"pedca",
+				"pedCab"
+			],
+			[
+				"data",
+				"data	(?)"
+			],
+			[
+				"inve",
+				"inventarioUC"
+			],
+			[
+				"inven",
+				"inventarioUA"
+			],
+			[
+				"unidad",
+				"unidad"
+			],
+			[
+				"canti",
+				"cantidad"
+			],
+			[
+				"uni",
+				"unidad	(str)"
+			],
+			[
+				"user",
+				"user"
+			],
+			[
+				"sele",
+				"select"
+			],
+			[
+				"resul",
+				"resultado"
+			],
+			[
+				"add",
+				"addProducto(val)"
+			],
+			[
+				"defa",
+				"cbDefault"
+			],
+			[
+				"conse",
+				"console"
+			],
+			[
+				"log",
+				"log"
+			],
+			[
+				"butto",
+				"buttonIndex	(?)"
+			],
+			[
 				"bmsProdto",
 				"bmsProdTotal"
 			],
@@ -12,24 +152,12 @@
 				"prodObjModif"
 			],
 			[
-				"bmsprod",
-				"bmsProdIva"
-			],
-			[
-				"bmspro",
-				"bmsProdImporte"
-			],
-			[
 				"t",
 				"true"
 			],
 			[
 				"modi",
 				"modificaDetalle"
-			],
-			[
-				"pedido",
-				"pedidoDetalle"
 			],
 			[
 				"objmod",
@@ -46,10 +174,6 @@
 			[
 				"prodObjm",
 				"prodObjModif"
-			],
-			[
-				"cant",
-				"cantidad	(num)"
 			],
 			[
 				"actualizaTotalesProductosEdita",
@@ -74,18 +198,6 @@
 			[
 				"actua",
 				"actualizaTotalesPedido"
-			],
-			[
-				"bmspr",
-				"bmsProducto"
-			],
-			[
-				"produc",
-				"productos_txtProducto"
-			],
-			[
-				"unidad",
-				"unidadAbrev"
 			],
 			[
 				"termina",
@@ -128,10 +240,6 @@
 				"bmsProdImporte"
 			],
 			[
-				"bmsProd",
-				"bmsProducto"
-			],
-			[
 				"limp",
 				"limpiaProducto"
 			],
@@ -142,10 +250,6 @@
 			[
 				"bmsUnida",
 				"bmsUnidadAbrev"
-			],
-			[
-				"log",
-				"logGlobal"
 			],
 			[
 				"bmsUni",
@@ -174,10 +278,6 @@
 			[
 				"iva",
 				"ivaProd"
-			],
-			[
-				"precio",
-				"precioUC"
 			],
 			[
 				"linea",
@@ -284,16 +384,8 @@
 				"inicio"
 			],
 			[
-				"te",
-				"text1"
-			],
-			[
 				"tex",
 				"text1"
-			],
-			[
-				"user",
-				"username"
 			],
 			[
 				"fun",
@@ -312,10 +404,10 @@
 			}
 		},
 		{
-			"contents": "onclick=\"+\"addCliente(\"+val.codigo+\")\"+\"\n\n\"http://bmsandroid.net.mandrake.arvixe.com/api/Clientes/GetBuscarClientes\"\n\n\n					bmsUnidad = val.tipo;\n                    bmsUnidadNombre = val.nombre;\n                    bmsUnidadAbrev = val.abreviatura;\n\n                    prodObj{\n	                    codigo: \"10382\"\n						contenido: 72\n						descripcion: \"JAB. PALM.NATURALS EXTRA HUMEC JAT\"\n						notas: \"\"\n						peso: 0\n						porcentajeIVA: 16\n						precioUA: 0.6897\n						precioUC: 42.5862\n						tipoPrecioUA: \"1\"\n						tipoPrecioUC: \"1\"\n						unidades: Array[2]\n						volumen: 0	\n                    }\n                    ",
+			"contents": "onclick=\"+\"addCliente(\"+val.codigo+\")\"+\"\n\n\" /api/Clientes/GetBuscarClientes\"\n\n\n					bmsUnidad = val.tipo;\n                    bmsUnidadNombre = val.nombre;\n                    bmsUnidadAbrev = val.abreviatura;\n\n                    prodObj{\n	                    codigo: \"10382\"\n						contenido: 72\n						descripcion: \"JAB. PALM.NATURALS EXTRA HUMEC JAT\"\n						notas: \"\"\n						peso: 0\n						porcentajeIVA: 16\n						precioUA: 0.6897\n						precioUC: 42.5862\n						tipoPrecioUA: \"1\"\n						tipoPrecioUC: \"1\"\n						unidades: Array[2]\n						volumen: 0	\n                    }\n                    ",
 			"settings":
 			{
-				"buffer_size": 627,
+				"buffer_size": 587,
 				"line_ending": "Windows"
 			}
 		},
@@ -323,7 +415,18 @@
 			"file": "lib/funciones.js",
 			"settings":
 			{
-				"buffer_size": 54178,
+				"buffer_size": 5606,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "/*global numeral,FastClick*/\n    /*++++++++++++++++++++ Variables BMS  ++++++++++++++++++++++++++ */\nvar bmsUser;\nvar bmsEstab = \"\";\nvar bmsTipo; //Pedido o Cobranza\nvar bmsServer;\n     /*+++++++++++++++++++++ Pedido    +++++++++++++++++++++++++++++++ */\nvar bmsCliente = \"\";\nvar bmsLineaDetalle = [];\nvar bmsFecha = new Date();\nvar bmsNotas = \"\";\nvar bmsCondDistrib = \"\";\nvar bmsPedImporte = 0.00;\nvar bmsPedIva = 0.00;\nvar bmsPedTotal = 0.00;\n     /*+++++++++++++++++++++ Cliente   +++++++++++++++++++++++++++++++ */\nvar bmsLPV;\nvar bmsCondPago;\nvar bmsSaldo = 0;\nvar bmsSucursal;\n     /*+++++++++++++++++++++ Productos +++++++++++++++++++++++++++++++ */\nvar bmsProducto;\nvar bmsUnidad;\nvar bmsCantidad = 0;\nvar bmsPeso;\nvar bmsVolumen;\nvar bmsPrecio;\nvar bmsProdImporte;\nvar bmsProdIva;\nvar bmsProdTotal;\nvar bmsTotalConIva = 0;\n    /*+++++++++++++++++++++ Unidades +++++++++++++++++++++++++++++++ */\nvar bmsUnidadAbrev;\nvar bmsUnidadNombre;\n\nvar prodObj = {};\nvar prodObjModif = {};\nvar iProdObjModif = -1;\nvar pedCab = {};\nvar pedProd = {};\nvar pedLineas = [];\n\nvar fueraDeMargen = false;\nvar pedidoGuardado = false;\n     /*+++++++++++++++++++++ --------- +++++++++++++++++++++++++++++++ */\n     //var currentTime = new Date();\n\nfunction producto(codigo, descripcion, unidad, unidadAbrev, cantidad,  peso, volumen, precio, importe, iva, total, precioOriginal) {\n    this.codigo = codigo;\n    this.descripcion = descripcion;\n    this.unidad = unidad;\n    this.unidadAbrev = unidadAbrev;\n    this.cantidad = cantidad;\n    this.peso = peso;\n    this.volumen = volumen;\n    this.precio = precio;\n    this.importe = importe;\n    this.iva = iva;\n    this.total = total;\n    this.precioOriginal = precioOriginal;\n}\nfunction pedidoPost (cliente, establecimiento, fecha, notas, sucursal, usuario, productos){\n    this.cliente = cliente;\n    this.estab = establecimiento;\n    this.fecha = fecha;\n    this.notas = notas;\n    this.sucursal = sucursal;\n    this.user = usuario;\n    this.productos = productos;    \n}\nfunction pedidoProd (codigo, cantidad, precio, unidad, peso){\n    this.codigo = codigo;\n    this.cantidad = cantidad;\n    this.precio = precio;\n    this.unidad = unidad;\n    this.peso = peso;\n}\nfunction logGlobal(){\n    console.log('***DEBUGGING LOG - [Page: logGlobal()] [\\n'+         '******* PEDIDO *******' +'\\n' +\n                                                                      'Data: bmsCliente = ' + bmsCliente + '\\n' +\n                                                                      'Data: bmsFecha = ' + bmsFecha + '\\n' +\n                                                                      'Data: bmsNotas = ' + bmsNotas + '\\n' +\n                                                                      'Data: bmsPedImporte = ' + bmsPedImporte + '\\n' +\n                                                                      'Data: bmsPedIva = ' + bmsPedIva + '\\n' +\n                                                                      'Data: bmsPedTotal = ' + bmsPedTotal + '\\n' +\n                                                                      '******* CLIENTE *******' +'\\n' + \n                                                                      'Data: bmsLPV = ' + bmsLPV + '\\n' +\n                                                                      'Data: bmsCondPago = ' + bmsCondPago + '\\n' + \n                                                                      'Data: bmsSaldo = ' + bmsSaldo + '\\n' + \n                                                                      'Data: bmsSucursal = ' + bmsSucursal + '\\n' + \n                                                                      '******* PRODUCTO *******' +'\\n' +\n                                                                      'Data: bmsProducto = ' + bmsProducto + '\\n' +\n                                                                      'Data: bmsUnidad = ' + bmsUnidad + '\\n' +\n                                                                      'Data: bmsUnidadAbrev = ' + bmsUnidadAbrev + '\\n' + \n                                                                      'Data: bmsUnidadNombre = ' + bmsUnidadNombre + '\\n' +  \n                                                                      'Data: bmsCantidad = ' + bmsCantidad + '\\n' + \n                                                                      'Data: bmsPeso = ' + bmsPeso + '\\n' +\n                                                                      'Data: bmsVolumen = ' + bmsVolumen + '\\n' +\n                                                                      'Data: bmsPrecio = ' + bmsPrecio + '\\n' + \n                                                                      'Data: bmsProdImporte = ' + bmsProdImporte + '\\n' + \n                                                                      'Data: bmsProdIva = ' + bmsProdIva+ '\\n' +\n                                                                      'Data: bmsProdTotal = ' + bmsProdTotal + '\\n' +                                                                      \n                                                                      'Data: prodObj = ' + JSON.stringify(prodObj) + '\\n' +\n\n         ']');\n}\n\n// Manejo de base de datos \n\n// global variables DB\nvar db;\nvar shortName ='WebSqlDB';\nvar version = '1.0';\nvar displayName = 'WebSqlDB';\nvar maxSize = 65535;\n\n\n\nfunction alertBox(msg, cb, title, btnName){\n      navigator.notification.alert(\n            msg,        // message\n            cb,         // callback\n            title,      // title\n            btnName     // buttonName\n        );\n}\n\nfunction cdDefault(){\n//CallBack del alertBox:Hacer algo.\n}\n\n//SWIPE LIST\n$(document).on( \"pageshow\", \"#pedidoDetalle\", function() {\n    //alert(\"Estamos en pageshow #pedidoDetalle\");\n    $('#list').empty();\n    var length = bmsLineaDetalle.length,\n        obj    = null,\n        html   = \"\",\n        i; \n    \n        for (i = 0; i < length; i++) {\n            obj = bmsLineaDetalle[i];\n            html +=  \"<li class='\"+\"item\"+\"'data-value='\"+obj.codigo+\"'><a href=\"+\"'#'\"+\"><p class=\"+\"topic\"+\">\"+ obj.descripcion +\"</p><p class=\"+\"topic\"+\"><strong>Cant: </strong>\"+ obj.cantidad+\"</p><p class=\"+\"topic\"+\"><strong>Unidad: </strong>\"+obj.unidadAbrev+\"</p><p><strong>Importe: </strong>\"+numeral(obj.importe).format('$0,0.00')+\"</p><p><strong>IVA: </strong>\"+numeral(obj.iva).format('$0,0.00')+\"</p><p><strong>TOTAL: </strong>\"+numeral(obj.total).format('$0,0.00')+\"</p></a><a href=\"+\"#\"+\" class=\"+\"delete\"+\">Delete</a></li>\";\n        }\n        $('#list').append(html);\n        $( \"#list\" ).listview( \"refresh\" );\n    \n    function confirmAndDelete( listitem, transition, i ) {\n        // Highlight the list item that will be removed\n        listitem.addClass( \"ui-btn-down-d\" );\n        // Inject topic in confirmation popup after removing any previous injected topics\n        $( \"#confirm .topic\" ).remove();\n        listitem.find( \".topic\" ).clone().insertAfter( \"#question\" );\n        // Show the confirmation popup\n        $( \"#confirm\" ).popup( \"open\" );\n        // Proceed when the user confirms\n        $( \"#confirm #yes\" ).on( \"click\", function() {\n            $( \"#confirm\" ).popup( \"close\" );\n            // Remove with a transition\n            if ( transition ) {\n                listitem\n                    // Remove the highlight\n                    .removeClass( \"ui-btn-down-d\" )\n                    // Add the class for the transition direction\n                    .addClass( transition )\n                    // When the transition is done...\n                    .on( \"webkitTransitionEnd transitionend otransitionend\", function() {\n                        // ...the list item will be removed\n                        \n                        var eliminado = bmsLineaDetalle.splice(i,1);\n                        alertBox(\"Producto eliminado: \" + eliminado[0].descripcion + \" Cant. \"+eliminado[0].cantidad + \" Importe. \" + numeral(eliminado[0].importe).format('$0,0.00'), \"cbDefault()\", \"BMS Móvil\", \"OK\");\n                        //alert(\"Producto eliminado: \" + eliminado[0].descripcion + \" Cant. \"+eliminado[0].cantidad + \" Importe. \" + numeral(eliminado[0].importe).format('$0,0.00'));\n                        listitem.remove();\n                        actualizaTotalesPedido();\n                        // ...the list will be refreshed and the temporary class for border styling removed\n                        $( \"#list\" ).listview( \"refresh\" ).find( \".ui-li.border\" ).removeClass( \"border\" );\n\n                    })\n                    // During the transition the previous list item should get bottom border\n                    .prev( \"li.ui-li\" ).addClass( \"border\" );\n\n            }\n            // If it's not a touch device or the CSS transition isn't supported just remove the list item and refresh the list\n            else {\n                var eliminado = bmsLineaDetalle.splice(i,1);\n                        alertBox(\"Producto eliminado: \" + eliminado[0].descripcion + \" Cant. \"+eliminado[0].cantidad + \" Importe. \" + numeral(eliminado[0].importe).format('$0,0.00'), \"cbDefault()\", \"BMS Móvil\", \"OK\");\n                        //alert(\"Producto eliminado: \" + eliminado[0].descripcion + \" Cant. \"+eliminado[0].cantidad + \" Importe. \" + numeral(eliminado[0].importe).format('$0,0.00'));\n                listitem.remove();\n                actualizaTotalesPedido();\n                $( \"#list\" ).listview( \"refresh\" );\n            }\n        });\n        // Remove active state and unbind when the cancel button is clicked\n        $( \"#confirm #cancel\" ).on( \"click\", function() {\n            listitem.removeClass( \"ui-btn-down-d\" );\n            $( \"#confirm\" ).popup( \"close\" );\n            $( \"#confirm #yes\" ).off();\n        });\n    }   \n    $(document).on('pagehide', function () { $(this).off('swipeleft swiperight'); });    \n    // Swipe to remove list item\n    $(document).on( \"swipeleft\", \"#list li.ui-li\", function( event ) {\n        //alert(\"Estamos en event #pedidoDetalle\");\n\n        event.stopPropagation();\n        var i = $(this).index(),\n        listitem = $( this ),\n            // These are the classnames used for the CSS transition\n            dir = \"left\", //event.type === \"swipeleft\" ? \"left\" : \"right\",\n            // Check if the browser supports the transform (3D) CSS transition\n            transition = $.support.cssTransform3d ? dir : false;\n            confirmAndDelete( listitem, transition, i );\n    });\n    // If it's not a touch device...\n    if ( ! $.mobile.support.touch ) {\n        // Remove the class that is used to hide the delete button on touch devices\n        $( \"#list\" ).removeClass( \"touch\" );\n        // Click delete split-button to remove list item\n        $( \".delete\" ).on( \"click\", function() {\n            var i = $(this).parent(\"li.ui-li\").index(),\n            listitem = $( this ).parent( \"li.ui-li\" );\n            confirmAndDelete( listitem, false, i );\n        });\n    }\n});\n\nfunction errorHandler(transaction, error) {\n    console.log('Error: ' + error.message + ' code: ' + error.code);\n}\n\nfunction successCallBack() {\n //alert(\"DEBUGGING: success\");\n}\n\nfunction nullHandler() {}\n\nfunction renderEntries(tx, result) {\n         //alert(\"DEBUGGING: We are on renderEntries()\");\n    if (result.rows.length === 0) {\n        console.log(\"No se trajo registros con el SELECT\");\n    } else {\n        var row = result.rows.item(0);\n        console.log('***DEBUGGING LOG - [Page: Config - SQL SELECT] [Data: row.serverText  ' + row.serverText);\n        document.getElementById(\"config_servidor\").value = row.serverText;\n        console.log('***DEBUGGING LOG - [Page: Config] [Data: bmsServer =  ' + row.serverText);\n        bmsServer = row.serverText;\n    }\n}\n\nfunction queryDB() {\n\n    if (!window.openDatabase) {\n        alert('Databases are not supported in this browser.');\n        return;\n    }\n    db.transaction(function(transaction) {\n        transaction.executeSql('SELECT serverText FROM Config ORDER BY serverId DESC LIMIT 1;', [], renderEntries, errorHandler);\n    }, errorHandler, nullHandler);\n    return;\n}\nfunction onBackKeyDown() {\n    }\nfunction onDeviceReady() {\n        // Register the event listener\n        document.addEventListener(\"backbutton\", onBackKeyDown, false);\n}\n      // called when the application loads \nfunction onBodyLoad() {\ndocument.addEventListener(\"deviceready\", onDeviceReady, false);\n //alert(\"DEBUGGING: we are in the onBodyLoad() function\"); \n\n    if (!window.openDatabase) {\n        alert('Databases are not supported in this browser.');\n        return;\n    }\n\n    db = window.openDatabase(shortName, version, displayName, maxSize);\n    queryDB();\n\n // this line will try to create the table User in the database just created/openned \n    db.transaction(function(tx) {\n     //tx.executeSql( 'CREATE TABLE IF NOT EXISTS Config(serverId INTEGER NOT NULL PRIMARY KEY, serverText TEXT NOT NULL)',[],nullHandler,errorHandler);\n        tx.executeSql('CREATE TABLE IF NOT EXISTS Config(serverId INTEGER NOT NULL PRIMARY KEY, serverText TEXT NOT NULL)', [], nullHandler, errorHandler);\n    }, errorHandler, successCallBack);\n //alert('DB Created!');\n}\n\n\n      // list the values in the database to the screen using jquery to update the ##config_servidor element \n\nfunction AddValueToDB() {\n\n    if (!window.openDatabase) {\n        alert('Databases are not supported in this browser.');\n        return;\n    }\n\n    bmsServer = $('#config_servidor').val();\n    db.transaction(function(transaction) {\n        transaction.executeSql('INSERT INTO Config(serverText) VALUES (?)', [bmsServer],\n            nullHandler, errorHandler);\n        console.log('***DEBUGGING LOG - [Page: config] [Data: bmsServer = ' + bmsServer + ']');\n        alertBox(\"Información guardada: \" + bmsServer, \"cbDefault()\", \"BMS Móvil\", \"OK\");\n        //alert('Información guardada: ' + bmsServer);\n        $('#config').dialog(\"close\");\n    });\n\n    //return false;\n}\n\nfunction addProducto(val) {\n         bmsProducto = val;\n         console.log('***DEBUGGING LOG - [Page: buscaProducto function addProducto()] [Data: codProducto = ' + val +\n             ']');\n         document.getElementById(\"productos_txtProducto\").value = val;\n         $('input[data-type=\"search\"]').val(\"\");\n         $('#autocompleteProds').empty();\n\n         var url = bmsServer+\"/api/Productos/GetProducto\",\n         html = \"\", //= '<option value=\"' + '' + '\">' + \"Seleccione...\" + '</option>';\n         \n         success = function(data) {\n             if (data.codigo !== null) {\n\n                 $('#productos_listaUnidad').empty();\n                  \n                 bmsUnidad = \"U\";\n                 bmsUnidadAbrev = data.unidades[0].abreviatura;\n                 bmsUnidadNombre = data.unidades[0].nombre;\n                 bmsCantidad = 1;\n                 bmsPeso = data.peso;\n                 bmsVolumen = data.volumen;\n                 bmsPrecio = data.precioUC;\n                 document.getElementById(\"productos_txtProducto\").value = data.descripcion;\n                 \n                 document.getElementById(\"productos_txtPeso\").value = numeral(data.peso).format('0.000');\n                 document.getElementById(\"productos_txtVolumen\").value = numeral(data.volumen).format('0.000');\n                 document.getElementById(\"productos_txtPrecioUni\").value = numeral(data.precioUC).format('$0,0.00');\n                 \n                 document.getElementById(\"productos_txtCantidad\").value = bmsCantidad;\n                 prodObj = data;\n                 actualizaTotalesProducto(1, 0, 1);                 \n                 \n                 $.each(data.unidades, function(i, val) {\n                    html += '<option value=\"' + val.tipo + '\">' + val.nombre + '</option>';                    \n                 });\n                                            \n                \n                 $('#productos_listaUnidad').append(html);\n                 $(\"#productos_listaUnidad\").val(bmsUnidad);\n                 $(\"#productos_listaUnidad\").selectmenu('refresh', true);\n\n                 $('#productos_txtCantidad').focus();\n                 $('#productos_txtCantidad').select();\n\n             }\n             if (data.codigo === null) {\n                alertBox(\"No se encontró el código: \" + bmsProducto, \"cbDefault()\", \"BMS Móvil\", \"OK\");\n                document.getElementById(\"productos_txtProducto\").value = \"\";\n                $(\"productos_txtProducto\").focus();\n             }\n         };\n \n         $.ajax({\n             type: 'get',\n             url: url,\n             data: {\n                 \"cliente\": bmsCliente,\n                 \"estab\"  : bmsEstab,\n                 \"producto\": bmsProducto\n             },\n             dataType: \"jsonp\",\n             crossDomain: true,\n             cache: false,\n             success: success,\n             beforeSend: function() {$('#modal').show();},\n             complete: function(){$('#modal').hide();},\n             error: function(jqXHR, textStatus, errorThrown) {\n                 alert(errorThrown);\n             }\n         });\n\n     }\n\n     function modificaProducto(val) {\n         iProdObjModif = val;                 //Recibo el indice del producto a modificar\n         prodObjModif = bmsLineaDetalle[val]; //Hago una copia del objeto a modificar\n         var codProd = prodObjModif.codigo,\n         url = bmsServer+\"/api/Productos/GetProducto\",\n         html = \"\";\n         console.log('***DEBUGGING LOG - [Page: modificaProducto function modificaProducto()] [Data: codProducto = ' + codProd +']');\n         document.getElementById(\"productosEditar_txtProducto\").value = codProd;\n         \n         \n         var success = function(data) {\n             if (data.codigo !== \"\") {\n\n                 $('#productosEditar_listaUnidad').empty();\n                 \n                 prodObj = data; \n                 bmsUnidad = \"U\";\n                 bmsUnidadAbrev = data.unidades[0].abreviatura;\n                 bmsUnidadNombre = data.unidades[0].nombre;\n                 bmsCantidad = prodObjModif.cantidad;\n                 bmsPeso = data.peso;\n                 bmsVolumen = data.volumen;\n                 bmsPrecio = prodObjModif.precio;\n                 bmsProdImporte = prodObjModif.importe;\n                 bmsProdIva = prodObjModif.iva;\n                 bmsProdTotal = prodObjModif.total;\n                 document.getElementById(\"productosEditar_txtProducto\").value = data.descripcion;\n                 \n                 document.getElementById(\"productosEditar_txtPeso\").value = numeral(data.peso).format('0.000');\n                 document.getElementById(\"productosEditar_txtVolumen\").value = numeral(data.volumen).format('0.000');\n                 document.getElementById(\"productosEditar_txtPrecioUni\").value = numeral(prodObjModif.precio).format('$0,0.00');\n                 \n                 document.getElementById(\"productosEditar_txtCantidad\").value = prodObjModif.cantidad;\n\n                 document.getElementById(\"productosEditar_txtImporte\").value = numeral(prodObjModif.importe).format('$0,0.00'); \n                 document.getElementById(\"productosEditar_txtIva\").value = numeral(prodObjModif.iva).format('$0,0.00');\n                 document.getElementById(\"productosEditar_txtTotal\").value = numeral(prodObjModif.total).format('$0,0.00');\n\n                 \n                 $.each(data.unidades, function(i, val) {\n                    html += '<option value=\"' + val.tipo + '\">' + val.nombre + '</option>';                    \n                 });\n                                            \n                \n                 $('#productosEditar_listaUnidad').append(html);\n                 $(\"#productosEditar_listaUnidad\").val(bmsUnidad);\n                 $(\"#productosEditar_listaUnidad\").selectmenu('refresh', true);\n\n             }\n\n         };\n \n         $.ajax({\n             type: 'get',\n             url: url,\n             data: {\n                 \"cliente\": bmsCliente,\n                 \"estab\"  : bmsEstab,\n                 \"producto\": codProd\n             },\n             dataType: \"jsonp\",\n             crossDomain: true,\n             cache: false,\n             success: success,\n             beforeSend: function() {$('#modal').show();},\n             complete: function(){$('#modal').hide();},\n             error: function(jqXHR, textStatus, errorThrown) {\n                 alert(errorThrown);\n             }\n         });\n\n     }\n\n      //Busca Cliente\n     $(document).on(\"pageinit\", \"#buscaCliente\", function() {\n         $(\"#autocompleteCtes\").on(\"listviewbeforefilter\", function(e, data) {\n             var $ul = $(this),\n                 $input = $(data.input),\n                 value = $input.val(),\n                 html = \"\";\n             $ul.html(\"\");\n             if (value && value.length > 2) {\n                 $ul.html(\"<li ><div class='ui-loader'><span class='ui-icon ui-icon-loading'></span></div></li>\");\n                 $ul.listview(\"refresh\");\n                 $.ajax({\n                     url: bmsServer+\"/api/Clientes/GetBuscarClientes\",\n                     type: \"GET\",\n                     dataType: \"jsonp\",\n                     crossDomain: true,\n                     data: {\n                         estab: \"1\",\n                         filtro: $input.val()\n                     }\n                 })\n                     .then(function(response) {\n                         $.each(response, function(i, val) {\n                             html += \"<li \" + \"data-icon=\" + \"plus\" + \" data-liCtesCod= '\" + val.codigo + \"' data-liCtesNom='\" + val.nombre + \"' onclick=\" + \"addCliente('\" + val.codigo + \"');\" + \"><a href=\" + \"#clienteDetalle\" + \"><h2 class='ui-li-heading'>\" + val.nombre + \"</h2><p class=\" + \"ui-li-desc\" + \"> Código: \" + val.codigo + \"</p> </a></li>\";\n                         });\n                         $ul.html(html);\n                         $ul.listview(\"refresh\");\n                         $ul.trigger(\"updatelayout\");\n                     });\n             }\n         });\n     });\n\n     \n      //Llama al webservice que se trae el detalle del cliente mandandole el codigoCte \n     function addCliente(val) {\n         bmsCliente = val;\n         console.log('***DEBUGGING LOG - [Page: buscaCliente function addCliente()] [Data: codCte = ' + val +\n             ']');\n         document.getElementById(\"clienteDetalle_txtCliente\").value = val;\n         $('input[data-type=\"search\"]').val(\"\");\n         $('#autocompleteCtes').empty();\n         //$('input[data-type=\"search\"]').trigger(\"change\");\n\n         var url = bmsServer+\"/api/Clientes/GetCliente\",\n         html = '<option value=\"' + '' + '\">' + \"Seleccione...\" + '</option>',\n         success = function(data) {\n             if (data.codigo === null) {\n                alertBox(\"No se encontró el código: \" + bmsCliente, \"cbDefault()\", \"BMS Móvil\", \"OK\");\n                document.getElementById(\"clienteDetalle_txtCliente\").value = \"\";\n\n             }\n             if (data.codigo !== null) {\n                 $('#listaSucursales').empty();\n                 //alert(\"Llenar combo.\");\n                 //console.log(data);\n                 bmsSucursal = \"\";\n                 document.getElementById(\"pedido_txtCliente\").value = data.razonSocial;\n                 document.getElementById(\"clienteDetalle_txtCliente\").value = data.razonSocial;\n                 bmsCliente = data.codigo;\n                 document.getElementById(\"clienteDetalle_txtLPV\").value = data.listaPrecios;\n                 bmsLPV = data.idListaPrecios;\n                 document.getElementById(\"clienteDetalle_txtCondPago\").value = data.condicionPago;\n                 bmsCondPago = data.idCondicionPago;\n                 document.getElementById(\"clienteDetalle_txtSaldo\").value = numeral(data.saldo).format('$0,0.00');\n                 bmsSaldo = data.saldo;\n                 \n                 $.each(data.sucursales, function(i, val) {\n                    html += '<option value=\"' + val.codigo + '\">' + val.nombre + '</option>';\n                 });\n                 $('#listaSucursales').append(html);\n                 $(\"#listaSucursales\").selectmenu('refresh', true);\n             }\n         };\n\n         //Llamada al web service GetEstabs \n         $.ajax({\n             type: 'get',\n             url: url,\n             data: {\n                 \"cliente\": val\n             },\n             dataType: \"jsonp\",\n             crossDomain: true,\n             cache: false,\n             success: success,\n             beforeSend: function() {$('#modal').show();},\n             complete: function(){$('#modal').hide();},\n             error: function(jqXHR, textStatus, errorThrown) {\n                 alert(errorThrown);\n             }\n         });\n     }\n\nfunction clickScan(type) {\n    if (type === 1) {//Si es producto\n        cordova.plugins.barcodeScanner.scan(\n          function (result) {\n            addProducto(result.text);\n              /*alert(\"We got a barcode\\n\" +\n                    \"Result: \" + result.text + \"\\n\" +\n                    \"Format: \" + result.format + \"\\n\" +\n                    \"Cancelled: \" + result.cancelled);*/\n          }, \n          function (error) {\n            alertBox(\"Error al scanear el código. Inténtelo de nuevo. ERROR: \" + error, \"cbDefault()\", \"BMS Móvil\", \"OK\");\n              //alert(\"Error al scanear el código. Inténtelo de nuevo. ERROR: \" + error);\n          });\n    } else if (type === 2) {//Es cliente\n        cordova.plugins.barcodeScanner.scan(\n          function (result) {\n            addCliente(result.text);\n              /*alert(\"We got a barcode\\n\" +\n                    \"Result: \" + result.text + \"\\n\" +\n                    \"Format: \" + result.format + \"\\n\" +\n                    \"Cancelled: \" + result.cancelled);*/\n          }, \n          function (error) {\n            alertBox(\"Error al scanear el código. Inténtelo de nuevo. ERROR: \" + error, \"cbDefault()\", \"BMS Móvil\", \"OK\");\n              //alert(\"Error al scanear el código. Inténtelo de nuevo. ERROR: \" + error);\n          });\n    }\n}\n\nfunction validateForm() {\n    var x = document.forms.login.text1.value,\n    y = document.forms.Login.text2.value,\n    band = true;\n    bmsServer = document.getElementById(\"config_servidor\").value;\n    \n    if (x === null || x === \"\") {\n        alertBox(\"Por favor indique su nombre de usuario.\", \"cbDefault()\", \"BMS Móvil\", \"OK\");\n        //alert(\"Por favor indique su nombre de usuario.\");\n        band = false;\n        return band;\n    }  \n    if (y === null || y === \"\") {\n        alertBox(\"Por favor indique su contraseña.\", \"cbDefault()\", \"BMS Móvil\", \"OK\");\n        //alert(\"Por favor indique su contraseña.\");\n        band = false;\n        return band;\n    }  \n    if (bmsServer === null || bmsServer === \"\") {\n     alertBox(\"Por favor indique un servidor en el panel de configuración.\", \"cbDefault()\", \"BMS Móvil\", \"OK\");\n     //alert(\"Por favor indique un servidor en el panel de configuración.\");\n        band = false;\n        return band;\n    }\n    return true;\n}\n\nfunction limpiaProducto(){\n    //Limpia el formulario de producto y se resetean las variables globales de los valores de pedido\n    $('#productos_txtProducto').val('');\n    $('#productos_listaUnidad').empty();\n    $('#productos_txtCantidad').val('');\n    $('#productos_txtPeso').val('');\n    $('#productos_txtVolumen').val('');\n    $('#productos_txtPrecioUni').val('');\n    $('#productos_txtImporte').val('');\n    $('#productos_txtIva').val('');\n    $('#productos_txtTotal').val('');\n\n    $('#productosEditar_txtProducto').val('');\n    $('#productosEditar_listaUnidad').empty();\n    $('#productosEditar_txtCantidad').val('');\n    $('#productosEditar_txtPeso').val('');\n    $('#productosEditar_txtVolumen').val('');\n    $('#productosEditar_txtPrecioUni').val('');\n    $('#productosEditar_txtImporte').val('');\n    $('#productosEditar_txtIva').val('');\n    $('#productosEditar_txtTotal').val('');\n\n    //Limpiar variables\n    bmsProdImporte = 0;\n    bmsProdIva = 0;\n    bmsProdTotal = 0;\n    prodObj = {};\n    prodObjModif = {};\n    iProdObjModif = -1;\n\n    bmsProducto = \"\";\n    bmsUnidad = \"\";\n    bmsCantidad = 0;\n    bmsPeso = 0;\n    bmsVolumen = 0;\n    bmsPrecio = 0.0;\n\n    bmsUnidadAbrev = \"\";\n    bmsUnidadNombre = \"\";\n}\n\nfunction nuevoPedido(){\n        limpiaProducto();\n        $('form').clearForm();\n        bmsCliente = \"\";\n        \n        bmsLineaDetalle = [];\n        pedLineas = [];\n        bmsFecha = new Date();\n        bmsNotas = \"\";\n        bmsPedImporte = 0.00;\n        bmsPedIva = 0.00;\n        bmsPedTotal = 0.00;\n\n        bmsSucursal = \"\";\n        document.getElementById(\"pedido_txtImporte\").value = numeral(bmsPedImporte).format('$0,0.00');\n        document.getElementById(\"pedido_txtIva\").value = numeral(bmsPedIva).format('$0,0.00');\n        document.getElementById(\"pedido_txtTotal\").value = numeral(bmsPedTotal).format('$0,0.00');\n        document.getElementById(\"pedido_dtpFecha\").valueAsDate = bmsFecha;\n        document.getElementById(\"config_servidor\").value = bmsServer;\n     }\n     function actualizaTotalesPedido() {\n        var length = bmsLineaDetalle.length,\n            obj    = null,\n            i;\n            bmsPedImporte = 0;\n            bmsPedIva = 0;\n            bmsPedTotal = 0; \n        if (length !== 0) {\n            for (i = 0; i < length; i++) {\n                obj = bmsLineaDetalle[i];\n                bmsPedImporte += obj.importe;\n                bmsPedIva += obj.iva;\n                bmsPedTotal += obj.total;\n            }    \n        }\n        if (length === 0) {\n            bmsPedImporte = 0;\n            bmsPedIva = 0;\n            bmsPedTotal = 0;                        \n        }\n        document.getElementById(\"pedido_txtImporte\").value = numeral(bmsPedImporte).format('$0,0.00');\n        document.getElementById(\"pedido_txtIva\").value = numeral(bmsPedIva).format('$0,0.00');\n        document.getElementById(\"pedido_txtTotal\").value = numeral(bmsPedTotal).format('$0,0.00');\n\n        $('#pedidoDetalle_totalImporte').text(numeral(bmsPedImporte).format('$0,0.00'));\n        $('#pedidoDetalle_totalIva').text(numeral(bmsPedIva).format('$0,0.00'));\n        $('#pedidoDetalle_Total').text(numeral(bmsPedTotal).format('$0,0.00'));\n        logGlobal();              \n     }\n\n     function actualizaTotalesProducto( cant, precio, tipo ){\n        var b,\n        precioUnidad = 0;\n        if (precio === 0) {\n            b = true;\n        } else {\n            b = false;\n        }\n\n        bmsProdImporte = 0;\n        bmsProdIva = 0;\n        bmsProdTotal = 0;\n        \n        bmsPeso = 0;\n        bmsVolumen = 0;\n        if (bmsUnidad === 'U') {\n            bmsPeso = cant * prodObj.peso;\n            if (b) {\n                bmsPrecio = prodObj.precioUC;\n            } else {\n              bmsPrecio = precio;  \n            }\n            \n            bmsTotalConIva =((prodObj.porcentajeIVA * bmsPrecio) / 100) + bmsPrecio;\n            bmsVolumen = cant * prodObj.volumen;\n        }\n        if (bmsUnidad === 'P') {\n            bmsPeso = (cant * prodObj.volumen)/prodObj.contenido;\n            if (b) {\n                bmsPrecio = prodObj.precioUA;\n            } else {\n              bmsPrecio = precio;  \n            }\n            \n            bmsTotalConIva =((prodObj.porcentajeIVA * bmsPrecio) / 100) + bmsPrecio;\n            bmsVolumen = cant * prodObj.volumen;\n        }\n        switch(tipo){\n            case 1:\n                bmsProdImporte = bmsPrecio * cant;\n                bmsProdIva = (prodObj.porcentajeIVA * bmsProdImporte) / 100;\n                bmsProdTotal = bmsProdImporte + bmsProdIva;\n                if (b || tipo === 1) {document.getElementById(\"productos_txtPrecioUni\").value = numeral(bmsProdTotal).format('$0,0.00');}\n                break;\n            case 2:\n                bmsProdImporte = bmsPrecio * cant;\n                bmsProdIva = (prodObj.porcentajeIVA * bmsProdImporte) / 100;\n                bmsProdTotal = bmsProdImporte + bmsProdIva;\n                if (b) {document.getElementById(\"productos_txtPrecioUni\").value = numeral(bmsProdTotal).format('$0,0.00');}\n                break;\n            case 3:\n                bmsProdImporte = bmsPrecio * cant;\n                bmsProdIva = (prodObj.porcentajeIVA * bmsProdImporte) / 100;\n                bmsProdImporte = bmsProdImporte - bmsProdIva;\n                bmsProdTotal = precio * cant;\n                if (b) {document.getElementById(\"productos_txtPrecioUni\").value = numeral(bmsProdTotal).format('$0,0.00');}\n                break;\n            case 4:\n                bmsProdImporte = bmsPrecio * cant;\n                bmsProdIva = (prodObj.porcentajeIVA * bmsProdImporte) / 100;\n                bmsProdTotal = bmsProdImporte + bmsProdIva;\n                if (cant >= 2) {precioUnidad = (bmsProdImporte/cant);}\n                if (b && precioUnidad !== 0) {\n                    document.getElementById(\"productos_txtPrecioUni\").value = numeral(precioUnidad).format('$0,0.00');\n                }else{\n                    document.getElementById(\"productos_txtPrecioUni\").value = numeral(bmsProdTotal).format('$0,0.00');\n                }\n                break;            \n        }\n        document.getElementById(\"productos_txtTotal\").value = numeral(bmsProdTotal).format('$0,0.00');\n        document.getElementById(\"productos_txtIva\").value = numeral(bmsProdIva).format('$0,0.00');\n        document.getElementById(\"productos_txtImporte\").value = numeral(bmsProdImporte).format('$0,0.00');\n}\n\n     function actualizaTotalesProductosEditar( cant, precio ){\n        var b;\n        if (precio === 0) {\n            b = true;\n        } else {\n            b = false;\n        }\n        bmsProdImporte = 0;\n        bmsProdIva = 0;\n        bmsProdTotal = 0;\n        if (bmsUnidad === 'U') {\n            bmsPeso = cant * prodObj.peso;\n            if (precio === 0) {\n                bmsPrecio = prodObj.precioUC;\n            } else {\n              bmsPrecio = precio;  \n            }\n            \n            bmsProdImporte = bmsPrecio * cant;\n            bmsVolumen = cant * prodObj.volumen;\n        }\n        if (bmsUnidad === 'P') {\n            bmsPeso = (cant * prodObj.volumen)/prodObj.contenido;\n            if (precio === 0) {\n                bmsPrecio = prodObj.precioUA;\n            } else {\n              bmsPrecio = precio;  \n            }\n            \n            bmsProdImporte = bmsPrecio * cant;\n            bmsVolumen = cant * prodObj.volumen;\n        }\n        \n        bmsProdIva = (prodObj.porcentajeIVA * bmsProdImporte) / 100;\n        bmsProdTotal = bmsProdImporte + bmsProdIva;\n        if (b) {document.getElementById(\"productosEditar_txtPrecioUni\").value = numeral(bmsPrecio).format('$0,0.00');}\n        document.getElementById(\"productosEditar_txtImporte\").value = numeral(bmsProdImporte).format('$0,0.00');\n        document.getElementById(\"productosEditar_txtIva\").value = numeral(bmsProdIva).format('$0,0.00');\n        document.getElementById(\"productosEditar_txtTotal\").value = numeral(bmsProdTotal).format('$0,0.00');\n\n        //if (confirm(\"Imprimir Log General?\")){\n        //    logGlobal();\n        //}\n        \n     }\n     function modificaDetalle (){\n      var b = false;\n        if (bmsLineaDetalle[iProdObjModif].cantidad !== bmsCantidad) {\n          bmsLineaDetalle[iProdObjModif].cantidad = bmsCantidad;\n          b = true;\n        }\n        if (bmsLineaDetalle[iProdObjModif].peso !== bmsPeso) {\n          bmsLineaDetalle[iProdObjModif].peso = bmsPeso;\n          b = true;\n        }\n        if (bmsLineaDetalle[iProdObjModif].volumen !== bmsVolumen) {\n          bmsLineaDetalle[iProdObjModif].volumen = bmsVolumen;\n          b = true;\n        }\n        if (bmsLineaDetalle[iProdObjModif].precio !== bmsPrecio) {\n          bmsLineaDetalle[iProdObjModif].precio = bmsPrecio;\n          b = true;\n        }\n        if (bmsLineaDetalle[iProdObjModif].importe !== bmsProdImporte) {\n          bmsLineaDetalle[iProdObjModif].importe = bmsProdImporte;\n          b = true;\n        }\n        if (bmsLineaDetalle[iProdObjModif].iva !== bmsProdIva) {\n          bmsLineaDetalle[iProdObjModif].iva = bmsProdIva;\n          b = true;\n        }\n        if (bmsLineaDetalle[iProdObjModif].total !== bmsProdTotal) {\n          bmsLineaDetalle[iProdObjModif].total = bmsProdTotal;\n          b = true;\n        }\n        \n        logGlobal();\n\n        return b;\n     }\n\n\nfunction inicio() {        \n         nuevoPedido();\n         $('#listaEstab').empty();\n         bmsEstab = \"\";\n         bmsTipo = \"\";\n         document.getElementById(\"text1\").value = '';\n         document.getElementById(\"text2\").value = '';\n         $('#text1').focus();\n     }\n\nfunction iniciaPedido(){\n        document.getElementById(\"pedido_dtpFecha\").valueAsDate = bmsFecha;\n        document.getElementById(\"pedido_txtImporte\").value = numeral(bmsPedImporte).format('$0,0.00');\n        document.getElementById(\"pedido_txtIva\").value = numeral(bmsPedIva).format('$0,0.00');\n        document.getElementById(\"pedido_txtTotal\").value = numeral(bmsPedTotal).format('$0,0.00');\n      }\n    \n\nfunction llenaSelect(codigoUsuario){ //Recibe un codigo de usuario, consume el ws GetEstabs y llena un Select \n      \n         var url = bmsServer + \"/api/sesion/GetEstabs\",\n         \n         html = '<option value=\"' + '-1' + '\">' + \"Seleccione...\" + '</option>',\n         success = function(data) {\n             if (data.codigo !== \"\") {\n                 $('#listaEstab').empty();\n                 //alert(\"Llenar combo.\");\n                 //console.log(data);\n                 $.each(data, function(i, val) {\n                     html += '<option value=\"' + val.codigo + '\">' + val.nombre + '</option>';\n                 });\n                 $('#listaEstab').append(html);\n                 $(\"#listaEstab\").selectmenu('refresh', true);\n             }\n\n         };\n         //Llamada al web service GetEstabs \n         $.ajax({\n             type: 'get',\n             url: url,\n             data: {\n                 \"usuario\": codigoUsuario\n             },\n             dataType: \"jsonp\",\n             crossDomain: true,\n             cache: false,\n             success: success,\n             error: function(jqXHR, textStatus, errorThrown) {\n                 alert(errorThrown);\n             }\n         });\n         llenaCondDistrib();\n     }\n\n     function llenaCondDistrib(){\n        var url = bmsServer + \"/api/General/GetCondDistrib\",\n         \n         html = '<option value=\"' + '-1' + '\">' + \"Seleccione...\" + '</option>',\n         success = function(data) {\n             if (data[0] !== null) {\n                 $('#pedido_CondDistrib').empty();\n                 //alert(\"Llenar combo.\");\n                 //console.log(data);\n                 $.each(data, function(i, val) {\n                     html += '<option value=\"' + val.codigo + '\">' + val.nombre + '</option>';\n                 });\n                 $('#pedido_CondDistrib').selectmenu();\n                 $('#pedido_CondDistrib').append(html);\n                 $(\"#pedido_CondDistrib\").selectmenu('refresh', true);\n             }\n\n         };\n         //Llamada al web service GetEstabs \n         $.ajax({\n             type: 'get',\n             url: url,\n             data: {},\n             dataType: \"jsonp\",\n             crossDomain: true,\n             cache: false,\n             success: success,\n             error: function(jqXHR, textStatus, errorThrown) {\n                 alert(errorThrown);\n             }\n         });\n     }\n\n    function validaMargen(){\n        var url = bmsServer + \"/api/Productos/GetVerificaMargen\";\n        fueraDeMargen = false;\n         success = function(data) {\n             if (data !== \"\" ) {\n                 alertBox(JSON.stringify(data), \"cbDefault()\", \"BMS Móvil\", \"OK\");\n                 fueraDeMargen = true;\n             } else {fueraDeMargen = false;}\n             if (fueraDeMargen) {\n                return;\n            }\n                                                //producto(codigo        ,         descripcion,    unidad, unidadAbrev,       cantidad,    peso,    volumen,    precio,        importe,        iva, total)\n                var productoNuevo = new producto(prodObj.codigo, prodObj.descripcion, bmsUnidad, bmsUnidadAbrev, bmsCantidad, bmsPeso, bmsVolumen, bmsPrecio, bmsProdImporte, bmsProdIva, bmsProdTotal, bmsPrecio);\n                bmsLineaDetalle.push(productoNuevo);\n                \n                logGlobal();\n\n                actualizaTotalesPedido();\n                limpiaProducto();\n                alertBox(\"Producto agregado correctamente.\", \"cbDefault()\", \"BMS Móvil\", \"OK\");\n                $('#productos_txtProducto').focus();\n               \n         };\n         //Llamada al web service GetVerificaMargen\n         $.ajax({\n             type: 'get',\n             url: url,\n             data: {\"usuario\": bmsUser, \"cliente\": bmsCliente, \"estab\": bmsEstab, \"prod\": prodObj.codigo, \"unidad\": bmsUnidad, \"precio\": bmsPrecio},\n             dataType: \"jsonp\",\n             crossDomain: true,\n             cache: false,\n             success: success,\n             error: function(jqXHR, textStatus, errorThrown) {\n                 alert(errorThrown);\n                 return fueraDeMargen;\n             }\n         });         \n    }\n    function submit_login (){\n     var username = $(\"#text1\").val(),\n     password = $(\"#text2\").val(),\n     estab = \"1\",\n     url = bmsServer+\"/api/sesion/GetUsuario\",\n     success = function(data) {\n         if (data.codigo === \"\") {\n             alertBox(\"No se pudo iniciar sesion, por favor verifique sus datos.\", \"cbDefault()\", \"BMS Móvil\", \"OK\");\n             //alert(\"No se pudo iniciar sesion, por favor verifique sus datos.\");\n             inicio();\n             return;\n         }  \n         if (data.codigo !== \"\") {\n             alertBox(\"Bienvenido \" + data.nombre, \"cbDefault()\", \"BMS Móvil\", \"OK\");\n             //alert(\"Bienvenido \" + data.nombre);\n             bmsUser = data.codigo; //Variable Global BMS\n             console.log('***DEBUGGING LOG - [Page: Login] Codigo usuario guardado: ' + data.codigo);\n             $.mobile.changePage($('#selector_estab'), {\n                 transition: \"slide\",\n                 changeHash: false\n             });\n             llenaSelect(data.codigo);\n             //$('#establecimientos').css('visibility','visible');\n         }\n\n     };\n     console.log('***DEBUGGING LOG - [Page: Login] [Data: username = ' + username +\n         '] [Data: password = ' + password +   '\\n' +\n         '] [Data: estab = ' + estab +         '\\n' +\n         '] [Data: url = ' + url);             \n     \n     //Llamada al web service GetUsuario \n     $.ajax({\n         type: 'get',\n         url: url,\n         data: {\n             \"usuario\": username,\n             \"clave\": password\n         },\n         dataType: \"jsonp\",\n         crossDomain: true,\n         cache: false,\n         success: success,\n         beforeSend: function() {$('#modal').show();},\n         complete: function(){$('#modal').hide();},\n         error: function(jqXHR, textStatus, errorThrown) {\n             alert(errorThrown);\n         }\n     });\n    } \n    function validaCabeceroDoc(){\n      var b = true;\n      if (bmsUser === \"\" || bmsUser === \"undefined\" || bmsUser === null ) {\n        alertBox(\"Usuario no válido.\", \"cbDefault()\", \"BMS Móvil\", \"OK\");\n        b = false;\n        return b;\n      }\n      if (bmsEstab === \"\" || bmsEstab === \"undefined\" || bmsEstab === null ) {\n        alertBox(\"Establecimiento no válido.\", \"cbDefault()\", \"BMS Móvil\", \"OK\");\n        b = false;\n        return b;\n      }\n      if (bmsTipo !== \"pedido\") {\n        alertBox(\"Tipo de docuemento no válido.\", \"cbDefault()\", \"BMS Móvil\", \"OK\");\n        b = false;\n        return b;\n      }\n      if (bmsCliente === \"\" || bmsCliente === \"undefined\" || bmsCliente === null ) {\n        alertBox(\"Cliente no válido.\", \"cbDefault()\", \"BMS Móvil\", \"OK\");\n        b = false;\n        return b;\n      }\n      if (bmsFecha === \"\" || bmsFecha === \"undefined\" || bmsFecha === null ) {\n        alertBox(\"Fecha no válida.\", \"cbDefault()\", \"BMS Móvil\", \"OK\");\n        b = false;\n        return b;\n      }\n      /*if (bmsSucursal === \"\" || bmsSucursal === \"undefined\" || bmsSucursal === null ) {\n        alertBox(\"No selecciono una sucursal.\", \"cbDefault()\", \"BMS Móvil\", \"OK\");\n        b = false;\n        return b;\n      }*/ \n      return b;\n    }\n\n      //Funciones Básicas\n    window.addEventListener('load', function() {\n    new FastClick(document.body);\n    }, false);\n$(document).ready(function() {\n  \n    //navigator.splashscreen.hide();\n    //document.getElementById(\"text1\").value = '1';\n    //document.getElementById(\"text2\").value = 'coloma';\n    //nuevoPedido();\n    \n    $(\"#btnIniciar\").click(function() {\n        if (!validateForm()) {\n            return;\n        }\n        submit_login();\n });\n $('#text1').on('keypress', function(e){ \n    var input = $(this).val();\n    if (e.keyCode === 13) {\n        if (input !== \"\") {\n            $('#text2').focus();\n        }\n    }            \n });   \n $('#text2').on('keypress', function(e){ \n    var input = $(this).val();\n    if (e.keyCode === 13) {\n        if (input !== \"\") {\n            submit_login();\n        }\n    }            \n });\n $('#config_servidor').on('keypress', function(e){ \n    var input = $(this).val();\n    if (e.keyCode === 13) {\n        if (input !== \"\") {\n            AddValueToDB();\n        }\n    }             \n });\n $('#config_btnProbar').click(function(){\n    bmsServer = $('#config_servidor').val();\n    if (bmsServer === \"\"){\n        alertBox(\"Para probar la conexión ingrese un servidor válido.\", \"cbDefault()\", \"BMS Móvil\", \"OK\");\n        //alert(\"Para probar la conexión ingrese un servidor válido.\");\n        return;\n    }\n     var url = bmsServer+\"/api/General/GetProbarConexion\",\n     \n     success = function(data) {\n         if (data === true) {\n             alertBox(\"La conexión se estableció correctamente.\", \"cbDefault()\", \"BMS Móvil\", \"OK\");\n             //alert(\"La conexión se estableció correctamente.\");\n         }\n     };\n\n     //Llamada al web service \n     $.ajax({\n         timeout: 4000,\n         type: 'get',\n         url: url,\n         data: {},\n         dataType: \"jsonp\",\n         crossDomain: true,\n         cache: false,\n         success: success,\n         beforeSend: function() {$('#modal').show();},\n         complete: function(){$('#modal').hide();},\n         error: function(jqXHR, textStatus, errorThrown) {\n\n             alertBox(\"No se pudo conectar. Verifique los datos de conexión.\", \"cbDefault()\", \"BMS Móvil\", \"OK\");\n\n         }\n     });\n\n });\n    //Continuar después de seleccionar un establecimiento\n $('#BtnContinuar').click(function() {\n     if (bmsEstab == -1 || bmsEstab === null || bmsEstab === \"\") {\n         alertBox(\"Seleccione un establecimiento para continuar\", \"cbDefault()\", \"BMS Móvil\", \"OK\");\n         //alert(\"Seleccione un establecimiento para continuar\");\n         return;\n     }\n     $.mobile.changePage($('#selectorTipo'), {\n         transition: \"slide\",\n         changeHash: false\n     });\n });\n    //Tipo de documento: Pedido o Crobranza\n $('#listaTipo').children('li').click(function() {\n     bmsTipo = $(this).attr('data-name');\n     event.stopPropagation();\n     iniciaPedido();             \n     console.log('***DEBUGGING LOG - [Page: selectorTipo] [Data: bmsTipo = ' + bmsTipo +\n         ']');\n });\n\n $('#selector_estabBtnSalir').click(function() {\n     salir();     \n });\n\n $(\"#pedido_btnDetalle\").click(function() {\n        if (bmsLineaDetalle.length === 0) {\n            alertBox(\"No se han agregado productos\", \"cbDefault()\", \"BMS Móvil\", \"OK\");\n            //alert(\"No se han agregado productos\"); \n            return;\n        }\n        $.mobile.changePage($('#pedidoDetalle'), {\n        transition: \"slide\",\n        changeHash: false\n        });\n });\n $('#Pedido_btnAgregarProducto').click(function() {\n    \n    if (bmsCliente !== \"\") {\n        $.mobile.changePage($('#productos'), {\n        transition: \"slide\",\n        changeHash: false\n        });\n    }\n    if (bmsCliente === \"\"){\n        navigator.notification.confirm(\n        \"Primero debe seleccionar un cliente. Desea hacerlo ahora?\",  // message\n        onConfirmSeleccionarCliente,            // callback to invoke with index of button pressed\n        \"Confirmar acción.\",  // title\n        \"Cancelar,OK\");       // buttonLabels\n        //selectCte = confirm(\"Primero debe seleccionar un cliente. Desea hacerlo ahora?\");\n    }\n });\n\n $('#Pedido_btnGuardaPedido').click(function() {\n    \n      navigator.notification.confirm(\n        \"Está a punto de guardar el pedido, desea continuar?\",  // message\n        onConfirmGuardaPedido,            // callback to invoke with index of button pressed\n        \"Confirmar acción.\",  // title\n        \"Cancelar,OK\");       // buttonLabels\n        //onConfirmGuardaPedido(2);\n     \n });\n $('#pedido_btnAtras').click(function() {\n     navigator.notification.confirm(\n        \"Está a punto de salir, desea continuar? Se perderán los datos no guardados.\",  // message\n        onConfirmBtnAtras,            // callback to invoke with index of button pressed\n        \"Confirmar acción.\",  // title\n        \"Cancelar,OK\");       // buttonLabels\n     //var guardar = confirm(\"Está a punto de salir, desea continuar? Se perderán los datos no guardados.\");\n });\n\n $('#Pedido_btnCancelaPedido').click(function() {\n     navigator.notification.confirm(\n        \"Está a punto de cancelar el pedido, desea continuar?\",  // message\n        onConfirmBtnCancelaPedido,            // callback to invoke with index of button pressed\n        \"Confirmar acción.\",  // title\n        \"Cancelar,OK\");       // buttonLabels\n     //var guardar = confirm(\"Está a punto de cancelar el pedido, desea continuar?\");\n });\n //Mostrar el inventario en página nueva\n $('#productos_btnInventario').click(function(){\n    if ($('#productos_txtProducto').val() === \"\") {\n        alertBox(\"No ha seleccionador un producto.\", \"cbDefault()\", \"BMS Móvil\", \"OK\");\n        return;\n    }\n    if ($('#productos_txtProducto').val() !== \"\") {\n        var url = bmsServer+\"/api/Productos/GetInventario\",\n        html = \"\",\n        obj = {},\n        estab = {},\n         \n         success = function(data) {\n             if (data[0] !== null) {               \n                 \n                 $.each(data, function(i, val) {\n                    obj = val;\n                    estab = val.estab;\n                    html += \"<li><h2 class='ui-li-heading'>\"+ estab.nombre +\"</h2><p class=\"+\"ui-li-desc\"+\"><strong>Inventario UA : </strong>\"+ obj.inventarioUA+\"</p><p class=\"+\"ui-li-desc\"+\"><strong>Inventario UC : </strong>\"+obj.inventarioUC+\"</p></li>\"; \n                    //html += '<div class=\"ui-block-a\">Código</div><div class=\"ui-block-b\">'+estab.codigo+'</div><div class=\"ui-block-a\">Nombre</div><div class=\"ui-block-b\">'+estab.nombre+'</div><div class=\"ui-block-a\">Inventario UA</div><div class=\"ui-block-b\">'+obj.inventarioUA+'</div><div class=\"ui-block-a\">Inventario UC</div><div class=\"ui-block-b\">'+obj.inventarioUC+'</div><br>';                    \n                 });\n                    \n                 $.mobile.changePage($('#inventario'), {\n                 transition: \"slide\",\n                 changeHash: false});\n\n                 $('#inventario_list').append(html);\n                 $(\"#inventario_list\").listview( \"refresh\" );\n             }\n         };\n \n         $.ajax({\n             type: 'get',\n             url: url,\n             data: {\n                 \"producto\": bmsProducto\n             },\n             dataType: \"jsonp\",\n             crossDomain: true,\n             cache: false,\n             success: success,\n             beforeSend: function() {$('#modal').show();},\n             complete: function(){$('#modal').hide();},\n             error: function(jqXHR, textStatus, errorThrown) {\n                 alert(errorThrown);\n             }\n         }); \n    }            \n });\n\n//TAPHOLD List detalle producto\n $(document).on( 'taphold', 'li.item', tapholdHandler );\n    \n            function tapholdHandler( event ){\n            var i = $(this).index();\n              $.mobile.changePage($('#productosEditar'), {\n                transition: \"slide\",\n                changeHash: false});\n                \n                modificaProducto(i);\n            }\n \n //Agregar producto al detalle: Se crea el Objeto producto, se añade al arreglo de objectos y se limpia la pagina de producto. \n $('#productos_btnAgregaProducto').click(function() {\n    if ($('#productos_txtProducto').val() === \"\") {\n        alertBox(\"No ha seleccionador un producto.\", \"cbDefault()\", \"BMS Móvil\", \"OK\");\n        //alert(\"No ha seleccionador un producto.\");\n        $('#productos_btnAgregaProducto').focus();\n        return;}\n    if (document.getElementById(\"productos_txtCantidad\").value === \"\") {\n        alertBox(\"Especifique una cantidad válida.\", \"cbDefault()\", \"BMS Móvil\", \"OK\");\n        //alert(\"Especifique una cantidad válida.\");\n        $('#productos_txtCantidad').focus();\n        return;\n    }\n    validaMargen();\n    \n    //alert(\"Producto agregado correctamente.\");\n\n    /*$.mobile.changePage($('#productos'), {\n    transition: \"slide\",\n    changeHash: false});*/\n    \n });\n//Agrega producto modificado al detalle: Se utiliza el prodObjModif para actualizar los valores de prodObj en bmsLineaDetalle[], despues de actualizar se limpia la pagina de ProductosEditar.\n//Regresa a la pagina de pedidoDetalle\n $('#productosEditar_btnAgregaProducto').click(function() {\n    if ($('#productosEditar_txtProducto').val() === \"\") {\n        alertBox(\"No hay producto seleccionado para editar.\", \"cbDefault()\", \"BMS Móvil\", \"OK\");\n        //alert(\"No hay producto seleccionado para editar.\");\n        return;}\n    if (document.getElementById(\"productosEditar_txtCantidad\").value === \"\") {\n        alertBox(\"Especifique una cantidad válida.\", \"cbDefault()\", \"BMS Móvil\", \"OK\");\n        //alert(\"Especifique una cantidad válida.\");\n        $('#productosEditar_txtCantidad').focus();\n        return;\n    }\n    //Llamar método booleano modificaDetalle\n\n    if (modificaDetalle()) {\n      actualizaTotalesPedido();\n      limpiaProducto();\n      alertBox(\"Producto modificado correctamente.\", \"cbDefault()\", \"BMS Móvil\", \"OK\");\n      //alert(\"Producto modificado correctamente.\");\n\n      $.mobile.changePage($('#pedidoDetalle'), {\n      transition: \"slide\",\n      changeHash: false});\n    } else {\n      alertBox(\"No se ha modificado el producto.\", \"cbDefault()\", \"BMS Móvil\", \"OK\");\n      //alert(\"No se ha modificado el producto.\");\n    }\n });\n/*\n $('#productos_txtCantidad').on('input propertychange', function(){ \n    bmsCantidad = $(this).val();\n    if (bmsCantidad == \"\") {return;}\n\n    if ($.isNumeric($('#productos_txtCantidad').val())){\n        actualizaTotalesProducto(bmsCantidad);\n    }else{\n        document.getElementById(\"productos_txtCantidad\").value = \"\";\n        alert(\"Teclee la cantidad en numeros.\");       \n        $('#productos_txtCantidad').focus();\n    }               \n });\n*/\n $('#productos_btnCancelaProducto').click(function() {\n    navigator.notification.confirm(\n        \"Desea limpiar el formulario? Se limpiaran todos los campos.\",  // message\n        onConfirmBtnCancelaProducto,            // callback to invoke with index of button pressed\n        \"Confirmar acción.\",  // title\n        \"Cancelar,OK\");       // buttonLabels\n    //var limpiar = confirm(\"Desea limpiar el formulario? Se limpiaran todos los campos.\");    \n });\n //Al cambiar el valor de la cantidad actualizar importe, iva y total del producto\n $('#productos_txtCantidad').on('input propertychange', function(){ \n    bmsCantidad = $(this).val();\n    if (bmsCantidad === \"\") {return;}\n\n    if ($.isNumeric($('#productos_txtCantidad').val())){\n        actualizaTotalesProducto(bmsCantidad, bmsPrecio, 2);\n    }else{\n        document.getElementById(\"productos_txtCantidad\").value = \"\";\n        alertBox(\"Teclee la cantidad en números.\", \"cbDefault()\", \"BMS Móvil\", \"OK\");\n        //alert(\"Teclee la cantidad en números.\");       \n        $('#productos_txtCantidad').focus();\n    }                \n });\n //Al cambiar el valor de la cantidad actualizar importe, iva y total del productosEditar\n $('#productosEditar_txtCantidad').on('input propertychange', function(){ \n    bmsCantidad = $(this).val();\n    if (bmsCantidad === \"\") {return;}\n\n    if ($.isNumeric($('#productosEditar_txtCantidad').val())){\n        actualizaTotalesProductosEditar(bmsCantidad, prodObjModif.precio);\n    }else{\n        document.getElementById(\"productosEditar_txtCantidad\").value = \"\";\n        alertBox(\"Teclee la cantidad en números.\", \"cbDefault()\", \"BMS Móvil\", \"OK\");\n        //alert(\"Teclee la cantidad en números.\");       \n        $('#productosEditar_txtCantidad').focus();\n    }                \n });\n \n $('#productos_txtCantidad').on('focus', function(){\n    this.select();\n });\n $('#productosEditar_txtCantidad').on('focus', function(){\n    this.select();\n });\n  //Al cambiar el valor del precio/u actualizar importe, iva y total del producto\n $('#productos_txtPrecioUni').on('focus', function(){\n    this.select();\n });\n $('#productos_txtPrecioUni').on('input propertychange', function(){\n    if ($.isNumeric($('#productos_txtPrecioUni').val())){\n        bmsPrecio = numeral().unformat($(this).val());\n        actualizaTotalesProducto(bmsCantidad, bmsPrecio, 3);\n    } else{\n        document.getElementById(\"productos_txtPrecioUni\").value = \"\";\n        alertBox(\"Teclee la cantidad en números.\", \"cbDefault()\", \"BMS Móvil\", \"OK\");\n        //alert(\"Teclee la cantidad en números.\");       \n        $('#productos_txtPrecioUni').focus();\n    }\n    \n });   \n/*$('#productos_txtPrecioUni').on('input propertychange', function(){\n    $('#productos_txtPrecioUni').on('keypress', function(e){ \n      if (e.keyCode === 8){\n            return;\n          }\n       if (e.keyCode === 13){\n            bmsPrecio = numeral().unformat($(this).val());\n              if (bmsPrecio == \"\") {\n                  alertBox(\"Especifique un precio válido.\", \"cbDefault()\", \"BMS Móvil\", \"OK\");\n                  return;\n              actualizaTotalesProducto(bmsCantidad, bmsPrecio);\n          }\n          \n      }\n    });\n                  \n});*/\n   //Al cambiar el valor del precio/u actualizar importe, iva y total del producto\n $('#productosEditar_txtPrecioUni').on('focus', function(){\n    this.select();\n });\n $('#productosEditar_txtPrecioUni').on('input propertychange', function(){\n    if ($.isNumeric($('#productosEditar_txtPrecioUni').val())){\n        bmsPrecio = numeral().unformat($(this).val());\n        actualizaTotalesProductosEditar(bmsCantidad, bmsPrecio);  \n    } else{\n        document.getElementById(\"productosEditar_txtPrecioUni\").value = \"\";\n        alertBox(\"Teclee la cantidad en números.\", \"cbDefault()\", \"BMS Móvil\", \"OK\");\n        //alert(\"Teclee la cantidad en números.\");       \n        $('#productosEditar_txtPrecioUni').focus();\n    }\n                 \n });\n $('#productos_txtPrecioUni').on('keypress', function(e){ \n    var precioInput = $(this).val();\n    if (e.keyCode === 13) {\n        if (precioInput !== \"\") {\n            //añadir\n            if ($('#productos_txtProducto').val() === \"\") {\n                alertBox(\"No ha seleccionador un producto.\", \"cbDefault()\", \"BMS Móvil\", \"OK\");\n                //alert(\"No ha seleccionador un producto.\");\n                $('#productos_btnAgregaProducto').focus();\n                return;}\n            if (document.getElementById(\"productos_txtCantidad\").value === \"\") {\n                alertBox(\"Especifique una cantidad válida.\", \"cbDefault()\", \"BMS Móvil\", \"OK\");\n                //alert(\"Especifique una cantidad válida.\");\n                $('#productos_txtCantidad').focus();\n                return;}\n                                      //producto(codigo        ,         descripcion,    unidad, unidadAbrev,       cantidad,    peso,    volumen,    precio,        importe,        iva, total)\n                var productoNuevo = new producto(prodObj.codigo, prodObj.descripcion, bmsUnidad, bmsUnidadAbrev, bmsCantidad, bmsPeso, bmsVolumen, bmsPrecio, bmsProdImporte, bmsProdIva, bmsProdTotal, bmsPrecio);\n                bmsLineaDetalle.push(productoNuevo);\n                \n                logGlobal();\n\n                actualizaTotalesPedido();\n                limpiaProducto();\n                alertBox(\"Producto agregado correctamente.\", \"cbDefault()\", \"BMS Móvil\", \"OK\");\n                $('#productos_txtProducto').focus();\n        }\n    }               \n });\n $('#productos_txtCantidad').on('keypress', function(e){ \n    var cantInput = $(this).val();\n    if (e.keyCode === 13) {\n        if (cantInput !== \"\") {\n            $('#productos_txtPrecioUni').focus();\n        }\n    }             \n });\n //Buscar producto por código\n $('#productos_txtProducto').on('keypress', function(e){ \n    var prodInput = $(this).val();\n    if (e.keyCode === 13) {\n        if (prodInput !== \"\") {\n            addProducto(prodInput);\n        }\n    }               \n });\n\n //On click productos_btnScan y clienteDetalle_btnScan buscar por código de barras\n $( \"#productos_btnScan\" ).on( \"click\", function() {\n            clickScan(1);\n        });\n$( \"#clienteDetalle_btnScan\" ).on( \"click\", function() {\n            clickScan(2);\n        });\n $('#clienteDetalle_btnAceptar').click(function() {\n                \n });\n \n\n $('#pedidoDetalle_btnBorraTodos').click(function() {\n    var length = bmsLineaDetalle.length,\n    eliminado,\n    i;\n\n    if (length !== 0) {\n        //for (i = 0; i < length; i++) {\n        //  eliminado = bmsLineaDetalle.splice(i,1);\n        navigator.notification.confirm(\n        \"Está seguro de borrar todos los productos del pedido?.\",  // message\n        onConfirmBtnBorraTodos,            // callback to invoke with index of button pressed\n        \"Confirmar acción.\",  // title\n        \"Cancelar,OK\");       // buttonLabels\n        //var confirma = confirm(\"Está seguro de borrar todos los productos del pedido?.\");      \n    }                  \n });\n});\n\n     $.fn.clearForm = function() { \n         return this.each(function() {  \n             var type = this.type,\n                 tag = this.tagName.toLowerCase();  \n             if (tag == 'form')    return $(':input', this).clearForm();  \n             if (type == 'text' || type == 'password' || tag == 'textarea')    this.value = '';  \n             else if (type == 'checkbox' || type == 'radio')    this.checked = false;  \n             else if (tag == 'select')    this.selectedIndex = -1; \n         });\n     };\n\n\n     $(document).ready(\"pageinit\", \"#config\", function() {\n         queryDB();\n     });\n\n    \n     //Busca Producto\n     $(document).on(\"pageinit\", \"#buscaProducto\", function() {\n         $(\"#autocompleteProds\").on(\"listviewbeforefilter\", function(e, data) {\n             var $ul = $(this),\n                 $input = $(data.input),\n                 value = $input.val(),\n                 html = \"\";\n             $ul.html(\"\");\n             if (value && value.length > 2) {\n                 $ul.html(\"<li><div class='ui-loader'><span class='ui-icon ui-icon-loading'></span></div></li>\");\n                 $ul.listview(\"refresh\");\n                 $.ajax({\n                     url: bmsServer+\"/api/Productos/GetBuscarProductos\",\n                     type: \"GET\",\n                     dataType: \"jsonp\",\n                     crossDomain: true,\n                     data: {\n                         estab: \"1\",\n                         filtro: $input.val()\n                     }\n                 })\n                     .then(function(response) {\n                         $.each(response, function(i, val) {\n                             html += \"<li data-icon=\" + \"plus\" + \" onclick=\" + \"addProducto('\" + val.codigo + \"');>\" + \"<a href=\" + \"#productos\" + \"><h2 class='ui-li-heading'>\" + val.descripcion + \"</h2><p class=\" + \"ui-li-desc\" + \"> Exist: \" + val.existenciaEstablecimiento + \"</p> <p class=\" + \"ui-li-desc\" + \"> Exist Global: \" + val.existenciaGlobal + \"</p></a></li>\";\n                         });\n                         $ul.html(html);\n                         $ul.listview(\"refresh\");\n                         $ul.trigger(\"updatelayout\");\n                     });\n             }\n         });\n     });\n     \n\n     function seleccionaEstab() {\n         bmsEstab = document.getElementById(\"listaEstab\").value;\n         console.log('***DEBUGGING LOG - [Page: selector_estab] [Data: bmsEstab = ' + bmsEstab +\n             ']');\n         //showNotificationBar(\"Acciones al seleccionar un elemento\");\n     }\n     function seleccionaSucursal() {\n         bmsSucursal = document.getElementById(\"listaSucursales\").value;\n         console.log('***DEBUGGING LOG - [Page: selector_sucursales] [Data: bmsSucursal = ' + bmsSucursal +\n             ']');\n         //showNotificationBar(\"Acciones al seleccionar un elemento\");\n     }\n\n     function seleccionaPedido() {\n         bmsTipo = $(this).attr('data-name');\n         bmsTipo = document.getElementById(\"listaTipo\").index;\n         console.log('***DEBUGGING LOG - [Page: selectorTipo] [Data: bmsTipo = ' + bmsTipo +\n             ']');\n     }\n     function seleccionaUnidad(modif) {\n        if (modif) {\n          bmsUnidad = document.getElementById(\"productosEditar_listaUnidad\").value;\n          actualizaTotalesProductosEditar(bmsCantidad, 0);\n          console.log('***DEBUGGING LOG - [Page: ProductosEditar_selectorUnidad] [Data: bmsUnidad = ' + bmsUnidad +\n             ']');\n          return;\n        }\n         bmsUnidad = document.getElementById(\"productos_listaUnidad\").value;\n         actualizaTotalesProducto(bmsCantidad, 0, 4);\n         console.log('***DEBUGGING LOG - [Page: Productos_selectorUnidad] [Data: bmsUnidad = ' + bmsUnidad +\n             ']');\n     }\n     function seleccionaCondDistrib(){\n          bmsCondDistrib = document.getElementById(\"pedido_CondDistrib\").value;\n          console.log('***DEBUGGING LOG - [Page: pedido_CondDistrib] [Data: bmsCondDistrib = ' + bmsCondDistrib +\n             ']');\n     } \n\n     function onConfirmSalir(button) {\n  if (button == 2) {\n    console.log(\"Botón presionado index: \" + button);\n    inicio();\n         $.mobile.changePage($('#Login'), {\n             transition: \"slide\",\n             changeHash: false\n         });\n  }\n}\nfunction salir(){\n  navigator.notification.confirm(\n    \"Está a punto de terminar su sesión, desea continuar?\",  // message\n    onConfirmSalir,            // callback to invoke with index of button pressed\n    \"Confirmar acción.\",  // title\n    \"Cancelar,OK\");       // buttonLabels\n    \n    //var answer = confirm(\"Está a punto de terminar su sesión, desea continuar?\");\n}\nfunction onConfirmSeleccionarCliente(button) {\n  if (button === 2) {\n    console.log(\"Botón presionado index: \" + button);\n    inicio();\n         $.mobile.changePage($('#clienteDetalle'), {\n             transition: \"slide\",\n             changeHash: false\n         });\n  }\n}\n\nfunction onConfirmGuardaPedido(button) {\n  if (button === 2) {\n    if (validaCabeceroDoc()) {\n             if (bmsLineaDetalle.length === 0) { //Se valida el detalle\n              alertBox(\"El pedido está vacío. Necesita añadir productos para guardar un pedido.\", \"cbDefault()\", \"BMS Móvil\", \"OK\");\n              return;\n             }\n\n            var i,\n            obj = null,\n            length = bmsLineaDetalle.length,\n            bmsNotas = document.getElementById(\"pedido_txtNotas\").value,\n            pedido;\n\n            var today = bmsFecha;\n            var dd = today.getDate();\n            var mm = today.getMonth()+1; //January is 0!\n\n            var yyyy = today.getFullYear();\n            if(dd<10){dd='0'+dd;} if(mm<10){mm='0'+mm;} today = yyyy+'/'+mm+'/'+dd;\n\n            for (i = 0; i < length; i++) {\n                obj = bmsLineaDetalle[i];\n\n                pedProd = new pedidoProd(obj.codigo, obj.cantidad, obj.precio, obj.unidad, obj.peso);\n\n                pedLineas.push(pedProd);\n            }\n            //Crear los objetos para mandarlos por el WS\n            //Si se enviaron regresar true;\n            //pedido = new pedidoPost(bmsCliente, bmsEstab, bmsFecha, bmsNotas, bmsSucursal, bmsUser, pedLineas);\n            //function pedido (cliente, establecimiento, fecha, notas, sucursal, usuario, productos)\n                    \n             var url = bmsServer+\"/api/General/PostGuardar\",\n             \n             success = function(data) {\n                 if (data[0] !== \"\") {\n                     alertBox(\"La información se ha guardado correctamente. Folio de guardado: \" + JSON.stringify(data[0]), \"cbDefault()\", \"BMS Móvil\", \"OK\");\n                     pedidoGuardado = true;\n\n                        nuevoPedido();\n                        $.mobile.changePage($('#selectorTipo'), {\n                        transition: \"slide\",\n                        changeHash: false });                  \n                     return;\n                 } else {\n                  alertBox(\"Pedido no guardado. ERROR: \" + JSON.stringify(data[1]), \"cbDefault()\", \"BMS Móvil\", \"OK\");\n                 }\n             };\n\n             //Llamada al web service \n             $.ajax({\n                 type: 'POST',\n                 url: url,\n                 data: {\"cliente\":bmsCliente, \"CondDistrib\": bmsCondDistrib, \"estab\":bmsEstab,\"fecha\":today,\"notas\":bmsNotas,\"sucursal\":bmsSucursal,\"user\":bmsUser,\"productos\":pedLineas},\n                 dataType: \"json\",\n                 crossDomain: false,\n                 cache: false,\n                 success: success,\n                 beforeSend: function() {$('#modal').show();},\n                 complete: function(){$('#modal').hide();},\n                 error: function(jqXHR, textStatus, errorThrown) {\n                     alert(errorThrown);\n                 }\n             });\n         }\n  }\n}\n\nfunction onConfirmBtnAtras(button) {\n  if (button == 2) {\n    nuevoPedido();         \n         logGlobal();\n         $.mobile.changePage($('#selectorTipo'), {\n             transition: \"slide\",\n             changeHash: false\n         });\n  }\n}\nfunction onConfirmBtnCancelaPedido(button) {\n  if (button == 2) {\n    nuevoPedido();         \n         logGlobal();\n         $.mobile.changePage($('#selectorTipo'), {\n             transition: \"slide\",\n             changeHash: false\n         });\n  }\n}\nfunction onConfirmBtnCancelaProducto(button) {\n  if (button == 2) {\n    limpiaProducto();\n  }\n}\nfunction onConfirmBtnBorraTodos(button) {\n  if (button == 2) {\n    bmsLineaDetalle = [];\n\n    $('#list').empty();\n    $( \"#list\" ).listview( \"refresh\" );\n    actualizaTotalesPedido();\n\n    alertBox(\"Se han eliminado todos los productos del pedido.\", \"cbDefault()\", \"BMS Móvil\", \"OK\");\n    $.mobile.changePage($('#pedido'), {\n             transition: \"slide\",\n             changeHash: false\n         });\n  }\n}\n\n     function showNotificationBar(message, duration, bgColor, txtColor, height) {\n\n         /*set default values*/\n         duration = typeof duration !== 'undefined' ? duration : 2500;\n         bgColor = typeof bgColor !== 'undefined' ? bgColor : \"#5CFF7C\";\n         txtColor = typeof txtColor !== 'undefined' ? txtColor : \"#262425\";\n         height = typeof height !== 'undefined' ? height : 100;\n         /*create the notification bar div if it doesn't exist*/\n         if ($('#notification-bar').size() === 0) {\n             var HTMLmessage = \"<div class='notification-message' style='text-align:center; line-height: \" + height + \"px;'> \" + message + \" </div>\";\n             $('body').prepend(\"<div id='notification-bar' style='display:none; width:100%; height:\" + height + \"px; background-color: \" + bgColor + \"; position: fixed; z-index: 100; color: \" + txtColor + \";border-bottom: 1px solid \" + txtColor + \";'>\" + HTMLmessage + \"</div>\");\n         }\n         /*animate the bar*/\n         $('#notification-bar').slideDown(function() {\n             setTimeout(function() {\n                 $('#notification-bar').slideUp(function() {});\n             }, duration);\n         });\n     }\n\n\n\n\n\n\n\n\n     /*     function submit_form()\n            {\n                if (!validateForm()){return}\n                var username=$(\"#text1\").val();\n                var password=$(\"#text2\").val(); \n                var estab=\"1\";\n                var data = { user: username, cve:password, estab:estab };\n                $.ajax( {\n                    type: \"POST\",\n                    url:\"http://bmsystems.myvnc.com:8888/WSAndroid/bms/BMS/Sesion/\",\n                    data: JSON.stringify(data),\n                    contentType: \"application/json; charset=utf-8\",\n                    dataType: \"json\",\n                    async: false,\n                    success: function(data){\n                        var value = data.d; \n                        if(value.usuario !== 0){ \n                            alert('Success ' + data);\n                        }\n                    },\n                    error: function (e) {\n                        alert('Failed ' + data);\n                    }\n                });  \n            }\n        */",
+			"file": "lib/funciones.bakNew.js",
+			"file_size": 74984,
+			"file_write_time": 130353209885649233,
+			"settings":
+			{
+				"buffer_size": 72970,
 				"line_ending": "Windows"
 			}
 		}
@@ -331,12 +434,28 @@
 	"build_system": "Packages/JSLint/JSLint.sublime-build",
 	"command_palette":
 	{
-		"height": 392.0,
+		"height": 375.0,
 		"selected_items":
 		[
 			[
+				"package",
+				"Package Control: List Packages"
+			],
+			[
+				"packa",
+				"Package Control: Install Package"
+			],
+			[
+				"sublimelinter",
+				"Preferences: SublimeLinter Settings – User"
+			],
+			[
 				"pack",
-				"Package Control: Remove Package"
+				"Package Control: Install Package"
+			],
+			[
+				"oack",
+				"Package Control: List Packages"
 			],
 			[
 				"insta",
@@ -395,11 +514,15 @@
 				"Package Control: Install Package"
 			]
 		],
-		"width": 464.0
+		"width": 514.0
 	},
 	"console":
 	{
-		"height": 58.0
+		"height": 58.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
 	},
 	"distraction_free":
 	{
@@ -412,9 +535,31 @@
 	},
 	"file_history":
 	[
-		"/C/Users/Programacion3/Dropbox/Public/appNew/index.html",
+		"/C/Users/Programacion3/AppData/Roaming/Sublime Text 3/Packages/User/bh_core.sublime-settings",
+		"/C/Users/Programacion3/AppData/Roaming/Sublime Text 3/Packages/User/Monokai (SL).tmTheme",
+		"/C/Users/Programacion3/AppData/Roaming/Sublime Text 3/Packages/BracketHighlighter/bh_core.sublime-settings",
+		"/C/Users/Programacion3/AppData/Roaming/Sublime Text 3/Packages/User/bh_swapping.sublime-settings",
+		"/C/Users/Programacion3/AppData/Roaming/Sublime Text 3/Packages/User/bh_wrapping.sublime-settings",
 		"/C/Users/Programacion3/Dropbox/Public/appNew/lib/funciones.js",
+		"/C/Users/Programacion3/Desktop/jsexample.js",
+		"/C/Users/Programacion3/AppData/Roaming/Sublime Text 3/Packages/User/SublimeLinter.sublime-settings",
+		"/C/Users/Programacion3/AppData/Roaming/Sublime Text 3/Packages/SublimeLinter/SublimeLinter.sublime-settings",
+		"/C/Users/Programacion3/AppData/Roaming/Sublime Text 3/Packages/SublimeLinter/Default (Windows).sublime-keymap",
+		"/C/Users/Programacion3/AppData/Roaming/Sublime Text 3/Packages/User/Default (Windows).sublime-keymap",
+		"/C/Users/Programacion3/AppData/Roaming/Sublime Text 3/Packages/User/Side Bar.sublime-settings",
+		"/C/Users/Programacion3/AppData/Roaming/Sublime Text 3/Packages/User/Package Control.sublime-settings",
+		"/C/Users/Programacion3/Dropbox/Public/appNew/index.html",
+		"/C/Users/Programacion3/AppData/Roaming/Sublime Text 2/Packages/BracketHighlighter/bh_core.sublime-settings",
+		"/C/Users/Programacion3/AppData/Roaming/Sublime Text 2/Packages/User/bh_core.sublime-settings",
+		"/C/Users/Programacion3/Dropbox/Public/appNew/lib/funciones.bakNew.js",
+		"/C/Users/Programacion3/AppData/Roaming/Sublime Text 2/Packages/Color Scheme - Default/Monokai.tmTheme",
+		"/C/Users/Programacion3/AppData/Roaming/Sublime Text 2/Packages/BracketHighlighter/bh_wrapping.sublime-settings",
 		"/C/Users/Programacion3/Dropbox/Public/appNew/css/style.css",
+		"/C/Users/Programacion3/workspace/BMSMovil/assets/www/cordova.js",
+		"/C/Users/Programacion3/Dropbox/Public/appNew/img/barcode.png",
+		"/C/Users/Programacion3/AppData/Local/Telerik/BlackDragon/noelandresg_gmail.com/sample-barcode-scanner/sample-barcode-scanner/index.html",
+		"/C/Users/Programacion3/AppData/Local/Telerik/BlackDragon/noelandresg_gmail.com/sample-barcode-scanner/sample-barcode-scanner/scripts/main.js",
+		"/C/Users/Programacion3/Dropbox/Public/appNew/cordova.js",
 		"/C/Users/Programacion3/Dropbox/Public/appNew/project sample file",
 		"/C/Users/Programacion3/Dropbox/Public/appNew/BMSMovil.sublime-project",
 		"/C/Users/Programacion3/Dropbox/Public/appNew/swipeIndex.html",
@@ -477,7 +622,7 @@
 	],
 	"find":
 	{
-		"height": 35.0
+		"height": 26.0
 	},
 	"find_in_files":
 	{
@@ -491,134 +636,134 @@
 		"case_sensitive": false,
 		"find_history":
 		[
-			"validaCabeceroDoc",
-			"bmsSucursal",
-			"bmsSaldo",
-			"bmsCondPago",
-			"bmsLPV",
-			"validaCabeceroDoc",
-			"validaCliente",
-			"null",
-			"= \"\"",
-			"validaCliente",
-			"guardaPedido()",
-			"validaCliente",
-			"valida",
-			"guardaPedido",
-			"alertBo",
-			"alert(\"",
-			"alertBo",
-			"alert(\"",
-			"alertBox",
-			"alert(\"",
-			"alertBox",
-			"alert(\"",
-			"alertBox",
-			"alert(\"",
-			"modificaProducto",
-			"modificaDetalle",
-			"bmsprodimporte = 0",
-			"bmsprodimp",
-			"bmsimporte",
-			"modificaProducto",
-			"modifica",
-			"bmsProdImporte = 0",
-			"modificaDetalle",
-			"modificaProducto",
-			"actualizaTotalesPedido",
-			"bmsLineaDetalle",
-			"modificaDetalle",
-			"limpiaProducto",
+			"save",
+			"pedidoGuardado",
+			"fueraDeMargen",
+			"splash",
+			"Teclee la cantidad en números",
+			"productos_txtPrecioUni",
+			").focus();",
+			"productos_txtPrecioUni",
+			"númer",
+			"espec",
+			"$.ajax",
+			"show",
+			"config",
+			"onBodyLoad",
+			".on",
+			"addcl",
+			"class",
+			"body",
+			"submit_login",
+			"validateForm",
+			"login",
+			"config",
+			"clickScan",
+			"scan",
+			"onConfirmGuardaPedido",
+			"refresh",
+			"onConfirmGuardaPedido",
+			"seleccionaCondDistrib",
+			"seleccionaEstab",
+			"estab",
+			"'<option value=",
+			"llenaSelect",
+			"estab",
+			"selec",
+			"seleccionaSucursal",
+			"AddValueToDB",
+			"#config",
+			"console",
+			"errorHandler",
+			"clickScan",
+			"slide",
+			"AddValueToDB",
+			"#config_",
+			"password",
+			"13",
+			"submit_login",
+			"passwor",
+			"submit_login",
+			"basicas",
+			"var password",
+			"username=$(\"#text1\").",
+			"submit_form",
+			"onConfirmGuardaPedido",
+			"addprod",
+			"addcliente",
+			"addproduc",
+			"=addCliente",
+			"addcliente",
+			"scan",
 			"nuevoPedido",
-			"limpiaProducto",
-			"actualizaTotalesPedido",
-			"modificaDetalle",
-			"modificade",
-			"!",
-			"modificaDetalle",
-			"número",
-			"numero",
-			"numer",
-			"numero",
-			"producto modificado co",
-			"limpiaProducto",
-			"actualizaTotalesProductosEditar",
-			"prec",
-			"prodObj",
-			"prodObjModif",
-			"actualizaTotalesProductosEditar",
-			"addprod",
-			"bmsprecio",
-			"actualizaTotalesProductos",
-			"addprod",
-			"teclee",
-			"actualizaTotalesProductos",
-			"actualizaTotalesProducto",
-			"actualizaTotalesProductos",
-			"modif",
-			"actualizaTotalesProductosEditar",
-			"actualiza",
-			"modifica",
-			"actualizaTotalesProducto",
-			"productos_txtCantidad",
-			"actualizaTotalesProductosEditar",
-			"prodObj",
-			"modificaProducto",
-			"prodObjModif",
-			"actualizaTotalesProductosEditar",
-			"seleccionaun",
-			"actualizaTotalesProductosEditar",
-			"prodObjModif.cantidad",
-			"actualizaTotalesProductosEditar",
-			"modificaProducto",
-			"actualizaTotalesProductosEditar",
-			"modificaProducto",
-			"modifi",
-			"actualizaTotalesProductosEditar",
-			"actualizaTotales",
-			"seleccionauni",
-			"actualizaTotalesProductosEditar",
-			"actualizaTotalesProducto",
-			"seleccionaUnidad",
-			"onchan",
-			"modif",
-			"splice",
-			"modificaProducto",
-			"editar",
-			"prodObjModif",
-			"actualizaTotalesProductosEditar",
-			"actualiz",
-			"edit",
-			"editar",
-			"actualizaTotalesProducto",
-			"modificaProducto",
+			"bmsNotas",
+			"bmsfecha",
+			"new dat",
+			"onConfirmGuardaPedido",
+			"guarda",
+			"device",
+			"{}\n",
+			"ready",
+			"onconfirmguard",
+			"guarda",
+			"margen",
+			"guarda",
+			"margen",
+			"pedidoPost",
+			"guardaped",
+			"onConfirmGuardaPedido",
+			"guardaPedido()",
+			"b ",
+			"guarda",
+			"guardaPedido()",
+			"onConfirmGuardaPedido",
+			"guardaPedido(",
+			"guarda",
+			"guardaPedido()",
+			"onConfirmGuardaPedido",
+			"guardar",
+			"validaMargen()",
+			"basicas",
+			"onDeviceReady",
+			"ready",
+			"docum",
+			"line ",
+			"read",
+			"ondevice",
+			"validaMargen",
+			"validaMargen()",
+			"margen",
+			"validaMargen()",
+			"margen",
+			"actualizaTotalesProducto(",
+			"(bmsCantidad, 0",
+			"bmsCantidad, 0, 1",
+			"switc",
+			"validaMargen()",
+			"alertBox",
+			"validaMargen()",
+			"validaCabeceroDoc()",
+			"if (",
+			"if(",
+			"productos_btnAgregaProducto",
+			"actualizaTotalesProducto(",
+			" actualizaTotalesProducto(",
+			"addProducto(",
+			"productos_btnAgregaProducto",
+			"actualizaTotalesProducto(",
 			"actualizaTotalesProducto",
 			"seleccionaUnidad",
-			"onchange",
-			"change",
+			"unidad",
 			"actualizaTotalesProducto",
-			"modificaProducto",
-			"=bmsVolumen",
-			"= bmsVolumen",
-			"modificaProducto",
-			"addProd",
-			"addprod",
 			"new pro",
-			"modificaProducto",
-			"bmsLineaDetalle[",
-			"modificaProducto",
-			"list",
-			"tap",
-			"\"productos_",
-			"productos",
-			"agregar",
-			"=\"pe",
-			"href=\"#Login\"",
-			"eliminado",
-			"confirm",
-			"pedidoDetalle_btnBorraTodos",
 			"actualizaTotalesProducto",
-			"input"
+			"addPro",
+			" producto(",
+			"producto(",
+			"new producto",
+			"actualizaTotalesProducto(",
+			"actualizaTotalesProducto",
+			"productos_txtCantidad"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -639,11 +784,12 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 3,
 			"sheets":
 			[
 				{
 					"buffer": 0,
+					"semi_transient": false,
 					"settings":
 					{
 						"buffer_size": 1235,
@@ -662,18 +808,18 @@
 							"BracketHighlighterBusy": false,
 							"bh_regions":
 							[
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
 								"bh_square",
 								"bh_square_center",
 								"bh_square_open",
 								"bh_square_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
 								"bh_angle",
 								"bh_angle_center",
 								"bh_angle_open",
@@ -682,6 +828,10 @@
 								"bh_curly_center",
 								"bh_curly_open",
 								"bh_curly_close",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
 								"bh_default",
 								"bh_default_center",
 								"bh_default_open",
@@ -694,14 +844,10 @@
 								"bh_round_center",
 								"bh_round_open",
 								"bh_round_close",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close"
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close"
 							],
 							"syntax": "Packages/Java/Java.tmLanguage",
 							"tab_size": 8,
@@ -711,21 +857,23 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
+					"stack_index": 3,
 					"type": "text"
 				},
 				{
 					"buffer": 1,
+					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 627,
+						"buffer_size": 587,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								84,
-								43
+								239,
+								239
 							]
 						],
 						"settings":
@@ -733,18 +881,18 @@
 							"BracketHighlighterBusy": false,
 							"bh_regions":
 							[
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
 								"bh_square",
 								"bh_square_center",
 								"bh_square_open",
 								"bh_square_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
 								"bh_angle",
 								"bh_angle_center",
 								"bh_angle_open",
@@ -753,6 +901,10 @@
 								"bh_curly_center",
 								"bh_curly_open",
 								"bh_curly_close",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
 								"bh_default",
 								"bh_default_center",
 								"bh_default_open",
@@ -765,14 +917,10 @@
 								"bh_round_center",
 								"bh_round_open",
 								"bh_round_close",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close"
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close"
 							],
 							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
 						},
@@ -780,22 +928,24 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
+					"stack_index": 2,
 					"type": "text"
 				},
 				{
 					"buffer": 2,
 					"file": "lib/funciones.js",
+					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 54178,
+						"buffer_size": 5606,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								19215,
-								19215
+								5606,
+								5606
 							]
 						],
 						"settings":
@@ -803,18 +953,18 @@
 							"BracketHighlighterBusy": false,
 							"bh_regions":
 							[
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
 								"bh_square",
 								"bh_square_center",
 								"bh_square_open",
 								"bh_square_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
 								"bh_angle",
 								"bh_angle_center",
 								"bh_angle_open",
@@ -823,6 +973,10 @@
 								"bh_curly_center",
 								"bh_curly_open",
 								"bh_curly_close",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
 								"bh_default",
 								"bh_default_center",
 								"bh_default_open",
@@ -835,6 +989,48 @@
 								"bh_round_center",
 								"bh_round_open",
 								"bh_round_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close"
+							],
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1890.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "lib/funciones.bakNew.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 72970,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								5325,
+								5325
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
 								"bh_tag",
 								"bh_tag_center",
 								"bh_tag_open",
@@ -842,16 +1038,45 @@
 								"bh_single_quote",
 								"bh_single_quote_center",
 								"bh_single_quote_open",
-								"bh_single_quote_close"
+								"bh_single_quote_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close"
 							],
 							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
 							"tab_size": 2,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 8193.0,
+						"translation.y": 1404.0,
 						"zoom_level": 1.0
 					},
+					"stack_index": 0,
 					"type": "text"
 				}
 			]
@@ -859,7 +1084,7 @@
 	],
 	"incremental_find":
 	{
-		"height": 0.0
+		"height": 26.0
 	},
 	"input":
 	{
@@ -892,13 +1117,18 @@
 	{
 		"height": 130.0
 	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
 	"output.jslint_result_view":
 	{
-		"height": 70.0
+		"height": 29.0
 	},
+	"project": "BMSMovil.sublime-project",
 	"replace":
 	{
-		"height": 62.0
+		"height": 48.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -921,10 +1151,24 @@
 		],
 		"width": 0.0
 	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"settings":
+	{
+	},
 	"show_minimap": true,
 	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
 	"side_bar_width": 175.0,
-	"status_bar_visible": true
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
 }

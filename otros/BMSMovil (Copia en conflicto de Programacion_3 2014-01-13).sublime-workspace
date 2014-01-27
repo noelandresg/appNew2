@@ -1,0 +1,1143 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"ped",
+				"pedCab	{}"
+			],
+			[
+				"pedca",
+				"pedCab"
+			],
+			[
+				"data",
+				"data	(?)"
+			],
+			[
+				"inve",
+				"inventarioUC"
+			],
+			[
+				"inven",
+				"inventarioUA"
+			],
+			[
+				"unidad",
+				"unidad"
+			],
+			[
+				"canti",
+				"cantidad"
+			],
+			[
+				"uni",
+				"unidad	(str)"
+			],
+			[
+				"user",
+				"user"
+			],
+			[
+				"sele",
+				"select"
+			],
+			[
+				"bmspr",
+				"bmsProducto	(str)"
+			],
+			[
+				"resul",
+				"resultado"
+			],
+			[
+				"te",
+				"text"
+			],
+			[
+				"add",
+				"addProducto(val)"
+			],
+			[
+				"defa",
+				"cbDefault"
+			],
+			[
+				"pedido",
+				"pedido"
+			],
+			[
+				"conse",
+				"console"
+			],
+			[
+				"log",
+				"log"
+			],
+			[
+				"butto",
+				"buttonIndex	(?)"
+			],
+			[
+				"bmsProdto",
+				"bmsProdTotal"
+			],
+			[
+				"prodobj",
+				"prodObjModif"
+			],
+			[
+				"bmsprod",
+				"bmsProdIva"
+			],
+			[
+				"bmspro",
+				"bmsProdImporte"
+			],
+			[
+				"t",
+				"true"
+			],
+			[
+				"modi",
+				"modificaDetalle"
+			],
+			[
+				"objmod",
+				"prodObjModif"
+			],
+			[
+				"prodi",
+				"prodObjModif	{}"
+			],
+			[
+				"prod",
+				"prodObj	{}"
+			],
+			[
+				"prodObjm",
+				"prodObjModif"
+			],
+			[
+				"cant",
+				"cantidad	(num)"
+			],
+			[
+				"actualizaTotalesProductosEdita",
+				"actualizaTotalesProductosEditar(cant, precio)"
+			],
+			[
+				"ip",
+				"iProdObjModif"
+			],
+			[
+				"actual",
+				"actualizaTotalesProductosEditar(cant, precio)"
+			],
+			[
+				"codig",
+				"codigo"
+			],
+			[
+				"conf",
+				"confirma"
+			],
+			[
+				"actua",
+				"actualizaTotalesPedido"
+			],
+			[
+				"produc",
+				"productos_txtProducto"
+			],
+			[
+				"termina",
+				"terminarPedido"
+			],
+			[
+				"bmsUnid",
+				"bmsUnidad"
+			],
+			[
+				"bmsUn",
+				"bmsUnidad"
+			],
+			[
+				"limpi",
+				"limpiaProducto"
+			],
+			[
+				"bmspedi",
+				"bmsPedIva"
+			],
+			[
+				"bmsped",
+				"bmsPedImporte"
+			],
+			[
+				"cliente",
+				"clienteDetalle"
+			],
+			[
+				"for",
+				"for	for (…) {…}"
+			],
+			[
+				"prodOb",
+				"prodObj"
+			],
+			[
+				"bmsPro",
+				"bmsProdImporte"
+			],
+			[
+				"bmsProd",
+				"bmsProducto"
+			],
+			[
+				"limp",
+				"limpiaProducto"
+			],
+			[
+				"bmsImp",
+				"bmsProdImporte"
+			],
+			[
+				"bmsUnida",
+				"bmsUnidadAbrev"
+			],
+			[
+				"bmsUni",
+				"bmsUnidadNombre"
+			],
+			[
+				"bmsprodI",
+				"bmsProdIva"
+			],
+			[
+				"bmsuni",
+				"bmsUnidad"
+			],
+			[
+				"imp",
+				"impProd"
+			],
+			[
+				"bms",
+				"bmsCantidad"
+			],
+			[
+				"ac",
+				"actualizaTotalesProducto"
+			],
+			[
+				"iva",
+				"ivaProd"
+			],
+			[
+				"precio",
+				"precioUC"
+			],
+			[
+				"linea",
+				"bmsLineaDetalle"
+			],
+			[
+				"bmsPe",
+				"bmsPedImporte"
+			],
+			[
+				"bmsunida",
+				"bmsUnidadAbrev"
+			],
+			[
+				"bmsunid",
+				"bmsUnidadNombre"
+			],
+			[
+				"estab",
+				"estab"
+			],
+			[
+				"bmsPed",
+				"bmsPedTotal"
+			],
+			[
+				"val",
+				"value"
+			],
+			[
+				"Suc",
+				"SucursalCliente"
+			],
+			[
+				"auto",
+				"autocompleteProds"
+			],
+			[
+				"functi",
+				"function"
+			],
+			[
+				"data-",
+				"data-liCtesNom"
+			],
+			[
+				"selector",
+				"selector_estab"
+			],
+			[
+				"lista",
+				"listaTipo"
+			],
+			[
+				"get",
+				"getElementById"
+			],
+			[
+				"nom",
+				"nombre"
+			],
+			[
+				"notyAl",
+				"notyAlert"
+			],
+			[
+				"el",
+				"else"
+			],
+			[
+				"ro",
+				"rows"
+			],
+			[
+				"server",
+				"serverText"
+			],
+			[
+				"servi",
+				"serverId"
+			],
+			[
+				"confi",
+				"config_servidor"
+			],
+			[
+				"ser",
+				"serverText"
+			],
+			[
+				"config",
+				"Config"
+			],
+			[
+				"h",
+				"h4	Tag"
+			],
+			[
+				"codi",
+				"codigo"
+			],
+			[
+				"inici",
+				"inicio"
+			],
+			[
+				"tex",
+				"text1"
+			],
+			[
+				"fun",
+				"function"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"contents": "                        ipWS = http://bmsystems.myvnc.com:8888/WSAndroid\n                        HttpClient httpClient= new DefaultHttpClient();\n                        HttpPost post = new HttpPost(ipWS+\"/bms/BMS/Sesion/\");\n                        post.setHeader(\"content-type\", \"application/json\");\n                        JSONObject datos=new JSONObject();\n                        datos.put(\"user\", user);\n                        datos.put(\"cve\", cve);\n                        datos.put(\"estab\", estab);\n                        StringEntity entity = new StringEntity(datos.toString());\n                        post.setEntity(entity);\n                        HttpResponse resp = httpClient.execute(post);\n                        String respStr = EntityUtils.toString(resp.getEntity());\n                        JSONObject obj = new JSONObject(respStr);\n                        usuario=obj.getString(\"usuario\");\n                        nombre_usuario =obj.getString(\"nombre_us\");\n                        vendedor = obj.getString(\"vendedor\");\n                        nombre_vend= obj.getString(\"nombre_vend\");\n                        cod_estab= obj.getString(\"estab\");\n                        nombre_estab= obj.getString(\"nombre_estab\");",
+			"settings":
+			{
+				"buffer_size": 1235,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "onclick=\"+\"addCliente(\"+val.codigo+\")\"+\"\n\n\"http://bmsandroid.net.mandrake.arvixe.com/api/Clientes/GetBuscarClientes\"\n\n\n					bmsUnidad = val.tipo;\n                    bmsUnidadNombre = val.nombre;\n                    bmsUnidadAbrev = val.abreviatura;\n\n                    prodObj{\n	                    codigo: \"10382\"\n						contenido: 72\n						descripcion: \"JAB. PALM.NATURALS EXTRA HUMEC JAT\"\n						notas: \"\"\n						peso: 0\n						porcentajeIVA: 16\n						precioUA: 0.6897\n						precioUC: 42.5862\n						tipoPrecioUA: \"1\"\n						tipoPrecioUC: \"1\"\n						unidades: Array[2]\n						volumen: 0	\n                    }\n                    ",
+			"settings":
+			{
+				"buffer_size": 627,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "lib/funciones.js",
+			"settings":
+			{
+				"buffer_size": 66281,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "index.html",
+			"settings":
+			{
+				"buffer_size": 24873,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "<div class=\"ui-block-a\"></div>\n                <div class=\"ui-block-b\"></div>\n                <div class=\"ui-block-a\"></div>\n                <div class=\"ui-block-b\"></div>\n                <div class=\"ui-block-a\"></div>\n                <div class=\"ui-block-b\"></div>\n\n\"<li><p class=\"+\"topic\"+\">\"+ obj.descripcion +\"</p><p class=\"+\"topic\"+\"><strong>Cant: </strong>\"+ obj.cantidad+\"</p><p class=\"+\"topic\"+\"><strong>Unidad: </strong>\"+obj.unidadAbrev+\"</p><p><strong>Importe: </strong>\"+obj.importe+\"</p><p><strong>IVA: </strong>\"+obj.iva+\"</p><p><strong>TOTAL: </strong>\"+obj.total+\"</p></li>\";        \n\n\n\n                             html += \"<li data-icon=\" + \"plus\" + \" onclick=\" + \"'addProducto(\" + val.codigo + \")'>\" + \"<a href=\" + \"#productos\" + \"><h2 class='ui-li-heading'>\" + val.descripcion + \"</h2><p class=\" + \"ui-li-desc\" + \"> Exist: \" + val.existenciaEstablecimiento + \"</p> <p class=\" + \"ui-li-desc\" + \"> Exist Global: \" + val.existenciaGlobal + \"</p></a></li>\";\n    ",
+			"settings":
+			{
+				"buffer_size": 978,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "Packages/JSLint/JSLint.sublime-build",
+	"command_palette":
+	{
+		"height": 392.0,
+		"selected_items":
+		[
+			[
+				"pack",
+				"Package Control: Remove Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"tern",
+				"TernJS: Jump to definition"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"sche",
+				"Schemr: List all schemes"
+			],
+			[
+				"htm",
+				"HTMLPrettify"
+			],
+			[
+				"htmlpr",
+				"HTMLPrettify"
+			],
+			[
+				"intal",
+				"Package Control: Install Package"
+			],
+			[
+				"bracke",
+				"BracketHighlighter: Jump to Left Bracket"
+			],
+			[
+				"remo",
+				"Package Control: Remove Package"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"jsli",
+				"JSLint"
+			],
+			[
+				"jslin",
+				"JSLint"
+			],
+			[
+				"insta	",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 464.0
+	},
+	"console":
+	{
+		"height": 58.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": true,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": true
+	},
+	"file_history":
+	[
+		"/C/Users/Programacion3/Dropbox/Public/appNew/lib/funciones.js",
+		"/C/Users/Programacion3/Dropbox/Public/appNew/index.html",
+		"/C/Users/Programacion3/Dropbox/Public/appNew/img/barcode.png",
+		"/C/Users/Programacion3/AppData/Local/Telerik/BlackDragon/noelandresg_gmail.com/sample-barcode-scanner/sample-barcode-scanner/index.html",
+		"/C/Users/Programacion3/AppData/Local/Telerik/BlackDragon/noelandresg_gmail.com/sample-barcode-scanner/sample-barcode-scanner/scripts/main.js",
+		"/C/Users/Programacion3/Dropbox/Public/appNew/cordova.js",
+		"/C/Users/Programacion3/Dropbox/Public/appNew/css/style.css",
+		"/C/Users/Programacion3/Dropbox/Public/appNew/project sample file",
+		"/C/Users/Programacion3/Dropbox/Public/appNew/BMSMovil.sublime-project",
+		"/C/Users/Programacion3/Dropbox/Public/appNew/swipeIndex.html",
+		"/C/Users/Programacion3/Dropbox/Public/appNew/lib/testSwipe.js",
+		"/C/Users/Programacion3/Dropbox/Public/appNew/indexSwipe.html",
+		"/C/Users/Programacion3/Desktop/swipe.js",
+		"/C/Users/Programacion3/Desktop/swipe1.js",
+		"/C/Users/Programacion3/Dropbox/Public/index.html",
+		"/C/Users/Programacion3/Dropbox/Public/appNew/graphite-1.3.1_4/generated/slate/index.html",
+		"/C/Users/Programacion3/AppData/Roaming/Sublime Text 2/Packages/User/sublime-jslint.sublime-settings",
+		"/C/Users/Programacion3/AppData/Roaming/Sublime Text 2/Packages/sublime-jslint/sublime-jslint.sublime-settings",
+		"/C/Users/Programacion3/AppData/Roaming/Sublime Text 2/Packages/Package Control/Package Control.sublime-settings",
+		"/C/Users/Programacion3/AppData/Roaming/Sublime Text 2/Packages/JsFormat/Default (Windows).sublime-keymap",
+		"/C/Users/Programacion3/AppData/Roaming/Sublime Text 2/Packages/BracketHighlighter/Example.sublime-keymap",
+		"/C/Users/Programacion3/Documents/GitHub/appNew/index.html",
+		"/C/Users/Programacion3/Dropbox/Public/appNew/styles/style.css",
+		"/C/Users/Programacion3/Dropbox/Public/appNew/styles/css",
+		"/C/Users/Programacion3/Dropbox/Public/appNew/lib/noty/themes/default.js",
+		"/C/Users/Programacion3/Dropbox/Public/appNew/index(BuscaProducto).html",
+		"/C/Users/Programacion3/Dropbox/Public/appNew/buscaProducto.js",
+		"/C/Users/Programacion3/Dropbox/Public/appNew/buscaCliente.js",
+		"/C/Users/Programacion3/Dropbox/Public/appNew/index(BuscaCliente).html",
+		"/C/Users/Programacion3/Downloads/index(BuscaProducto).html",
+		"/C/Users/PROGRA~1/AppData/Local/Temp/Rar$DR00.556/index.html",
+		"/C/Users/Programacion3/Dropbox/Public/appNew/lib/index.html",
+		"/C/Users/Programacion3/Downloads/adt-bundle-windows-x86_64-20131030/sdk/tools/android.bat",
+		"/C/Users/Programacion3/Documents/GitHub/appNew - copia1/lib/funciones.js",
+		"/C/Users/Programacion3/Documents/GitHub/appNew/lib/funciones.js",
+		"/C/Users/Programacion3/Documents/GitHub/BMSapp/index.html",
+		"/C/Users/Programacion3/Dropbox/Public/BMSapp/index.html",
+		"/C/Users/Programacion3/Documents/GitHub/ThreeJs/index.html",
+		"/C/Users/Programacion3/Documents/GitHub/ThreeJs/main.js",
+		"/C/Users/Programacion3/Documents/GitHub/ThreeJs/style.css",
+		"/C/Users/Programacion3/Documents/GitHub/ThreeJs/styles/style.css",
+		"/C/Users/Programacion3/Documents/GitHub/ThreeJs/js/main.js",
+		"/C/Users/Programacion3/Downloads/mrdoob-three.js-f4c54b2/examples/canvas_ascii_effect.html",
+		"/C/Users/Programacion3/Documents/GitHub/appNew - copia1/new (3).html",
+		"/C/Users/Programacion3/Documents/GitHub/appNew - copia1/new.html",
+		"/C/Users/Programacion3/Documents/GitHub/appNew - copia1/lib/Exec.js",
+		"/C/Users/Programacion3/Documents/GitHub/appNew - copia1/new (2).html",
+		"/C/Users/Programacion3/Documents/GitHub/appNew - copia/new.html",
+		"/C/Users/Programacion3/Documents/GitHub/appNew - copia/index.html",
+		"/C/Users/Programacion3/Documents/GitHub/appNew - copia/newindex.html",
+		"/C/Users/Programacion3/Documents/GitHub/appNew - copia/lib/Exec.js",
+		"/C/Users/Programacion3/Documents/GitHub/appNew - copia/lib/Exec",
+		"/C/Users/Programacion3/Documents/GitHub/appNew - copia/lib/funciones.js",
+		"/C/Users/Programacion3/Documents/GitHub/Ajax/index.html",
+		"/C/Users/Programacion3/Documents/GitHub/appNew/readme.md",
+		"/C/Users/Programacion3/Downloads/BMSapp/index.html",
+		"/C/Users/Programacion3/Documents/GitHub/BMSapp/readme.md",
+		"/C/Users/Programacion3/Downloads/BMSapp/readme.md",
+		"/C/Users/Programacion3/Desktop/index.html",
+		"/C/Users/Programacion3/Desktop/hello_world.js",
+		"/C/Users/Programacion3/Downloads/Untitled/index.html",
+		"/C/Users/Programacion3/Documents/GitHub/phonegap-workshop-master/index.html",
+		"/C/Users/Programacion3/Downloads/Untitled/lib/myJS.js",
+		"/C/Users/Programacion3/Downloads/Untitled/lib/jquery-1.6.4.js",
+		"/C/Users/Programacion3/Downloads/Untitled/src/css/jquery.mobile.structure-1.1.0.css",
+		"/C/Users/Programacion3/Downloads/Untitled/src/css/jquery.mobile.theme-1.1.0.css"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"JSON.stringify",
+			"data:",
+			"type:",
+			"$.ajax(",
+			"dataType: \"jsonp\",",
+			"guardaPedido()",
+			"onConfirmGuardaPedido",
+			"Pedido_btnGuardaPedido",
+			"inventari",
+			"addpro",
+			").listview(",
+			").listview( ",
+			"' ).listview( \"refresh\" );",
+			"append(html);",
+			"invent",
+			"list",
+			"refres",
+			"function(i, val)",
+			"html +=",
+			"inventario",
+			"addprod",
+			"click",
+			"grid",
+			"productos",
+			"inventario_estab",
+			"data-role=\"content\"",
+			"style=\"position:fixed",
+			"inventario",
+			"guardaPedido",
+			"onConfirmGuardaPedido",
+			"push",
+			"guardaPedido",
+			"bmsLineaDetalle.length",
+			"guardaPedido",
+			"pedidoCabecero",
+			"pus",
+			"for (",
+			"for",
+			"pedProd",
+			"prodObj.",
+			"prodObj",
+			"pedCab",
+			"productoNuevo",
+			"= new prod",
+			"prodObj",
+			"pedCab",
+			"guardaPedido",
+			"validaCabeceroDoc",
+			"guardaPedido",
+			"guarda",
+			"\"#Login\"",
+			"\"Login\"",
+			"\"#Login\"",
+			"#",
+			"data-history=",
+			"yes",
+			"alert",
+			"//",
+			"close",
+			"yes",
+			"data.codigo ===",
+			"addCliente",
+			"if (data.codi",
+			"addCliente",
+			"clickSca",
+			"click",
+			"addclien",
+			"select",
+			"addpro",
+			"keypre",
+			"click",
+			"onclick",
+			"txtproducto\")",
+			"txtproducto\").on",
+			"\"productos_txtca",
+			"\"productos_txtProducto\"",
+			").focus()",
+			"focus",
+			"addProducto",
+			"productos_txtprod",
+			"addClien",
+			"addProducto",
+			"clickScan",
+			"resultado",
+			"clickScan",
+			"clickscan",
+			"scan",
+			"html",
+			"pedido\"",
+			"transition",
+			"actualizaTotalesProductosEditar",
+			"productosEditar_txtPrecioUni",
+			"#productos_txtPreciouni').on('in",
+			"#productos_txtPrecio').on('input propertychange",
+			"#productos_txtCantidad').on('input propertychange",
+			"bmsProducto",
+			"addProducto",
+			"=== 13",
+			"addProducto",
+			"códi",
+			"códiu",
+			"click",
+			"onDeviceReady",
+			"Ondevi",
+			"addEventListener(\"deviceready\"",
+			"actualizaTotalesProducto",
+			"$('#productos_txtPrecioUni').on('focus'",
+			"alertBox(\"Producto agregado correctamente.\"",
+			"producto agrega",
+			"#productos_txtProducto').on('keypress'",
+			"addProducto",
+			"select",
+			"productos_txt",
+			"productos_txtProducto",
+			"txtPro",
+			"productos_txtProducto",
+			"onConfirmBtnBorraTodos",
+			"\"BMS Móvil\"",
+			"onConfirmBtnBorraTodos",
+			"pedidoDetalle_btnBorraTodos",
+			"elimina",
+			"btnEli",
+			"salir()",
+			"oncon",
+			"actualizaTotalesPedido()",
+			"validaCabeceroDoc()",
+			"onconfirm",
+			"confirm(\""
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"\"productosEditar_",
+			"",
+			"o"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 2,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"settings":
+					{
+						"buffer_size": 1235,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								394,
+								398
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close"
+							],
+							"syntax": "Packages/Java/Java.tmLanguage",
+							"tab_size": 8,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"settings":
+					{
+						"buffer_size": 627,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								84,
+								43
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close"
+							],
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "lib/funciones.js",
+					"settings":
+					{
+						"buffer_size": 66281,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								38241,
+								38241
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close"
+							],
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 17199.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "index.html",
+					"settings":
+					{
+						"buffer_size": 24873,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								15625,
+								15625
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close"
+							],
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 566.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"settings":
+					{
+						"buffer_size": 978,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								829,
+								819
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close"
+							],
+							"syntax": "Packages/HTML/HTML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 130.0
+	},
+	"output.jslint_result_view":
+	{
+		"height": 29.0
+	},
+	"replace":
+	{
+		"height": 62.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"",
+				"/C/Users/Programacion3/Dropbox/Public/appNew/lib/funciones.js"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 175.0,
+	"status_bar_visible": true
+}
