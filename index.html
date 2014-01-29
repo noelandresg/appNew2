@@ -91,12 +91,12 @@
             <h1>Configuración</h1>
         </div>
         <div data-role="content">
-            <form name="config" action="http://" method="POST" accept-charset="utf-8">
+            
                 <div data-role="fieldcontain">
                     <label for="config_servidor">Servidor</label>
                     <input type="text" id="config_servidor" placeholder="Servidor">
                 </div>
-            </form>
+            
             <a data-role="button" id="config_btnProbar">Probar conexión</a>
             <a data-role="button" id="config_btnGuardar" href="#Login" data-transition="slideup" onclick="AddValueToDB()">Guardar</a>
             <a href='#Login' onclick='$(#config).dialog("close");'data-role='button' data-theme='b'>Cerrar</a>
@@ -325,20 +325,20 @@
                     <a data-role="button" href="#buscaProducto" data-inline="false" data-theme="b" data-icon="search" data-iconpos="left" data-mini="true" data-transition="slide">Buscar producto</a>
                 <div data-role="fieldcontain">
                     <label for="productos_txtProducto">Producto</label>
-                    <input type="text" id="productos_txtProducto" >
+                    <input type="text" id="productos_txtProducto" tabindex=1>
                     <!--<a id="productos_btnInventario" data-role="button" href="#" data-inline="false" data-theme="b" data-icon="search" data-iconpos="left" data-mini="false" data-transition="slide">Inventario</a>-->
                 </div>
                 
                 <div data-role="fieldcontain">
                     <label for="productos_listaUnidad">Unidad</label>
-                    <select onchange="seleccionaUnidad()" onfocus="this.selectedindex=-1;" id="productos_listaUnidad" data-native-menu="true">
+                    <select onchange="seleccionaUnidad()" onfocus="this.selectedindex=-1;" id="productos_listaUnidad" data-native-menu="true" >
                     </select>
                     <!--<label for="productos_txtUnidad">Unidad</label>
                         <input type="text" id="productos_txtUnidad" readonly="readonly"> -->
                 </div>
                 <div data-role="fieldcontain">
                     <label for="productos_txtCantidad">Cantidad</label>
-                    <input type="tel" id="productos_txtCantidad">
+                    <input type="tel" id="productos_txtCantidad" tabindex=2>
 
                     <label for="productos_txtPeso">Peso</label>
                     <input type="text" id="productos_txtPeso" readonly="readonly">
@@ -348,7 +348,7 @@
                 </div>
                 <div data-role="fieldcontain">
                     <label for="productos_txtPrecioUni">Precio/u</label>
-                    <input type="text" id="productos_txtPrecioUni">
+                    <input type="text" id="productos_txtPrecioUni" tabindex=3>
                 </div>
                 <div data-role="fieldcontain">
                     
